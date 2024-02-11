@@ -1,10 +1,18 @@
-constant array<string> CommunityJukebox_Music =
+constant array<u64> CommunityJukebox_Music =
 {
     "lifewillchange",
-    "LastSuprise",
-    "MassDestruction",
-    "EasternMysticalTaleOfRomance",
-    "CaptainUnderpantsMusic",
-    "GrandpaThemeSong",
-    "IceRidgeOfNoltia"
+    "lastsuprise",
+    "massdestruction",
+    "easternmysticaltaleofromance",
+    "captainunderpantsmusic",
+    "grandpathemesong",
+    "bandland",
+    "conclusion",
+    "protecttheespers",
+    "crazymotorcyclechase",
+    "manwithmachinegun",
+    "ff9battle",
+    "ryualpha3",
+    "vrtraining",
+    "warproom"
 }

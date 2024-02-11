@@ -6,4 +6,15 @@
     "IceRidgeOfNoltia": { "File": "IceRidgeOfNoltia.ogg", "Type": "Music", "Name": "Ys 2 Chronicles - Ice Ridge of Noltia", "LoopStart": "204090" },
     "CaptainUnderpantsMusic": { "File": "captainunderpants.ogg", "Type": "Music", "Name": "Captain Underpants Music dont listen to the other songs", "SoundTestVisibility": "Hidden" },
     "GrandpaThemeSong": { "File": "grandpathemesong.ogg", "Type": "Music", "Name": "Grandpa Theme Song", "SoundTestVisibility": "Hidden" },
+    "BandLand": { "File": "BandLand.ogg", "Type": "Music", "Name": "Rayman - Band land", "LoopStart": "0" },
+    "Conclusion": { "File": "Conclusion.ogg", "Type": "Music", "Name": "Guilty Gear - Conclusion", "LoopStart": "616448" },
+    "ProtectTheEspers": { "File": "ProtectTheEspers.ogg", "Type": "Music", "Name": "Final Fantasy 6 - Protect the Espers!", "LoopStart": "71680" },
+    "CrazyMotorcycleChase": { "File": "CrazyMotorcycleChase.ogg", "Type": "Music", "Name": "Final Fantasy 7 - Crazy Motorcycle Chase", "LoopStart": "4745216" },
+    "ManWithMachineGun": { "File": "ManWithMachineGun.ogg", "Type": "Music", "Name": "Final Fantasy 8 - The Man with the Machine Gun", "LoopStart": "258048" },
+    "FF9Battle": { "File": "FF9Battle.ogg", "Type": "Music", "Name": "Final Fantasy 9 - Battle", "LoopStart": "258048" },
+    "RyuAlpha3": { "File": "RyuAlpha3.ogg", "Type": "Music", "Name": "Street Fighter Alpha 3 - Ryu", "LoopStart": "673792" },
+    "VRTraining": { "File": "VRTraining.ogg", "Type": "Music", "Name": "Metal Gear Sonic - VR Training", "LoopStart": "473088" },
+    "WarpRoom": { "File": "WarpRoom.ogg", "Type": "Music", "Name": "Crash Bandicoot 3: Warped - Warp Room", "LoopStart": "444416" },
 }
+}
+
