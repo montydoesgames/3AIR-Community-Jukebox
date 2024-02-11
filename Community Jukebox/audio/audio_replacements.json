@@ -1,0 +1,6 @@
+{
+    "lifewillchange": { "File": "lifewillchange.ogg", "Type": "Music", "Name": "lifewillchange", "SoundTestVisibility": "Hidden" },
+    "EasternMysticalTaleOfRomance": { "File": "EasternMysticalTaleOfRomance.ogg", "Type": "Music", "Name": "Eastern Mystical Tale of Romance", "SoundTestVisibility": "Hidden" },
+    "LastSuprise": { "File": "LastSuprise.ogg", "Type": "Music", "Name": "Last Suprise", "SoundTestVisibility": "Hidden" },
+    "MassDestruction": { "File": "MassDestruction.ogg", "Type": "Music", "Name": "Mass Destruction", "SoundTestVisibility": "Hidden" },
+}
