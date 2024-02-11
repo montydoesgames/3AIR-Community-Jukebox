@@ -6,4 +6,5 @@ constant array<string> CommunityJukebox_Music =
     "EasternMysticalTaleOfRomance",
     "CaptainUnderpantsMusic",
     "GrandpaThemeSong",
+    "IceRidgeOfNoltia"
 }
