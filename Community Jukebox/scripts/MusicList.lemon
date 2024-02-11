@@ -1,4 +1,4 @@
-constant array<u64> CommunityJukebox_Music =
+constant array<string> CommunityJukebox_Music =
 {
     "lifewillchange",
     "lastsuprise",
