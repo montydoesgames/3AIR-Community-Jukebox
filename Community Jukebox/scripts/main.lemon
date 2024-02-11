@@ -1,0 +1,38 @@
+include MusicList
+
+global u8 jukeboxtimer
+global u8 jukeboxplaying
+
+//# address-hook(0x00db44) end(0x00dbb2)
+function void RenderHUD()
+{
+	s16 baseX = global.level_started
+	if (baseX < 0)
+	{
+		baseX += 8
+		global.level_started = baseX
+	}
+	baseX += 0x0f
+	s16 baseY = 0x08
+	u16 renderQueue = 0xe000
+
+    if (Input.buttonPressed(BUTTON_L) || Input.buttonPressed(BUTTON_R)) && (level.framecounter & 0x04)
+    {
+        jukeboxplaying = (Input.buttonPressed(BUTTON_L)) ? (jukeboxplaying - 1) : (jukeboxplaying + 1)
+        if (jukeboxplaying < 0)
+            jukeboxplaying = 0
+        if !Audio.isPlayingAudio(CommunityJukebox_Music[jukeboxplaying])
+        {
+            Audio.playAudio(CommunityJukebox_Music[jukeboxplaying], AudioContext.CONTEXT_MUSIC)
+            jukeboxtimer = 240
+        }
+    }
+
+    if jukeboxtimer > 0
+    {
+        --jukeboxtimer
+    	HUD.drawSprite(CommunityJukebox_Music[jukeboxplaying], baseX, baseY + 0x60, renderQueue)
+    }
+
+base.RenderHUD()
+}

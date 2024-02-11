@@ -1,11 +1,12 @@
 constant array<string> CommunityJukebox_Music =
 {
-    "lifewillchange",
-    "lastsuprise",
-    "massdestruction",
-    "easternmysticaltaleofromance",
-    "captainunderpantsmusic",
-    "grandpathemesong",
+    "LastSuprise",
+    "MassDestruction",
+    "itsgoingdownnow",
+    "EasternMysticalTaleOfRomance",
+    "CaptainUnderpantsMusic",
+    "GrandpaThemeSong",
+    "IceRidgeOfNoltia"
     "bandland",
     "conclusion",
     "protecttheespers",
