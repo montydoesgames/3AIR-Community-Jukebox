@@ -1,0 +1,7 @@
+constant array<string> CommunityJukebox_Music =
+{
+    "lifewillchange",
+    "LastSuprise",
+    "MassDestruction",
+    "EasternMysticalTaleOfRomance",
+}
