@@ -1,5 +1,10 @@
 constant array<string> CommunityJukebox_Music =
 {
+    "SMLCookieCrisp",
+    "Pacmanthemesong",
+    "HotDogDance",
+    "BrandyAndMrWhiskers",
+    "PeppaPigSong",
     "lifewillchange",
     "LastSuprise",
     "MassDestruction",
