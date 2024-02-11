@@ -1,7 +1,7 @@
 include MusicList
 
 global u8 jukeboxtimer
-global u8 jukeboxplaying = -1
+global u8 jukeboxplaying
 
 //# address-hook(0x00db44) end(0x00dbb2)
 function void RenderHUD()
