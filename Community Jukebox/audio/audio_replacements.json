@@ -4,6 +4,8 @@
     "LastSuprise": { "File": "LastSuprise.ogg", "Type": "Music", "Name": "Last Surprise", "SoundTestVisibility": "Hidden" },
     "MassDestruction": { "File": "MassDestruction.ogg", "Type": "Music", "Name": "Mass Destruction", "SoundTestVisibility": "Hidden" },
     "itsgoingdownnow": { "File": "itsgoingdownnow.ogg", "Type": "Music", "Name": "itsgoingdownnow", "SoundTestVisibility": "Hidden" },
+    "Tension": { "File": "Tension.ogg", "Type": "Music", "Name": "Ys 1 Chronicles - Tension", "LoopStart": "43264" },    
+    "BurningFight": { "File": "BurningFight.ogg", "Type": "Music", "Name": "Ys 3 (Mega Drive) - Burning Fight", "LoopStart": "1792" },    
     "IceRidgeOfNoltia": { "File": "IceRidgeOfNoltia.ogg", "Type": "Music", "Name": "Ys 2 Chronicles - Ice Ridge of Noltia", "LoopStart": "204090" },
     "CaptainUnderpantsMusic": { "File": "captainunderpants.ogg", "Type": "Music", "Name": "Captain Underpants Music dont listen to the other songs", "SoundTestVisibility": "Hidden" },
     "GrandpaThemeSong": { "File": "grandpathemesong.ogg", "Type": "Music", "Name": "Grandpa Theme Song", "SoundTestVisibility": "Hidden" },
@@ -21,5 +23,6 @@
     "HotDogDance": { "File": "hotdogdance.ogg", "Type": "Music", "Name": "Hot Dog Dance", "SoundTestVisibility": "Hidden" },
     "BrandyAndMrWhiskers": { "File": "brandyandmrwhiskers.ogg", "Type": "Music", "Name": "Brandy and Mr Whiskers Theme Song", "SoundTestVisibility": "Hidden" },
     "PeppaPigSong": { "File": "peppapigintro.ogg", "Type": "Music", "Name": "Peppa Pig Fixed Version", "SoundTestVisibility": "Hidden" },
+    "AirCombat": { "File": "AirCombat.ogg", "Type": "Music", "Name": "Mega Turrican - Air Combat", "LoopStart": "177190" },    
 }
 
