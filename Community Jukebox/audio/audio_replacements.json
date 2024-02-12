@@ -16,5 +16,10 @@
     "RyuAlpha3": { "File": "RyuAlpha3.ogg", "Type": "Music", "Name": "Street Fighter Alpha 3 - Ryu", "LoopStart": "673792" },
     "VRTraining": { "File": "VRTraining.ogg", "Type": "Music", "Name": "Metal Gear Sonic - VR Training", "LoopStart": "473088" },
     "WarpRoom": { "File": "WarpRoom.ogg", "Type": "Music", "Name": "Crash Bandicoot 3: Warped - Warp Room", "LoopStart": "444416" },
+    "SMLCookieCrisp": { "File": "smlcookiecrisp.ogg", "Type": "Music", "Name": "SML Cookie Crisp", "SoundTestVisibility": "Hidden" },
+    "Pacmanthemesong": { "File": "pacmanthemesong.ogg", "Type": "Music", "Name": "Pac Man Theme Song Good Version", "SoundTestVisibility": "Hidden" },
+    "HotDogDance": { "File": "hotdogdance.ogg", "Type": "Music", "Name": "Hot Dog Dance", "SoundTestVisibility": "Hidden" },
+    "BrandyAndMrWhiskers": { "File": "brandyandmrwhiskers.ogg", "Type": "Music", "Name": "Brandy and Mr Whiskers Theme Song", "SoundTestVisibility": "Hidden" },
+    "PeppaPigSong": { "File": "peppapigintro.ogg", "Type": "Music", "Name": "Peppa Pig Fixed Version", "SoundTestVisibility": "Hidden" },
 }
 
