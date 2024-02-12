@@ -20,9 +20,7 @@ function void RenderHUD()
 
     if (Input.buttonPressed(BUTTON_L) || Input.buttonPressed(BUTTON_R)) && (level.framecounter & 0x04)
     {
-        jukeboxplaying = (Input.buttonPressed(BUTTON_L)) ? (jukeboxplaying - 1) : (jukeboxplaying + 1)
-        if (jukeboxplaying < 0)
-            jukeboxplaying = 0
+        jukeboxplaying = (Input.buttonPressed(BUTTON_L)) ? ((jukeboxplaying == 0) ? 0 : (jukeboxplaying - 1)) : (jukeboxplaying + 1)
         if !Audio.isPlayingAudio(CommunityJukebox_Music[jukeboxplaying])
         {
             Audio.playAudio(CommunityJukebox_Music[jukeboxplaying], AudioContext.CONTEXT_MUSIC)
