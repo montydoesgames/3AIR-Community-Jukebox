@@ -15,5 +15,10 @@ constant array<string> CommunityJukebox_Music =
     "ff9battle",
     "ryualpha3",
     "vrtraining",
-    "warproom"
+    "warproom",
+    "SMLCookieCrisp",
+    "Pacmanthemesong",
+    "HotDogDance",
+    "BrandyAndMrWhiskers",
+    "PeppaPigSong",
 }
