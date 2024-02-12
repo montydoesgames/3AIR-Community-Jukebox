@@ -1,3 +1,6 @@
 {
-	"lifewillchange":    { "File": "lifewillchange.png", "Rect": "0,0,72,12", "Center": "16,6" }
+	"lifewillchange":    { "File": "lifewillchange.png", "Rect": "0,0,72,12", "Center": "16,6" },
+	"LastSuprise":    { "File": "lastsurprise.png", "Rect": "0,0,66,12", "Center": "16,6" },
+	"MassDestruction":    { "File": "massdestruction.png", "Rect": "0,0,80,12", "Center": "16,6" },
+	"itsgoingdownnow":    { "File": "itsgoingdownnow.png", "Rect": "0,0,88,12", "Center": "16,6" },
 }
