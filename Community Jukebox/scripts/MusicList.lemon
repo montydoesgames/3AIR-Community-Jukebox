@@ -1,13 +1,22 @@
 constant array<string> CommunityJukebox_Music =
 {
+    //Jukebox is not on
     "jukeboxoff",
+
+    //Sonic music
     "theairwindyvalley",
     "liveandlearn",
+
+    //Persona music
     "lifewillchange",
     "LastSuprise",
     "MassDestruction",
     "itsgoingdownnow",
+
+    //Touhou music
     "EasternMysticalTaleOfRomance",
+
+    //Misc and ungroupable music
     "CaptainUnderpantsMusic",
     "GrandpaThemeSong",
     "Tension",    
