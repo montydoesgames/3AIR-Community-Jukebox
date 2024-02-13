@@ -16,18 +16,22 @@ constant array<string> CommunityJukebox_Music =
     //Touhou music
     "EasternMysticalTaleOfRomance",
 
-    //Misc and ungroupable music
-    "CaptainUnderpantsMusic",
-    "GrandpaThemeSong",
+    // Ys music
     "Tension",    
     "IceRidgeOfNoltia",
     "BurningFight",
-    "bandland",
-    "conclusion",
+
+    // Final Fantasy music
     "protecttheespers",
     "crazymotorcyclechase",
     "manwithmachinegun",
     "ff9battle",
+
+    //Misc and ungroupable music
+    "CaptainUnderpantsMusic",
+    "GrandpaThemeSong",
+    "bandland",
+    "conclusion",
     "ryualpha3",
     "vrtraining",
     "warproom",
