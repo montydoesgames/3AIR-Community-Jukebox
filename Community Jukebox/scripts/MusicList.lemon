@@ -1,5 +1,8 @@
 constant array<string> CommunityJukebox_Music =
 {
+    "jukeboxoff",
+    "theairwindyvalley",
+    "liveandlearn",
     "lifewillchange",
     "LastSuprise",
     "MassDestruction",
@@ -22,4 +25,5 @@ constant array<string> CommunityJukebox_Music =
     "HotDogDance",
     "BrandyAndMrWhiskers",
     "PeppaPigSong",
+    "tombstone_arizzona",
 }
