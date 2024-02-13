@@ -1,4 +1,5 @@
 {
+    "liveandlearn": { "File": "liveandlearn.ogg", "Type": "Music", "Name": "liveandlearn", "SoundTestVisibility": "Hidden" },
     "lifewillchange": { "File": "lifewillchange.ogg", "Type": "Music", "Name": "lifewillchange", "SoundTestVisibility": "Hidden" },
     "EasternMysticalTaleOfRomance": { "File": "EasternMysticalTaleOfRomance.ogg", "Type": "Music", "Name": "Eastern Mystical Tale of Romance", "SoundTestVisibility": "Hidden" },
     "LastSuprise": { "File": "LastSuprise.ogg", "Type": "Music", "Name": "Last Surprise", "SoundTestVisibility": "Hidden" },
