@@ -1,5 +1,6 @@
 include MusicList
 
+// Preprocessor definitions for debugging
 #define SHOW_TRACKID = 1
 
 global u8 jukeboxtimer
@@ -47,7 +48,7 @@ u64 soundKey
     	HUD.drawSprite(CommunityJukebox_Music[jukeboxplaying], baseX, baseY + 0x60, renderQueue)
     }
 
-    #if SHOW_TRACKID == 1
+    #if SHOW_TRACKID
     Renderer.drawText("oxyfont_small", 10, 190, stringformat("Track No.: %02x", jukeboxplaying), 0xffffffff, 1, 0, 0xe000, 0)
     #endif
 

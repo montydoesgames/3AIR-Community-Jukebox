@@ -10,7 +10,9 @@ constant array<string> CommunityJukebox_Music =
     "EasternMysticalTaleOfRomance",
     "CaptainUnderpantsMusic",
     "GrandpaThemeSong",
+    "Tension",    
     "IceRidgeOfNoltia",
+    "BurningFight",
     "bandland",
     "conclusion",
     "protecttheespers",
@@ -25,5 +27,6 @@ constant array<string> CommunityJukebox_Music =
     "HotDogDance",
     "BrandyAndMrWhiskers",
     "PeppaPigSong",
+    "AirCombat",
     "tombstone_arizzona",
 }
