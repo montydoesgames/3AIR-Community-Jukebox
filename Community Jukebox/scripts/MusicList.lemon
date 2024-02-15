@@ -5,7 +5,11 @@ constant array<string> CommunityJukebox_Music =
 
     //Sonic music
     "theairwindyvalley",
+    "cityescape",
+    "openyourheart",
     "liveandlearn",
+    "sonicheroes",
+    "undefeatable",
 
     //Persona music
     "lifewillchange",
@@ -16,22 +20,18 @@ constant array<string> CommunityJukebox_Music =
     //Touhou music
     "EasternMysticalTaleOfRomance",
 
-    // Ys music
+    //Misc and ungroupable music
+    "CaptainUnderpantsMusic",
+    "GrandpaThemeSong",
     "Tension",    
     "IceRidgeOfNoltia",
     "BurningFight",
-
-    // Final Fantasy music
+    "bandland",
+    "conclusion",
     "protecttheespers",
     "crazymotorcyclechase",
     "manwithmachinegun",
     "ff9battle",
-
-    //Misc and ungroupable music
-    "CaptainUnderpantsMusic",
-    "GrandpaThemeSong",
-    "bandland",
-    "conclusion",
     "ryualpha3",
     "vrtraining",
     "warproom",
