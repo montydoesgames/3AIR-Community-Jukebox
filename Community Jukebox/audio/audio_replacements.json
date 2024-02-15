@@ -1,5 +1,10 @@
 {
+    "theairwindyvalley": { "File": "theairwindyvalley.ogg", "Type": "Music", "Name": "theairwindyvalley", "SoundTestVisibility": "Hidden" },
+    "cityescape": { "File": "CityEscape.ogg", "Type": "Music", "Name": "cityescape", "SoundTestVisibility": "Hidden" },
+    "openyourheart": { "File": "OpenYourHeart.ogg", "Type": "Music", "Name": "openyourheart", "SoundTestVisibility": "Hidden" },
     "liveandlearn": { "File": "liveandlearn.ogg", "Type": "Music", "Name": "liveandlearn", "SoundTestVisibility": "Hidden" },
+    "sonicheroes": { "File": "SonicHeroes.ogg", "Type": "Music", "Name": "sonicheroes", "SoundTestVisibility": "Hidden" },
+    "undefeatable": { "File": "Undefeatable.ogg", "Type": "Music", "Name": "undefeatable", "SoundTestVisibility": "Hidden" },
     "lifewillchange": { "File": "lifewillchange.ogg", "Type": "Music", "Name": "lifewillchange", "SoundTestVisibility": "Hidden" },
     "EasternMysticalTaleOfRomance": { "File": "EasternMysticalTaleOfRomance.ogg", "Type": "Music", "Name": "Eastern Mystical Tale of Romance", "SoundTestVisibility": "Hidden" },
     "LastSuprise": { "File": "LastSuprise.ogg", "Type": "Music", "Name": "Last Surprise", "SoundTestVisibility": "Hidden" },
