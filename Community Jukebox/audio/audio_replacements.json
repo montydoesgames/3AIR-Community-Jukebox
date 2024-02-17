@@ -31,4 +31,5 @@
     "PeppaPigSong": { "File": "peppapigintro.ogg", "Type": "Music", "Name": "Peppa Pig Fixed Version", "SoundTestVisibility": "Hidden" },
     "HeartlessBeing": { "File": "heartless_being.ogg", "Type": "Music", "Name": "Heartless Being - MAD RAT DEAD", "SoundTestVisibility": "Hidden" },
     "AirCombat": { "File": "AirCombat.ogg", "Type": "Music", "Name": "Mega Turrican - Air Combat", "LoopStart": "177190" },    
+    "FNAF": { "File": "FiveNightsatFreddysSongTheLivingTombstone.ogg", "Type": "Music", "Name": "Living Tombstone - FNAF", "SoundTestVisibility": "Hidden" },
 }
