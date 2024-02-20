@@ -23,6 +23,7 @@ constant array<string> CommunityJukebox_Music =
     //Touhou music
     "EasternMysticalTaleOfRomance",
     "RetributionForTheEternalNight",
+    "BadApplePC98",
 
     // Ys music
     "Tension",    
@@ -56,5 +57,6 @@ constant array<string> CommunityJukebox_Music =
     "PeppaPigSong",
     "tombstone_arizzona",
     "FNAF",
+    "weekendwhip",
     "BuckBumble", // Does come from a game but it's being included mainly for laughs
 }
