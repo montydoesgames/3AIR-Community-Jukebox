@@ -16,32 +16,45 @@ constant array<string> CommunityJukebox_Music =
     "LastSuprise",
     "MassDestruction",
     "itsgoingdownnow",
+    
+    // Other SMT music
+    "KyuuyakuTokyo",
 
     //Touhou music
     "EasternMysticalTaleOfRomance",
+    "RetributionForTheEternalNight",
 
-    //Misc and ungroupable music
-    "CaptainUnderpantsMusic",
-    "GrandpaThemeSong",
+    // Ys music
     "Tension",    
     "IceRidgeOfNoltia",
     "BurningFight",
-    "bandland",
-    "conclusion",
+    "ThemeOfAdol1993",
+    "FieldOfGale",
+
+    // Final Fantasy music
     "protecttheespers",
     "crazymotorcyclechase",
     "manwithmachinegun",
     "ff9battle",
+
+    // Misc. game music
+    "conclusion",
     "ryualpha3",
+    "HeartlessBeing",
+    "AirCombat",
+    "bandland",
     "vrtraining",
     "warproom",
+
+    //Misc and ungroupable music
+    "CaptainUnderpantsMusic",
+    "GrandpaThemeSong",
     "SMLCookieCrisp",
     "Pacmanthemesong",
     "HotDogDance",
     "BrandyAndMrWhiskers",
     "PeppaPigSong",
-    "HeartlessBeing",
-    "AirCombat",
     "tombstone_arizzona",
     "FNAF",
+    "BuckBumble", // Does come from a game but it's being included mainly for laughs
 }
