@@ -44,4 +44,5 @@ constant array<string> CommunityJukebox_Music =
     "AirCombat",
     "tombstone_arizzona",
     "FNAF",
+    "weekendwhip",
 }
