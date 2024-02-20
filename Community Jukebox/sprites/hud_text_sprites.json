@@ -28,6 +28,6 @@
     // No. I am not doing the memes. Leave me in peace.
 
     "CaptainUnderpantsMusic":    { "File": "CaptainUnderpantsMusic.png", "Rect": "0,0,72,24", "Center": "16,6" },
-    "FNAF":   { "File": "fnaf.png", "Rect": "0,0,72,24" "Center": "16,6" },
+    "FNAF":   { "File": "fnaf.png", "Rect": "0,0,72,24", "Center": "16,6" },
     "weekendwhip":    { "File": "weekendwhip.png", "Rect": "0,0,68,24", "Center": "16,6" }, //Jump up, kick back, whip around and spin!
 }
