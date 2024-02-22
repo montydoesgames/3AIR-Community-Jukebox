@@ -9,5 +9,33 @@
     "UsesFeatures":
     {
         "Controls_LR": true
+    },
+    "Settings":
+    {
+    	"CommunityJukebox": 
+		[
+      		{
+        		"InternalName": "SonicMusic",
+        		"DisplayName": "Sonic Music",
+        		"Variable": "CommJukeSonicMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+      		{
+        		"InternalName": "PersonaMusic",
+        		"DisplayName": "Persona/MGT Music",
+        		"Variable": "CommJukeMGTMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+      	]
     }
 }
