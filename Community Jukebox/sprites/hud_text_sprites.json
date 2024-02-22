@@ -7,6 +7,8 @@
     "sonicheroes":    { "File": "sonicheroes.png", "Rect": "0,0,68,12", "Center": "16,6" },
     "undefeatable":    { "File": "undefeatable.png", "Rect": "0,0,66,12", "Center": "16,6" },
     "lifewillchange":    { "File": "lifewillchange.png", "Rect": "0,0,72,12", "Center": "16,6" },
+"TakeOver":    { "File": "TakeOver.png", "Rect": "0,0,52,12", "Center": "16,6" },
+    "LastSuprise":    { "File": "lastsurprise.png", "Rect": "0,0,66,12", "Center": "16,6" },
     "LastSuprise":    { "File": "lastsurprise.png", "Rect": "0,0,66,12", "Center": "16,6" },
     "MassDestruction":    { "File": "massdestruction.png", "Rect": "0,0,80,12", "Center": "16,6" },
 	//DISTURBING THE PEEAAAAACE
