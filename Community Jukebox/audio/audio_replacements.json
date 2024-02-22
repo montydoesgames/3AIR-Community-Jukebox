@@ -1,6 +1,7 @@
 {
     "theairwindyvalley": { "File": "theairwindyvalley.ogg", "Type": "Music", "Name": "theairwindyvalley", "SoundTestVisibility": "Hidden" },
     "cityescape": { "File": "CityEscape.ogg", "Type": "Music", "Name": "cityescape", "SoundTestVisibility": "Hidden" },
+    "cityescape_fast": { "File": "CityEscape_fast.ogg", "Type": "Music", "Name": "cityescape", "SoundTestVisibility": "Hidden" },
     "openyourheart": { "File": "OpenYourHeart.ogg", "Type": "Music", "Name": "openyourheart", "SoundTestVisibility": "Hidden" },
     "liveandlearn": { "File": "liveandlearn.ogg", "Type": "Music", "Name": "liveandlearn", "SoundTestVisibility": "Hidden" },
     "sonicheroes": { "File": "SonicHeroes.ogg", "Type": "Music", "Name": "sonicheroes", "SoundTestVisibility": "Hidden" },
@@ -8,6 +9,7 @@
     "lifewillchange": { "File": "lifewillchange.ogg", "Type": "Music", "Name": "lifewillchange", "SoundTestVisibility": "Hidden" },
     "EasternMysticalTaleOfRomance": { "File": "EasternMysticalTaleOfRomance.ogg", "Type": "Music", "Name": "Eastern Mystical Tale of Romance", "SoundTestVisibility": "Hidden" },
     "LastSuprise": { "File": "LastSuprise.ogg", "Type": "Music", "Name": "Last Surprise", "SoundTestVisibility": "Hidden" },
+    "TakeOver": { "File": "TakeOver.ogg", "Type": "Music", "Name": "Take Over", "SoundTestVisibility": "Hidden" },
     "MassDestruction": { "File": "MassDestruction.ogg", "Type": "Music", "Name": "Mass Destruction", "SoundTestVisibility": "Hidden" },
     "itsgoingdownnow": { "File": "itsgoingdownnow.ogg", "Type": "Music", "Name": "itsgoingdownnow", "SoundTestVisibility": "Hidden" },
     "Tension": { "File": "Tension.ogg", "Type": "Music", "Name": "Ys 1 Chronicles - Tension", "LoopStart": "43264" },    
