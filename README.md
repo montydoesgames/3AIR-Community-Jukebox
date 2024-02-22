@@ -1,4 +1,8 @@
-# 3AIR-Community-Jukebox
+# Community Jukebox
+
+Because soundtrack mods just aren't enough!
+
+Cycle through many series' music with L and R, and listen to the community's favourite OSTs!
 
 ## How to request a song:
 1: Fork this repository  
