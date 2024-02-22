@@ -14,6 +14,7 @@ constant array<string> CommunityJukebox_Music =
     //Persona music
     "lifewillchange",
     "LastSuprise",
+    "TakeOver",
     "MassDestruction",
     "itsgoingdownnow",
 
