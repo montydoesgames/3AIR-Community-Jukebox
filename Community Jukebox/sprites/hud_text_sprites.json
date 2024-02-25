@@ -29,4 +29,7 @@
 
     "CaptainUnderpantsMusic":    { "File": "CaptainUnderpantsMusic.png", "Rect": "0,0,72,24", "Center": "16,6" },
     "weekendwhip":    { "File": "weekendwhip.png", "Rect": "0,0,68,24", "Center": "16,6" }, //Jump up, kick back, whip around and spin!
+
+    "BadApplePC98":    { "File": "thisisyourfaultdoggy.png", "Rect": "0,0,92,12", "Center": "16,6" },
+    "ThemeOfAdol1993":    { "File": "themeofadol.png", "Rect": "0,0,92,12", "Center": "16,6" },
 }
