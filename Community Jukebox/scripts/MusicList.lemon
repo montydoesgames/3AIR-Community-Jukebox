@@ -40,6 +40,16 @@ constant array<string> CommunityJukebox_Music =
     "manwithmachinegun",
     "ff9battle",
 
+	// "Childhold classics" music
+    "CaptainUnderpantsMusic",
+    "FNAF",
+    "weekendwhip",
+    "PeppaPigSong",
+    "HotDogDance",
+
+    //Misc and ungrouped music
+    "GrandpaThemeSong",
+
     // Misc. game music
     "conclusion",
     "ryualpha3",
@@ -54,11 +64,9 @@ constant array<string> CommunityJukebox_Music =
     "GrandpaThemeSong",
     "SMLCookieCrisp",
     "Pacmanthemesong",
-    "HotDogDance",
     "BrandyAndMrWhiskers",
-    "PeppaPigSong",
+    "HeartlessBeing",
+    "AirCombat",
     "tombstone_arizzona",
-    "FNAF",
-    "weekendwhip",
     "BuckBumble", // Does come from a game but it's being included mainly for laughs
 }

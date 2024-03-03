@@ -1,4 +1,4 @@
-# Community Jukebox
+![1000042914](https://github.com/montydoesgames/3AIR-Community-Jukebox/assets/128521299/ea8599f8-60e2-46de-8be7-88e4bc24bcd3)
 
 Because soundtrack mods just aren't enough!
 
