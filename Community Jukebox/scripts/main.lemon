@@ -1,7 +1,10 @@
 include MusicList
 
+/*
 // Preprocessor definitions for debugging
-#define SHOW_TRACKID = 1
+#define COMMJUKE_SHOW_TRACKID = 1
+*/
+#define COMMUNITY_JUKEBOX_ACTIVE
 
 global u8 jukeboxtimer
 global u8 jukeboxplaying
@@ -9,62 +12,7 @@ global bool jukebox_isplaying
 global u8 CommJukeSonicMusic
 global u8 CommJukeMGTMusic
 
-//# address-hook(0x00db44) end(0x00dbb2)
-function void RenderHUD()
-{
-	s16 baseX = global.level_started
-	if (baseX < 0)
-	{
-		baseX += 8
-		global.level_started = baseX
-	}
-	baseX += 0x0f
-	s16 baseY = 0x08
-	u16 renderQueue = 0xe000
-
-    	if (Input.buttonPressed(BUTTON_L) || Input.buttonPressed(BUTTON_R)) && (level.framecounter & 0x04)
-    	{
-    	    jukebox_isplaying = true
-        	jukeboxplaying = (Input.buttonPressed(BUTTON_L)) ? ((jukeboxplaying == 0) ? (CommunityJukebox_Music.length() - 1) : (jukeboxplaying - 1)) : (jukeboxplaying + 1)
-        	if (jukeboxplaying < 0)
-            	jukeboxplaying = 0
-            if !(CommJukeSonicMusic) && (jukeboxplaying == 1)
-                jukeboxplaying = 7
-            else if !(CommJukeSonicMusic) && (jukeboxplaying == 6)
-                jukeboxplaying = 0
-            if !(CommJukeMGTMusic) && (jukeboxplaying == 7)
-                jukeboxplaying = 12
-            else if !(CommJukeMGTMusic) && (jukeboxplaying == 11)
-                jukeboxplaying = 6
-        	if !(Audio.isPlayingAudio(CommunityJukebox_Music[jukeboxplaying]))
-        	{
-				Audio.playAudio(CommunityJukebox_Music[jukeboxplaying], AudioContext.CONTEXT_MUSIC)
-         		jukeboxtimer = 240
-        	}
-        	if jukeboxplaying == 0
-        	{
-        	    jukebox_isplaying = false
-        	    Audio.playAudio(MUSIC_CTRL_STOP, AudioContext.CONTEXT_MUSIC)
-        	    chooseFittingMusic()
-         		jukeboxtimer = 240
-        	}
-    	}
-
-    if jukeboxtimer > 0
-    {
-        --jukeboxtimer
-        if (Renderer.hasCustomSprite(CommunityJukebox_Music[jukeboxplaying]))
-    	    HUD.drawSprite(CommunityJukebox_Music[jukeboxplaying], baseX, baseY + 0x60, renderQueue)
-    	else //Fallback
-            Renderer.drawText("oxyfont_small", baseX, baseY + 0x60, stringformat("Now playing: %s", CommunityJukebox_Music[jukeboxplaying]), 0xffffffff, 1, 0, 0xe000, 0)
-    }
-
-    #if SHOW_TRACKID
-    Renderer.drawText("oxyfont_small", 10, 190, stringformat("Track No.: %02x", jukeboxplaying), 0xffffffff, 1, 0, 0xe000, 0)
-    #endif
-
-base.RenderHUD()
-}
+// Prevent music interruptions
 
 function void Standalone.playAudio(u8 sfxId)
 {
@@ -84,33 +32,68 @@ jukeboxplaying = 0
 base.Menu.FadeInAfterInit()
 }
 
+
+
+// Main Game
+
+//# address-hook(0x00db44) end(0x00dbb2)
+function void RenderHUD()
+{
+CommunityJukebox.Main(0)
+base.RenderHUD()
+}
+
+// Competition Mode
+
 //# address-hook(0x037f1a) end(0x037f3c)
 function void fn037f1a()
 {
-	s16 baseX = global.level_started
+CommunityJukebox.Main(1)
+base.fn037f1a()
+}
+
+// Blue Spheres
+
+//# address-hook(0x00903e) end(0x00919e)
+function void fn00903e()
+{
+CommunityJukebox.Main(2)
+base.fn00903e()
+}
+
+
+
+function void CommunityJukebox.Main(u8 gamemode)
+{
+
+/*
+gamemode values:
+	0 - Main Game
+	1 - Competition Mode
+	2 - Blue Spheres
+*/
+
+	s16 baseX = gamemode == 3 ? global.level_started + 1 : global.level_started
 	if (baseX < 0)
 	{
 		baseX += 8
 		global.level_started = baseX
 	}
 	baseX += 0x0f
-	s16 baseY = 0x08
 	u16 renderQueue = 0xe000
 
     	if (Input.buttonPressed(BUTTON_L) || Input.buttonPressed(BUTTON_R)) && (level.framecounter & 0x04)
     	{
     	    jukebox_isplaying = true
         	jukeboxplaying = (Input.buttonPressed(BUTTON_L)) ? ((jukeboxplaying == 0) ? (CommunityJukebox_Music.length() - 1) : (jukeboxplaying - 1)) : (jukeboxplaying + 1)
-        	if (jukeboxplaying < 0)
+        	if (jukeboxplaying > CommunityJukebox_Music.length() - 1)
             	jukeboxplaying = 0
-            if !(CommJukeSonicMusic) && (jukeboxplaying == 1)
-                jukeboxplaying = 7
-            else if !(CommJukeSonicMusic) && (jukeboxplaying == 6)
-                jukeboxplaying = 0
-            if !(CommJukeMGTMusic) && (jukeboxplaying == 7)
-                jukeboxplaying = 12
-            else if !(CommJukeMGTMusic) && (jukeboxplaying == 11)
-                jukeboxplaying = 6
+            u8 SkipCount = 1
+            while (SkipCount < CommunityJukebox_Music.length())
+            {
+				CommunityJukebox.SkipSeries()
+				SkipCount += 1
+			}
         	if !(Audio.isPlayingAudio(CommunityJukebox_Music[jukeboxplaying]))
         	{
 				Audio.playAudio(CommunityJukebox_Music[jukeboxplaying], AudioContext.CONTEXT_MUSIC)
@@ -129,14 +112,24 @@ function void fn037f1a()
     {
         --jukeboxtimer
         if (Renderer.hasCustomSprite(CommunityJukebox_Music[jukeboxplaying]))
-    	    HUD.drawSprite(CommunityJukebox_Music[jukeboxplaying], baseX, baseY + 0x80, renderQueue)
+    	    HUD.drawSprite(CommunityJukebox_Music[jukeboxplaying], baseX, 0x80, renderQueue)
     	else //Fallback
-            Renderer.drawText("oxyfont_small", baseX, baseY + 0x80, stringformat("Now playing: %s", CommunityJukebox_Music[jukeboxplaying]), 0xffffffff, 1, 0, 0xe000, 0)
+            Renderer.drawText("oxyfont_small", baseX, 0x80, stringformat("Now playing: %s", CommunityJukebox_Music[jukeboxplaying]), 0xffffffff, 1, 0, 0xe000, 0)
     }
 
-    #if SHOW_TRACKID
+    #if COMMJUKE_SHOW_TRACKID
     Renderer.drawText("oxyfont_small", 10, 190, stringformat("Track No.: %02x", jukeboxplaying), 0xffffffff, 1, 0, 0xe000, 0)
     #endif
+}
 
-base.fn037f1a()
+function void CommunityJukebox.SkipSeries()
+{
+    if !(CommJukeSonicMusic) && (jukeboxplaying == 1)
+        jukeboxplaying = 7
+    else if !(CommJukeSonicMusic) && (jukeboxplaying == 6)
+        jukeboxplaying = 0
+    if !(CommJukeMGTMusic) && (jukeboxplaying == 7)
+        jukeboxplaying = 12
+    else if !(CommJukeMGTMusic) && (jukeboxplaying == 11)
+        jukeboxplaying = 6
 }
