@@ -35,4 +35,16 @@
     "AirCombat": { "File": "AirCombat.ogg", "Type": "Music", "Name": "Mega Turrican - Air Combat", "LoopStart": "177190" },    
     "FNAF": { "File": "FiveNightsatFreddysSongTheLivingTombstone.ogg", "Type": "Music", "Name": "Living Tombstone - FNAF", "SoundTestVisibility": "Hidden" },
     "weekendwhip": { "File": "weekendwhip.ogg", "Type": "Music", "Name": "weekendwhip", "SoundTestVisibility": "Hidden" },
+
+    "Michi_1": { "File": "Michi_1.ogg", "Type": "Music", "Name": "Michi_1" },
+    "Magnolia_1": { "File": "Magnolia_1.ogg", "Type": "Music", "Name": "Magnolia_1" },
+    "Niji": { "File": "Niji.ogg", "Type": "Music", "Name": "Niji", "SoundTestVisibility": "Hidden" },
+    "Ran": { "File": "Ran.ogg", "Type": "Music", "Name": "Ran", "SoundTestVisibility": "Hidden" },
+    "East_Asia": { "File": "East_Asia.ogg", "Type": "Music", "Name": "East_Asia", "SoundTestVisibility": "Hidden" },
+    "Silver_Lining_1": { "File": "Silver_Lining_1.ogg", "Type": "Music", "Name": "Silver_Lining_1", "SoundTestVisibility": "Hidden" },
+    "Super_Reflex_1": { "File": "Super_Reflex_1.ogg", "Type": "Music", "Name": "Super_Reflex_1", "SoundTestVisibility": "Hidden" },
+    "HyperDrive": { "File": "HyperDrive.ogg", "Type": "Music", "Name": "HyperDrive", "SoundTestVisibility": "Hidden" },
+    "Bloody_Battle_1": { "File": "Bloody_Battle_1.ogg", "Type": "Music", "Name": "Bloody_Battle_1", },    
+    "Big_the_Cat_Lofi": { "File": "Big_the_Cat_Lofi.ogg", "Type": "Music", "Name": "Big_the_Cat_Lofi", "SoundTestVisibility": "Hidden" },
+    "The_Glacial_Fortress": { "File": "The_Glacial_Fortress.ogg", "Type": "Music", "Name": "The_Glacial_Fortress", "SoundTestVisibility": "Hidden" },
 }
