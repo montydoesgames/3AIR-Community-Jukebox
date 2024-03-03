@@ -21,29 +21,35 @@ constant array<string> CommunityJukebox_Music =
     //Touhou music
     "EasternMysticalTaleOfRomance",
 
-    //Misc and ungrouped music
-    "CaptainUnderpantsMusic",
-    "GrandpaThemeSong",
+    // Ys music
     "Tension",    
     "IceRidgeOfNoltia",
     "BurningFight",
     "bandland",
     "conclusion",
+
+    // Final Fantasy music
     "protecttheespers",
     "crazymotorcyclechase",
     "manwithmachinegun",
     "ff9battle",
+
+	// "Childhold classics" music
+    "CaptainUnderpantsMusic",
+    "FNAF",
+    "weekendwhip",
+    "PeppaPigSong",
+    "HotDogDance",
+
+    //Misc and ungrouped music
+    "GrandpaThemeSong",
     "ryualpha3",
     "vrtraining",
     "warproom",
     "SMLCookieCrisp",
     "Pacmanthemesong",
-    "HotDogDance",
     "BrandyAndMrWhiskers",
-    "PeppaPigSong",
     "HeartlessBeing",
     "AirCombat",
     "tombstone_arizzona",
-    "FNAF",
-    "weekendwhip",
 }

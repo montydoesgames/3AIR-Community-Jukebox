@@ -4,13 +4,16 @@ include MusicList
 // Preprocessor definitions for debugging
 #define COMMJUKE_SHOW_TRACKID = 1
 */
-#define COMMUNITY_JUKEBOX_ACTIVE
+#define COMMUNITY_JUKEBOX_ACTIVE = 1
 
 global u8 jukeboxtimer
 global u8 jukeboxplaying
 global bool jukebox_isplaying
 global u8 CommJukeSonicMusic
 global u8 CommJukeMGTMusic
+global u8 CommJukeYsMusic
+global u8 CommJukeFinalFantasyMusic
+global u8 CommJukeNostalgiaMusic
 
 // Prevent music interruptions
 
@@ -128,8 +131,24 @@ function void CommunityJukebox.SkipSeries()
         jukeboxplaying = 7
     else if !(CommJukeSonicMusic) && (jukeboxplaying == 6)
         jukeboxplaying = 0
+
     if !(CommJukeMGTMusic) && (jukeboxplaying == 7)
         jukeboxplaying = 12
     else if !(CommJukeMGTMusic) && (jukeboxplaying == 11)
         jukeboxplaying = 6
+
+    if !(CommJukeYsMusic) && (jukeboxplaying == 13)
+        jukeboxplaying = 18
+    else if !(CommJukeYsMusic) && (jukeboxplaying == 17)
+        jukeboxplaying = 12
+
+    if !(CommJukeFinalFantasyMusic) && (jukeboxplaying == 18)
+        jukeboxplaying = 22
+    else if !(CommJukeFinalFantasyMusic) && (jukeboxplaying == 21)
+        jukeboxplaying = 17
+
+    if !(CommJukeNostalgiaMusic) && (jukeboxplaying == 22)
+        jukeboxplaying = 27
+    else if !(CommJukeNostalgiaMusic) && (jukeboxplaying == 26)
+        jukeboxplaying = 21
 }
