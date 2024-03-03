@@ -8,6 +8,8 @@ global u8 jukeboxplaying
 global bool jukebox_isplaying
 global u8 CommJukeSonicMusic
 global u8 CommJukeMGTMusic
+global u8 CommJukeYsMusic // If for whatever reason you don't like Ys music (shame on you by the way)
+global u8 CommJukeFFMusic
 
 //# address-hook(0x00db44) end(0x00dbb2)
 function void RenderHUD()
