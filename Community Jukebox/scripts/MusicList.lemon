@@ -10,6 +10,7 @@ constant array<string> CommunityJukebox_Music =
     "liveandlearn",
     "sonicheroes",
     "undefeatable",
+    "Big_the_Cat_Lofi",
 
     //Persona music
     "lifewillchange",
@@ -40,6 +41,7 @@ constant array<string> CommunityJukebox_Music =
     "weekendwhip",
     "PeppaPigSong",
     "HotDogDance",
+	"HyperDrive",
 
     //Misc and ungrouped music
     "GrandpaThemeSong",
@@ -52,4 +54,13 @@ constant array<string> CommunityJukebox_Music =
     "HeartlessBeing",
     "AirCombat",
     "tombstone_arizzona",
+	"Magnolia_1",
+	"Michi_1",
+	"Ran",
+	"Niji",
+	"East_Asia",
+	"Super_Reflex_1",
+	"Bloody_Battle_1",
+	"Silver_Lining_1",
+	"The_Glacial_Fortress",
 }
