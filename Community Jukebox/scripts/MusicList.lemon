@@ -21,7 +21,7 @@ constant array<string> CommunityJukebox_Music =
     //Touhou music
     "EasternMysticalTaleOfRomance",
 
-    //Misc and ungroupable music
+    //Misc and ungrouped music
     "CaptainUnderpantsMusic",
     "GrandpaThemeSong",
     "Tension",    
