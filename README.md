@@ -5,7 +5,7 @@ Because soundtrack mods just aren't enough!
 Cycle through many series' music with L and R, and listen to the community's favourite OSTs!
 
 ## How to request a song:
-1: Fork this repository  
+1: Fork this repository. If you don't know how, see [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository)
 
 2: Upload the OGG file of the song in your fork's audio folder  
 
@@ -13,6 +13,6 @@ Cycle through many series' music with L and R, and listen to the community's fav
 
 4: Use the template sprite in the template folder to add the jukebox sprite and put it in your fork's sprites folder, and add the song to the audio_replacements.json file
 
-5: Make a Pull Request to merge this repository and your fork  
+5: Make a Pull Request to merge this repository and your fork. If you don't know how, see [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 
 6: Wait for approval
