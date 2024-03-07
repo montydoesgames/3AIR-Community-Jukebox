@@ -41,7 +41,7 @@ constant array<string> CommunityJukebox_Music =
     "manwithmachinegun",
     "ff9battle",
 
-	// "Childhold classics" music
+    // "Childhold classics" music
     "CaptainUnderpantsMusic",
     "FNAF",
     "weekendwhip",
@@ -50,16 +50,8 @@ constant array<string> CommunityJukebox_Music =
 	"HyperDrive",
 
     //Misc and ungrouped music
+    "EasternMysticalTaleOfRomance",
     "GrandpaThemeSong",
-
-    // Misc. game music
-    "conclusion",
-    "ryualpha3",
-    "HeartlessBeing",
-    "AirCombat",
-    "bandland",
-    "vrtraining",
-    "warproom",
 
     //Misc and ungroupable music
     "GrandpaThemeSong",
@@ -67,7 +59,12 @@ constant array<string> CommunityJukebox_Music =
     "Pacmanthemesong",
     "BrandyAndMrWhiskers",
     "HeartlessBeing",
+    "conclusion",
+    "ryualpha3",
     "AirCombat",
+    "bandland",
+    "vrtraining",
+    "warproom",
     "tombstone_arizzona",
     "BuckBumble", // Does come from a game but it's being included mainly for laughs
 	"Magnolia_1",
