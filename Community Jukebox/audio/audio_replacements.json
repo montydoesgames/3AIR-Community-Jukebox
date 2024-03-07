@@ -38,7 +38,7 @@
     "AirCombat": { "File": "AirCombat.ogg", "Type": "Music", "Name": "Mega Turrican - Air Combat", "LoopStart": "177190" },    
     "FNAF": { "File": "FiveNightsatFreddysSongTheLivingTombstone.ogg", "Type": "Music", "Name": "Living Tombstone - FNAF", "SoundTestVisibility": "Hidden" },
     "weekendwhip": { "File": "weekendwhip.ogg", "Type": "Music", "Name": "weekendwhip", "SoundTestVisibility": "Hidden" },
-    "KyuuyakuTokyo": { "File": "KyuuyakuTokyo.ogg", "Type": "Music", "Name": "Kyuuyaku Megami Tensei - 3D Tokyo 1", "LoopStart": "0" }, // Will loop later
+    "KyuuyakuTokyo": { "File": "KyuuyakuTokyo.ogg", "Type": "Music", "Name": "Megami Tensei: The Old Testament - 3D Tokyo 1", "LoopStart": "0" }, // Will loop later
     "RetributionForTheEternalNight": { "File": "RetributionForTheEternalNight.ogg", "Type": "Music", "Name": "Touhou Eiyashou: Imperishable Night - Retribution for the Eternal Night ~ Imperishable Night", "LoopStart": "387072" },    
     "BadApplePC98": { "File": "BadApplePC98.ogg", "Type": "Music", "Name": "Touhou Gensoukyou ~ Lotus Land Story - Bad Apple!!", "LoopStart": "0" },    
 
@@ -53,4 +53,7 @@
     "Bloody_Battle_1": { "File": "Bloody_Battle_1.ogg", "Type": "Music", "Name": "Bloody_Battle_1", },    
     "Big_the_Cat_Lofi": { "File": "Big_the_Cat_Lofi.ogg", "Type": "Music", "Name": "Big_the_Cat_Lofi", "SoundTestVisibility": "Hidden" },
     "The_Glacial_Fortress": { "File": "The_Glacial_Fortress.ogg", "Type": "Music", "Name": "The_Glacial_Fortress", "SoundTestVisibility": "Hidden" },
+
+    "BuckBumble": { "File": "BuckBumble.ogg", "Type": "Music", "Name": "Buck Bumble - Title Theme", "LoopStart": "329728" },    
+
 }

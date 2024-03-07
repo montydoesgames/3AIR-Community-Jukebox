@@ -125,7 +125,7 @@ gamemode values:
     #endif
 }
 
-function void CommunityJukebox.SkipSeries()
+function void CommunityJukebox.SkipSeries() // Suggestion: Possibly make this use hexadecimals?
 {
     if !(CommJukeSonicMusic) && (jukeboxplaying == 1)
         jukeboxplaying = 8

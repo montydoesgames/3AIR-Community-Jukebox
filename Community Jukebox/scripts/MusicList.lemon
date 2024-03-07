@@ -62,7 +62,6 @@ constant array<string> CommunityJukebox_Music =
     "warproom",
 
     //Misc and ungroupable music
-    "CaptainUnderpantsMusic",
     "GrandpaThemeSong",
     "SMLCookieCrisp",
     "Pacmanthemesong",
