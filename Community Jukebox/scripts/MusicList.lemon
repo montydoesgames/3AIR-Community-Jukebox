@@ -19,15 +19,20 @@ constant array<string> CommunityJukebox_Music =
     "MassDestruction",
     "itsgoingdownnow",
 
-    //Touhou music
-    "EasternMysticalTaleOfRomance",
-
     // Ys music
     "Tension",    
     "IceRidgeOfNoltia",
     "BurningFight",
     "bandland",
     "conclusion",
+	"Michi_1",
+	"Ran",
+	"Niji",
+	"East_Asia",
+	"Super_Reflex_1",
+	"Bloody_Battle_1",
+	"Silver_Lining_1",
+	"The_Glacial_Fortress",
 
     // Final Fantasy music
     "protecttheespers",
@@ -35,7 +40,7 @@ constant array<string> CommunityJukebox_Music =
     "manwithmachinegun",
     "ff9battle",
 
-	// "Childhold classics" music
+    // "Childhold classics" music
     "CaptainUnderpantsMusic",
     "FNAF",
     "weekendwhip",
@@ -44,6 +49,7 @@ constant array<string> CommunityJukebox_Music =
 	"HyperDrive",
 
     //Misc and ungrouped music
+    "EasternMysticalTaleOfRomance",
     "GrandpaThemeSong",
     "ryualpha3",
     "vrtraining",
@@ -55,12 +61,4 @@ constant array<string> CommunityJukebox_Music =
     "AirCombat",
     "tombstone_arizzona",
 	"Magnolia_1",
-	"Michi_1",
-	"Ran",
-	"Niji",
-	"East_Asia",
-	"Super_Reflex_1",
-	"Bloody_Battle_1",
-	"Silver_Lining_1",
-	"The_Glacial_Fortress",
 }
