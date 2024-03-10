@@ -35,8 +35,6 @@
     "AirCombat": { "File": "AirCombat.ogg", "Type": "Music", "Name": "Mega Turrican - Air Combat", "LoopStart": "177190" },    
     "FNAF": { "File": "FiveNightsatFreddysSongTheLivingTombstone.ogg", "Type": "Music", "Name": "Living Tombstone - FNAF", "SoundTestVisibility": "Hidden" },
     "weekendwhip": { "File": "weekendwhip.ogg", "Type": "Music", "Name": "weekendwhip", "SoundTestVisibility": "Hidden" },
-    "scienceblaster": { "File": "scienceblaster.ogg", "Type": "Music", "Name": "scienceblaster" },
-    "phaseshift": { "File": "phaseshift.ogg", "Type": "Music", "Name": "phaseshift" },
 
     "Michi_1": { "File": "Michi_1.ogg", "Type": "Music", "Name": "Michi_1" },
     "Magnolia_1": { "File": "Magnolia_1.ogg", "Type": "Music", "Name": "Magnolia_1" },
