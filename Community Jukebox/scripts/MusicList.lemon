@@ -46,7 +46,9 @@ constant array<string> CommunityJukebox_Music =
     "weekendwhip",
     "PeppaPigSong",
     "HotDogDance",
-	"HyperDrive",
+    "HyperDrive",
+    "scienceblaster",
+    "phaseshift",
 
     //Misc and ungrouped music
     "EasternMysticalTaleOfRomance",
