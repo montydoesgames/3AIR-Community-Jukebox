@@ -35,6 +35,8 @@
     "AirCombat": { "File": "AirCombat.ogg", "Type": "Music", "Name": "Mega Turrican - Air Combat", "LoopStart": "177190" },    
     "FNAF": { "File": "FiveNightsatFreddysSongTheLivingTombstone.ogg", "Type": "Music", "Name": "Living Tombstone - FNAF", "SoundTestVisibility": "Hidden" },
     "weekendwhip": { "File": "weekendwhip.ogg", "Type": "Music", "Name": "weekendwhip", "SoundTestVisibility": "Hidden" },
+    "scienceblaster": { "File": "scienceblaster.ogg", "Type": "Music", "Name": "scienceblaster" },
+    "phaseshift": { "File": "phaseshift.ogg", "Type": "Music", "Name": "phaseshift" },
 
     "Michi_1": { "File": "Michi_1.ogg", "Type": "Music", "Name": "Michi_1" },
     "Magnolia_1": { "File": "Magnolia_1.ogg", "Type": "Music", "Name": "Magnolia_1" },
@@ -47,4 +49,5 @@
     "Bloody_Battle_1": { "File": "Bloody_Battle_1.ogg", "Type": "Music", "Name": "Bloody_Battle_1", },    
     "Big_the_Cat_Lofi": { "File": "Big_the_Cat_Lofi.ogg", "Type": "Music", "Name": "Big_the_Cat_Lofi", "SoundTestVisibility": "Hidden" },
     "The_Glacial_Fortress": { "File": "The_Glacial_Fortress.ogg", "Type": "Music", "Name": "The_Glacial_Fortress", "SoundTestVisibility": "Hidden" },
+
 }
