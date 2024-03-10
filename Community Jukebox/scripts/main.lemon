@@ -148,7 +148,7 @@ function void CommunityJukebox.SkipSeries()
         jukeboxplaying = 25
 
     if !(CommJukeNostalgiaMusic) && (jukeboxplaying == 29)
-        jukeboxplaying = 35
-    else if !(CommJukeNostalgiaMusic) && (jukeboxplaying == 34)
+        jukeboxplaying = 37
+    else if !(CommJukeNostalgiaMusic) && (jukeboxplaying == 36)
         jukeboxplaying = 28
 }
