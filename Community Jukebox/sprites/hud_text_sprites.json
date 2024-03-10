@@ -44,5 +44,7 @@
     "Bloody_Battle_1":    { "File": "Bloody_Battle_1.png", "Rect": "0,0,91,12", "Center": "16,6" },
     "Big_the_Cat_Lofi":    { "File": "Big_the_Cat_Lofi.png", "Rect": "0,0,110,12", "Center": "16,6" },
     "The_Glacial_Fortress":    { "File": "The_Glacial_Fortress.png", "Rect": "0,0,110,12", "Center": "16,6" },
+    "scienceblaster":    { "File": "scienceblaster.png", "Rect": "0,0,76,12", "Center": "16,6" }, //For when people turn off the jukebox
+    "phaseshift":    { "File": "phaseshift.png", "Rect": "0,0,64,12", "Center": "16,6" },
 
 }
