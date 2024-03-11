@@ -144,10 +144,6 @@ function void CommunityJukebox.SkipSeries() // Suggestion: Possibly make this us
 
     if !(CommJukeFinalFantasyMusic) && (jukeboxplaying == 26)
         jukeboxplaying = 29
-<<<<<<< HEAD
-    else if !(CommJukeNostalgiaMusic) && (jukeboxplaying == 28)
-        jukeboxplaying = 22
-=======
     else if !(CommJukeFinalFantasyMusic) && (jukeboxplaying == 28)
         jukeboxplaying = 25
 
@@ -155,5 +151,4 @@ function void CommunityJukebox.SkipSeries() // Suggestion: Possibly make this us
         jukeboxplaying = 35
     else if !(CommJukeNostalgiaMusic) && (jukeboxplaying == 34)
         jukeboxplaying = 28
->>>>>>> 816a66250ee0a317c41da591ce2216e230a7e153
 }
