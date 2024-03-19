@@ -4,11 +4,42 @@ include MusicList
 #define COMMJUKE_SHOW_TRACKID = 1
 #define COMMUNITY_JUKEBOX_ACTIVE = 1
 
+// Track end ID constants - Please use decimals if you can
+
+// Stupid blue rat game that was never good
+constant u8 SONIC_MUSIC_START = 1 // Windy Valley
+constant u8 SONIC_MUSIC_END = 7 // Big the Cat Lo-Fi
+
+// Shin Megami Tensei; includes Persona subseries
+constant u8 MEGATEN_MUSIC_START = 8 // Life Will Change
+constant u8 MEGATEN_MUSIC_END = 13 // DDS2 3D Tokyo 1
+
+// Touhou Project (AKA the only PC-98 series people care about; RIP to my boy Farland Story)
+constant u8 TOUHOU_MUSIC_START = 14 // Eastern Tale of Mystical Romance
+constant u8 TOUHOU_MUSIC_END = 16 // Bad Apple!! (PC-98)
+
+// Nihon Falcom's Ys series, AKA the GOAT 
+constant u8 YS_MUSIC_START = 17 // Tension
+constant u8 YS_MUSIC_END = 22 // Mountain Zone
+
+constant u8 FINAL_FANTASY_MUSIC_START = 23 // Protect the Espers
+constant u8 FINAL_FANTASY_MUSIC_END = 26 // Battle (FF9)
+
+// Music from kids' TV shows and stuff
+constant u8 NOSTALGIA_MUSIC_START = 27 // Captain Underpants
+constant u8 NOSTALGIA_MUSIC_END = 32 // Brandy & Mr. Whiskers
+
+/*
+constant u8 MEME_MUSIC_START = 23 // Protect the Espers
+constant u8 MEME_MUSIC_END = 26
+*/
+
 global u8 jukeboxtimer
 global u8 jukeboxplaying
 global bool jukebox_isplaying
 global u8 CommJukeSonicMusic
 global u8 CommJukeMGTMusic
+global u8 CommJukeTouhouMusic
 global u8 CommJukeYsMusic
 global u8 CommJukeFinalFantasyMusic
 global u8 CommJukeNostalgiaMusic
@@ -121,35 +152,50 @@ gamemode values:
     }
 
     #if COMMJUKE_SHOW_TRACKID
-    Renderer.drawText("oxyfont_small", 10, 190, stringformat("Track No.: %02x", jukeboxplaying), 0xffffffff, 1, 0, 0xe000, 0)
+    Renderer.drawText("oxyfont_small", 10, 190, stringformat("Track No.: %02d", jukeboxplaying), 0xffffffff, 1, 0, 0xe000, 0)
     Renderer.drawText("oxyfont_small", 10, 180, stringformat("Time: %d", System.getGlobalVariableValueByName("lyricstimer")), 0xffffffff, 1, 0, 0xe000, 0)
     #endif
 }
 
 function void CommunityJukebox.SkipSeries() // Suggestion: Possibly make this use hexadecimals?
 {
-    if !(CommJukeSonicMusic) && (jukeboxplaying == 1)
-        jukeboxplaying = 8
-    else if !(CommJukeSonicMusic) && (jukeboxplaying == 7)
-        jukeboxplaying = 0
+    /*
+    This is a template to use:
 
-    if !(CommJukeMGTMusic) && (jukeboxplaying == 8)
-        jukeboxplaying = 13
-    else if !(CommJukeMGTMusic) && (jukeboxplaying == 12)
-        jukeboxplaying = 7
+    if !(CommJukeMyCategoryMusic) && (jukeboxplaying == MY_CATEGORY_MUSIC_START)
+        jukeboxplaying = NEXT_CATEGORY_MUSIC_START
+    else if !(CommJukeMyCategoryMusic) && (jukeboxplaying == MY_CATEGORY_MUSIC_END)
+        jukeboxplaying = LAST_CATEGORY_MUSIC_END
 
-    if !(CommJukeYsMusic) && (jukeboxplaying == 13)
-        jukeboxplaying = 26
-    else if !(CommJukeYsMusic) && (jukeboxplaying == 25)
-        jukeboxplaying = 12
+    */
 
-    if !(CommJukeFinalFantasyMusic) && (jukeboxplaying == 26)
-        jukeboxplaying = 29
-    else if !(CommJukeFinalFantasyMusic) && (jukeboxplaying == 28)
-        jukeboxplaying = 25
+    if !(CommJukeSonicMusic) && (jukeboxplaying == SONIC_MUSIC_START)
+        jukeboxplaying = MEGATEN_MUSIC_START
+    else if !(CommJukeSonicMusic) && (jukeboxplaying == SONIC_MUSIC_END)
+        jukeboxplaying = 0 // Jukebox off
 
-    if !(CommJukeNostalgiaMusic) && (jukeboxplaying == 29)
+    if !(CommJukeMGTMusic) && (jukeboxplaying == MEGATEN_MUSIC_START)
+        jukeboxplaying = TOUHOU_MUSIC_START
+    else if !(CommJukeMGTMusic) && (jukeboxplaying == MEGATEN_MUSIC_END)
+        jukeboxplaying = SONIC_MUSIC_END
+
+    if !(CommJukeTouhouMusic) && (jukeboxplaying == TOUHOU_MUSIC_START)
+        jukeboxplaying = YS_MUSIC_START
+    else if !(CommJukeTouhouMusic) && (jukeboxplaying == TOUHOU_MUSIC_END)
+        jukeboxplaying = MEGATEN_MUSIC_END
+
+    if !(CommJukeYsMusic) && (jukeboxplaying == YS_MUSIC_START)
+        jukeboxplaying = FINAL_FANTASY_MUSIC_START
+    else if !(CommJukeYsMusic) && (jukeboxplaying == YS_MUSIC_END)
+        jukeboxplaying = TOUHOU_MUSIC_END
+
+    if !(CommJukeFinalFantasyMusic) && (jukeboxplaying == FINAL_FANTASY_MUSIC_START)
+        jukeboxplaying = NOSTALGIA_MUSIC_START
+    else if !(CommJukeFinalFantasyMusic) && (jukeboxplaying == FINAL_FANTASY_MUSIC_END)
+        jukeboxplaying = YS_MUSIC_END
+
+    if !(CommJukeNostalgiaMusic) && (jukeboxplaying == NOSTALGIA_MUSIC_START)
         jukeboxplaying = 37
-    else if !(CommJukeNostalgiaMusic) && (jukeboxplaying == 36)
-        jukeboxplaying = 28
+    else if !(CommJukeNostalgiaMusic) && (jukeboxplaying == NOSTALGIA_MUSIC_END)
+        jukeboxplaying = NOSTALGIA_MUSIC_END + 1 // Placeholder functionality
 }

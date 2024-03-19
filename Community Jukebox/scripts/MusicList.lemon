@@ -47,15 +47,11 @@ constant array<string> CommunityJukebox_Music =
     "weekendwhip",
     "PeppaPigSong",
     "HotDogDance",
-    "HyperDrive",
-    "scienceblaster",
-    "phaseshift",
-
-    //Misc and ungroupable music
-    "GrandpaThemeSong",
-    "SMLCookieCrisp",
-    "Pacmanthemesong",
     "BrandyAndMrWhiskers",
+
+    // DoDonPachi Music
+
+    // Other Game Music
     "HeartlessBeing",
     "conclusion",
     "ryualpha3",
@@ -63,8 +59,15 @@ constant array<string> CommunityJukebox_Music =
     "bandland",
     "vrtraining",
     "warproom",
+
+    //Misc and ungroupable music
+    "HyperDrive",
+    "scienceblaster",
+    "phaseshift",
+    
+    
     "tombstone_arizzona",
-    "BuckBumble", // Does come from a game but it's being included mainly for laughs
+
 	"Magnolia_1",
 	"Michi_1",
 	"Ran",
@@ -74,4 +77,11 @@ constant array<string> CommunityJukebox_Music =
 	"Bloody_Battle_1",
 	"Silver_Lining_1",
 	"The_Glacial_Fortress",
+
+    // Memes
+    "GrandpaThemeSong",
+    "SMLCookieCrisp",
+    "Pacmanthemesong",
+    "BuckBumble", // Does come from a game but it's being included mainly for laughs
+
 }
