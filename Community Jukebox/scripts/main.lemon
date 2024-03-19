@@ -1,9 +1,7 @@
 include MusicList
 
-/*
 // Preprocessor definitions for debugging
 #define COMMJUKE_SHOW_TRACKID = 1
-*/
 #define COMMUNITY_JUKEBOX_ACTIVE = 1
 
 global u8 jukeboxtimer
@@ -19,7 +17,7 @@ global u8 CommJukeNostalgiaMusic
 
 function void Standalone.playAudio(u8 sfxId)
 {
-	if (sfxId <= 0x32 || sfxId == 0xf0 || sfxId == MUSIC_CTRL_FADEOUT || sfxId == MUSIC_CTRL_STOP) && jukebox_isplaying && !competition_mode.active
+	if (sfxId <= 0x32 || sfxId == 0xf0 || sfxId == MUSIC_CTRL_FADEOUT || sfxId == MUSIC_CTRL_STOP) && jukebox_isplaying
         return
 
     base.Standalone.playAudio(sfxId)
@@ -68,7 +66,7 @@ base.fn00903e()
 
 function void CommunityJukebox.Main(u8 gamemode)
 {
-
+System.callFunctionByName("JukeboxLyrics")
 /*
 gamemode values:
 	0 - Main Game
@@ -87,6 +85,8 @@ gamemode values:
 
     	if (Input.buttonPressed(BUTTON_L) || Input.buttonPressed(BUTTON_R)) && (level.framecounter & 0x04)
     	{
+    		System.setGlobalVariableValueByName("lyricstimer", 0)
+    		System.setGlobalVariableValueByName("currentlyric", 0)
     	    jukebox_isplaying = true
         	jukeboxplaying = (Input.buttonPressed(BUTTON_L)) ? ((jukeboxplaying == 0) ? (CommunityJukebox_Music.length() - 1) : (jukeboxplaying - 1)) : (jukeboxplaying + 1)
         	if (jukeboxplaying > CommunityJukebox_Music.length() - 1)
@@ -122,6 +122,7 @@ gamemode values:
 
     #if COMMJUKE_SHOW_TRACKID
     Renderer.drawText("oxyfont_small", 10, 190, stringformat("Track No.: %02x", jukeboxplaying), 0xffffffff, 1, 0, 0xe000, 0)
+    Renderer.drawText("oxyfont_small", 10, 180, stringformat("Time: %d", System.getGlobalVariableValueByName("lyricstimer")), 0xffffffff, 1, 0, 0xe000, 0)
     #endif
 }
 
