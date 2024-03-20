@@ -48,12 +48,12 @@ constant u8 MISC_GAME_MUSIC_START = 43
 constant u8 MISC_GAME_MUSIC_END = 47
 
 // Misc/Ungroupable Music
-constant u8 UNGROUPABLE_MUSIC_START = 48 // Science Blaster (track is AWOL; Monty add it now)
-constant u8 UNGROUPABLE_MUSIC_END = 52
+constant u8 UNGROUPABLE_MUSIC_START = 48
+constant u8 UNGROUPABLE_MUSIC_END = 50
 
 // Memes only has a start due to it being at the very back of the list
-constant u8 MEME_MUSIC_START = 53 // Grandad Theme Song
-constant u8 MEME_MUSIC_END = 56 // Buck Bumble
+constant u8 MEME_MUSIC_START = 51 // Grandad Theme Song
+constant u8 MEME_MUSIC_END = 54 // Buck Bumble
 
 
 // Configuration variables
