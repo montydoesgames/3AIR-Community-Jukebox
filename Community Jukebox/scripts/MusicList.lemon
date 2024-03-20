@@ -73,8 +73,6 @@ constant array<string> CommunityJukebox_Music =
     "warproom",
 
     //Misc and ungroupable music
-    "scienceblaster", // Game Theory
-    "phaseshift", // Game Theory
     "tombstone_arizzona",
 	"Magnolia_1", // Original song; TODO: Find author
 	"Super_Reflex_1", // Megalomanchia2
