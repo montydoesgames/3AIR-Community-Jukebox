@@ -1,11 +1,11 @@
-global float lyricstimer
+global u16 lyricstimer
 global u8 currentlyric
 
 //General function
 
 function void JukeboxLyrics()
 {
-	lyricstimer += 1.0f
+	lyricstimer += 1
 
 if (jukeboxplaying == 8)
 	LifeWillChange_Lyrics()
@@ -59,30 +59,30 @@ constant array<string> LifeWillChangeLyrics =
 
 function void LifeWillChange_Lyrics()
 {
-	if lyricstimer >= 1700.0f
+	if lyricstimer >= 1700
 		currentlyric = 1
-	if lyricstimer >= 1820.0f
+	if lyricstimer >= 1820
 		currentlyric = 2
-	if lyricstimer >= 2120.0f
+	if lyricstimer >= 2120
 		currentlyric = 3
-	if lyricstimer >= 2240.0f
+	if lyricstimer >= 2240
 		currentlyric = 4
-	if lyricstimer >= 2360.0f
+	if lyricstimer >= 2360
 		currentlyric = 5
-	if lyricstimer >= 2630.0f
+	if lyricstimer >= 2630
 		currentlyric = 6
-	if lyricstimer >= 2840.0f
+	if lyricstimer >= 2840
 		currentlyric = 7
-	if lyricstimer >= 3070.0f
+	if lyricstimer >= 3070
 		currentlyric = 8
-	if lyricstimer >= 3500.0f
+	if lyricstimer >= 3500
 		currentlyric = 9
-	if lyricstimer >= 3750.0f
+	if lyricstimer >= 3750
 		currentlyric = 10
-	if lyricstimer >= 3950.0f
+	if lyricstimer >= 3950
 		currentlyric = 11
-	if lyricstimer >= 4460.0f
+	if lyricstimer >= 4460
 		currentlyric = 0
 
-Renderer.drawText("oxy.0font_small", getScreenWidth() / 2, 190, LifeWillChangeLyrics[currentlyric], 0xffffffff, 2, 0, 0xe000, 0)
+Renderer.drawText("oxyfont_small", getScreenWidth() / 2, 190, LifeWillChangeLyrics[currentlyric], 0xffffffff, 2, 0, 0xe000, 0)
 }
