@@ -39,7 +39,7 @@
             {
         		"InternalName": "TouhouMusic",
         		"DisplayName": "Touhou Music",
-        		"Variable": "CommJukeTouhouTMusic",
+        		"Variable": "CommJukeTouhouMusic",
         		"DefaultValue": "1",
         		"Options": 
 				{
@@ -73,6 +73,72 @@
         		"InternalName": "NostalgiaMusic",
         		"DisplayName": "\"Childhood Classics\" Music",
         		"Variable": "CommJukeNostalgiaMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+            {
+        		"InternalName": "DonPachiMusic",
+        		"DisplayName": "DonPachi Music",
+        		"Variable": "CommJukeDonPachiMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+            {
+        		"InternalName": "ShmupMusic",
+        		"DisplayName": "Misc. Shoot 'em up Music",
+        		"Variable": "CommJukeShmupMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+            {
+        		"InternalName": "FighterMusic",
+        		"DisplayName": "Misc. Fighting Game Music",
+        		"Variable": "CommJukeFightingMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+            {
+        		"InternalName": "MiscGameMusic",
+        		"DisplayName": "Other Game Music",
+        		"Variable": "CommJukeMiscGameMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+            {
+        		"InternalName": "UngroupableMusic",
+        		"DisplayName": "Misc./Ungroupable Music",
+        		"Variable": "CommJukeUngroupableMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+            {
+        		"InternalName": "SubjectiveHumour",
+        		"DisplayName": "Meme Music",
+        		"Variable": "CommJukeMemeMusic",
         		"DefaultValue": "1",
         		"Options": 
 				{

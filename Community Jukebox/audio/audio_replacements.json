@@ -1,5 +1,5 @@
 {
-    "theairwindyvalley": { "File": "theairwindyvalley.ogg", "Type": "Music", "Name": "theairwindyvalley", "SoundTestVisibility": "Hidden" },
+    "theairwindyvalley": { "File": "theairwindyvalley.ogg", "Type": "Music", "Name": "theairwindyvalley", "LoopStart": "232544", "SoundTestVisibility": "Hidden" },
     "cityescape": { "File": "CityEscape.ogg", "Type": "Music", "Name": "cityescape", "SoundTestVisibility": "Hidden" },
     "cityescape_fast": { "File": "CityEscape_fast.ogg", "Type": "Music", "Name": "cityescape", "SoundTestVisibility": "Hidden" },
     "openyourheart": { "File": "OpenYourHeart.ogg", "Type": "Music", "Name": "openyourheart", "SoundTestVisibility": "Hidden" },

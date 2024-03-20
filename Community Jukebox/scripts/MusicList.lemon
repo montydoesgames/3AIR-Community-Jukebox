@@ -22,7 +22,7 @@ constant array<string> CommunityJukebox_Music =
     // Other SMT music
     "KyuuyakuTokyo",
 
-    //Touhou music
+    //Touhou music; maybe move this down with the other shmups?
     "EasternMysticalTaleOfRomance",
     "RetributionForTheEternalNight",
     "BadApplePC98",
@@ -45,43 +45,44 @@ constant array<string> CommunityJukebox_Music =
     "CaptainUnderpantsMusic",
     "FNAF",
     "weekendwhip",
-    "PeppaPigSong",
+    "PeppaPigSong", // Proposal: Move this to the meme category because it contains an edited scream at the end and the sound test name calls it a "Fixed Version"
     "HotDogDance",
     "BrandyAndMrWhiskers",
+    "HyperDrive",
 
-    // DoDonPachi Music
+    // DonPachi Music
+    "East_Asia",
+    "Michi_1",
+	"Niji",    
+	"Ran",
+
+    // Misc. shoot 'em up music=
+    "Bloody_Battle_1", // Einhänder - did you know that Square Enix made a shmup?
+    "Silver_Lining_1", // Eschatos
+    "The_Glacial_Fortress", // Omega Five
+
+    // Misc. fighting game music
+    "conclusion", // Guilty Gear: The Missing Link
+    "ryualpha3", // Street Fighter Alpha 3
 
     // Other Game Music
     "HeartlessBeing",
-    "conclusion",
-    "ryualpha3",
     "AirCombat",
     "bandland",
     "vrtraining",
     "warproom",
 
     //Misc and ungroupable music
-    "HyperDrive",
-    "scienceblaster",
-    "phaseshift",
-    
-    
+    "scienceblaster", // Game Theory
+    "phaseshift", // Game Theory
     "tombstone_arizzona",
-
-	"Magnolia_1",
-	"Michi_1",
-	"Ran",
-	"Niji",
-	"East_Asia",
-	"Super_Reflex_1",
-	"Bloody_Battle_1",
-	"Silver_Lining_1",
-	"The_Glacial_Fortress",
+	"Magnolia_1", // Original song; TODO: Find author
+	"Super_Reflex_1", // Megalomanchia2
 
     // Memes
     "GrandpaThemeSong",
     "SMLCookieCrisp",
-    "Pacmanthemesong",
-    "BuckBumble", // Does come from a game but it's being included mainly for laughs
+    "Pacmanthemesong", // Arabic version of the opening theme song to Pac-Man and the Ghostly Adventures; sound test name calls it a "Good Version" which suggests its inclusion is as a meme 
+    "BuckBumble", // Does come from a game but it's being included mainly for laughs; should it be moved to the game music category?
 
 }

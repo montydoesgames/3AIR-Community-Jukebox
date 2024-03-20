@@ -4,7 +4,8 @@ include MusicList
 #define COMMJUKE_SHOW_TRACKID = 1
 #define COMMUNITY_JUKEBOX_ACTIVE = 1
 
-// Track end ID constants - Please use decimals if you can
+// Track end ID constants - Please use decimals (255) rather than hexadecimals (0xFF) if you can
+// I (ShadowXeldron) defines a series that has at least 3 tracks as being worth its own category.
 
 // Stupid blue rat game that was never good
 constant u8 SONIC_MUSIC_START = 1 // Windy Valley
@@ -14,26 +15,50 @@ constant u8 SONIC_MUSIC_END = 7 // Big the Cat Lo-Fi
 constant u8 MEGATEN_MUSIC_START = 8 // Life Will Change
 constant u8 MEGATEN_MUSIC_END = 13 // DDS2 3D Tokyo 1
 
-// Touhou Project (AKA the only PC-98 series people care about; RIP to my boy Farland Story)
+// Touhou Project (possibly move this to be with the other shoot 'em ups?)
 constant u8 TOUHOU_MUSIC_START = 14 // Eastern Tale of Mystical Romance
 constant u8 TOUHOU_MUSIC_END = 16 // Bad Apple!! (PC-98)
 
-// Nihon Falcom's Ys series, AKA the GOAT 
+// Ys, AKA the GOAT 
 constant u8 YS_MUSIC_START = 17 // Tension
 constant u8 YS_MUSIC_END = 22 // Mountain Zone
 
+// Final Fantasy Music
 constant u8 FINAL_FANTASY_MUSIC_START = 23 // Protect the Espers
 constant u8 FINAL_FANTASY_MUSIC_END = 26 // Battle (FF9)
 
-// Music from kids' TV shows and stuff
+// Childhood Classics: music from kids' TV shows and stuff
 constant u8 NOSTALGIA_MUSIC_START = 27 // Captain Underpants
-constant u8 NOSTALGIA_MUSIC_END = 32 // Brandy & Mr. Whiskers
+constant u8 NOSTALGIA_MUSIC_END = 33 // Hyper Drive (opening theme song from Yu-Gi-Oh 5Ds)
+// Proposal: Reshuffle these categories to have Childhood Classics after all the video games
 
-/*
-constant u8 MEME_MUSIC_START = 23 // Protect the Espers
-constant u8 MEME_MUSIC_END = 26
-*/
+// DonPachi Music
+constant u8 DONPACHI_MUSIC_START = 34 // East Asia
+constant u8 DONPACHI_MUSIC_END = 37 // Ran
 
+// Misc. Shoot 'em ups
+constant u8 MISC_SHMUP_MUSIC_START = 38 // Bloody Battle
+constant u8 MISC_SHMUP_MUSIC_END = 40 // The Glacial Fortress
+
+// Misc. Fighting Games
+constant u8 MISC_FIGHTER_MUSIC_START = 41 // Conclusion (Sol Badguy VS Ky Kiske)
+constant u8 MISC_FIGHTER_MUSIC_END = 42 // Ryu's Stage (SFA3)
+
+// Misc. Game Music
+constant u8 MISC_GAME_MUSIC_START = 43
+constant u8 MISC_GAME_MUSIC_END = 47
+
+// Misc/Ungroupable Music is handled seperately. Specifically, it always starts at (MISC_GAME_MUSIC_START + 1) and ends at MEME_MUSIC_START - 1 
+
+constant u8 UNGROUPABLE_MUSIC_START = 48 // Science Blaster (track is AWOL; Monty add it now)
+constant u8 UNGROUPABLE_MUSIC_END = 52
+
+// Memes only has a start due to it being at the very back of the list
+constant u8 MEME_MUSIC_START = 53 // Grandad Theme Song
+constant u8 MEME_MUSIC_END = 56 // Buck Bumble
+
+
+// Configuration variables
 global u8 jukeboxtimer
 global u8 jukeboxplaying
 global bool jukebox_isplaying
@@ -43,6 +68,14 @@ global u8 CommJukeTouhouMusic
 global u8 CommJukeYsMusic
 global u8 CommJukeFinalFantasyMusic
 global u8 CommJukeNostalgiaMusic
+global u8 CommJukeDonPachiMusic
+global u8 CommJukeShmupMusic
+global u8 CommJukeFightingMusic
+global u8 CommJukeMiscGameMusic
+global u8 CommJukeUngroupableMusic
+
+global u8 CommJukeMemeMusic
+
 
 // Prevent music interruptions
 
@@ -97,15 +130,15 @@ function void fn00903e()
 
 function void CommunityJukebox.Main(u8 gamemode)
 {
-System.callFunctionByName("JukeboxLyrics")
-/*
-gamemode values:
-	0 - Main Game
-	1 - Competition Mode
-	2 - Blue Spheres
-*/
+    System.callFunctionByName("JukeboxLyrics")
+    /*
+    gamemode values:
+        0 - Main Game
+        1 - Competition Mode
+        2 - Blue Spheres
+    */
 
-	s16 baseX = gamemode == 3 ? global.level_started + 1 : global.level_started
+		s16 baseX = gamemode == 3 ? global.level_started + 1 : global.level_started
 	if (baseX < 0)
 	{
 		baseX += 8
@@ -120,9 +153,11 @@ gamemode values:
     		System.setGlobalVariableValueByName("currentlyric", 0)
     	    jukebox_isplaying = true
         	jukeboxplaying = (Input.buttonPressed(BUTTON_L)) ? ((jukeboxplaying == 0) ? (CommunityJukebox_Music.length() - 1) : (jukeboxplaying - 1)) : (jukeboxplaying + 1)
-        	if (jukeboxplaying > CommunityJukebox_Music.length() - 1)
+        	
+            if (jukeboxplaying > CommunityJukebox_Music.length() - 1)
             	jukeboxplaying = 0
             u8 SkipCount = 1
+
             while (SkipCount < CommunityJukebox_Music.length())
             {
 				CommunityJukebox.SkipSeries()
@@ -163,39 +198,70 @@ function void CommunityJukebox.SkipSeries() // Suggestion: Possibly make this us
     This is a template to use:
 
     if !(CommJukeMyCategoryMusic) && (jukeboxplaying == MY_CATEGORY_MUSIC_START)
-        jukeboxplaying = NEXT_CATEGORY_MUSIC_START
+        jukeboxplaying = MY_CATEGORY_MUSIC_END - 1
     else if !(CommJukeMyCategoryMusic) && (jukeboxplaying == MY_CATEGORY_MUSIC_END)
-        jukeboxplaying = LAST_CATEGORY_MUSIC_END
+        jukeboxplaying = MY_CATEGORY_MUSIC_START + 1
 
     */
 
     if !(CommJukeSonicMusic) && (jukeboxplaying == SONIC_MUSIC_START)
-        jukeboxplaying = MEGATEN_MUSIC_START
+        jukeboxplaying = SONIC_MUSIC_END + 1
     else if !(CommJukeSonicMusic) && (jukeboxplaying == SONIC_MUSIC_END)
-        jukeboxplaying = 0 // Jukebox off
+        jukeboxplaying = 0 // In the event that Sonic music is no longer at the front of the playlist, change this to SONIC_MUSIC_END - 1
 
     if !(CommJukeMGTMusic) && (jukeboxplaying == MEGATEN_MUSIC_START)
-        jukeboxplaying = TOUHOU_MUSIC_START
+        jukeboxplaying = MEGATEN_MUSIC_END + 1
     else if !(CommJukeMGTMusic) && (jukeboxplaying == MEGATEN_MUSIC_END)
-        jukeboxplaying = SONIC_MUSIC_END
+        jukeboxplaying = MEGATEN_MUSIC_START - 1
 
     if !(CommJukeTouhouMusic) && (jukeboxplaying == TOUHOU_MUSIC_START)
-        jukeboxplaying = YS_MUSIC_START
+        jukeboxplaying = TOUHOU_MUSIC_END + 1
     else if !(CommJukeTouhouMusic) && (jukeboxplaying == TOUHOU_MUSIC_END)
-        jukeboxplaying = MEGATEN_MUSIC_END
+        jukeboxplaying = TOUHOU_MUSIC_START - 1
 
     if !(CommJukeYsMusic) && (jukeboxplaying == YS_MUSIC_START)
-        jukeboxplaying = FINAL_FANTASY_MUSIC_START
+        jukeboxplaying = YS_MUSIC_END + 1
     else if !(CommJukeYsMusic) && (jukeboxplaying == YS_MUSIC_END)
-        jukeboxplaying = TOUHOU_MUSIC_END
+        jukeboxplaying = YS_MUSIC_START - 1
 
     if !(CommJukeFinalFantasyMusic) && (jukeboxplaying == FINAL_FANTASY_MUSIC_START)
-        jukeboxplaying = NOSTALGIA_MUSIC_START
+        jukeboxplaying = FINAL_FANTASY_MUSIC_END + 1
     else if !(CommJukeFinalFantasyMusic) && (jukeboxplaying == FINAL_FANTASY_MUSIC_END)
-        jukeboxplaying = YS_MUSIC_END
+        jukeboxplaying = FINAL_FANTASY_MUSIC_START - 1
 
     if !(CommJukeNostalgiaMusic) && (jukeboxplaying == NOSTALGIA_MUSIC_START)
-        jukeboxplaying = 37
+        jukeboxplaying = NOSTALGIA_MUSIC_END + 1
     else if !(CommJukeNostalgiaMusic) && (jukeboxplaying == NOSTALGIA_MUSIC_END)
-        jukeboxplaying = NOSTALGIA_MUSIC_END + 1 // Placeholder functionality
+        jukeboxplaying = NOSTALGIA_MUSIC_START - 1
+
+    if !(CommJukeDonPachiMusic) && (jukeboxplaying == DONPACHI_MUSIC_START)
+        jukeboxplaying = DONPACHI_MUSIC_END + 1
+    else if !(CommJukeDonPachiMusic) && (jukeboxplaying == DONPACHI_MUSIC_END)
+        jukeboxplaying = DONPACHI_MUSIC_START - 1
+
+    if !(CommJukeShmupMusic) && (jukeboxplaying == MISC_SHMUP_MUSIC_START)
+        jukeboxplaying = MISC_SHMUP_MUSIC_END + 1
+    else if !(CommJukeShmupMusic) && (jukeboxplaying == MISC_SHMUP_MUSIC_END)
+        jukeboxplaying = MISC_SHMUP_MUSIC_START - 1
+
+    if !(CommJukeFightingMusic) && (jukeboxplaying == MISC_FIGHTER_MUSIC_START)
+        jukeboxplaying = MISC_FIGHTER_MUSIC_END + 1
+    else if !(CommJukeFightingMusic) && (jukeboxplaying == MISC_FIGHTER_MUSIC_END)
+        jukeboxplaying = MISC_FIGHTER_MUSIC_START - 1
+
+    if !(CommJukeMiscGameMusic) && (jukeboxplaying == MISC_GAME_MUSIC_START)
+        jukeboxplaying = MISC_GAME_MUSIC_END + 1
+    else if !(CommJukeMiscGameMusic) && (jukeboxplaying == MISC_GAME_MUSIC_END)
+        jukeboxplaying = MISC_GAME_MUSIC_START - 1
+
+    if !(CommJukeUngroupableMusic) && (jukeboxplaying == UNGROUPABLE_MUSIC_START)
+        jukeboxplaying = UNGROUPABLE_MUSIC_END + 1
+    else if !(CommJukeUngroupableMusic) && (jukeboxplaying == UNGROUPABLE_MUSIC_END)
+        jukeboxplaying = UNGROUPABLE_MUSIC_START - 1
+
+    if !(CommJukeMemeMusic) && (jukeboxplaying == MEME_MUSIC_START)
+        jukeboxplaying = 0 // If a new category is added afterwards MEME_MUSIC_END + 1
+    else if !(CommJukeMemeMusic) && (jukeboxplaying == MEME_MUSIC_END)
+        jukeboxplaying = MEME_MUSIC_START - 1
+
 }
