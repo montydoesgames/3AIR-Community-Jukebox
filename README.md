@@ -7,8 +7,11 @@ Cycle through many series' music with L and R, and listen to the community's fav
 ## Request a song:
 ### Rules:
 1: NO NSFW content. This should be obvious
+
 2: No slurs. Cursing is fine, but no slurs.
+
 3: Do not share personal information about yourself nor others through audio, script or sprite in this mod.
+
 4: Keep songs related to any drama to a minimum. I understand "seperate art from artist", however I nor anyone else who contributed to this mod would like to be involved in the drama.
 ### Tutorial:
 1: Fork this repository. If you don't know how, see [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository)
