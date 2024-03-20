@@ -56,7 +56,7 @@ constant array<string> CommunityJukebox_Music =
 	"Niji",    
 	"Ran",
 
-    // Misc. shoot 'em up music=
+    // Misc. shoot 'em up music
     "Bloody_Battle_1", // Einhänder - did you know that Square Enix made a shmup?
     "Silver_Lining_1", // Eschatos
     "The_Glacial_Fortress", // Omega Five

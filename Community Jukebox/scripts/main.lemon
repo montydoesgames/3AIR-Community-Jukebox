@@ -5,7 +5,6 @@ include MusicList
 #define COMMUNITY_JUKEBOX_ACTIVE = 1
 
 // Track end ID constants - Please use decimals (255) rather than hexadecimals (0xFF) if you can
-// I (ShadowXeldron) defines a series that has at least 3 tracks as being worth its own category.
 
 // Stupid blue rat game that was never good
 constant u8 SONIC_MUSIC_START = 1 // Windy Valley
@@ -48,8 +47,7 @@ constant u8 MISC_FIGHTER_MUSIC_END = 42 // Ryu's Stage (SFA3)
 constant u8 MISC_GAME_MUSIC_START = 43
 constant u8 MISC_GAME_MUSIC_END = 47
 
-// Misc/Ungroupable Music is handled seperately. Specifically, it always starts at (MISC_GAME_MUSIC_START + 1) and ends at MEME_MUSIC_START - 1 
-
+// Misc/Ungroupable Music
 constant u8 UNGROUPABLE_MUSIC_START = 48 // Science Blaster (track is AWOL; Monty add it now)
 constant u8 UNGROUPABLE_MUSIC_END = 52
 
