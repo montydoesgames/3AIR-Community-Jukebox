@@ -8,9 +8,9 @@ function void JukeboxLyrics()
 /*
 if Game.isSecretUnlocked(u32 secretId)
 {
-u16 setting = Game.getSetting("SECRET_GAME_SPEED")
+    u16 setting = Game.getSetting("SECRET_GAME_SPEED")
     Renderer.drawText("oxyfont_small", 10, 170, stringformat("Speed: %02x", setting), 0xffffffff, 1, 0, 0xe000, 0)
-lyricstimer += (1.0f / (Game.getSetting("SECRET_GAME_SPEED") / 60.0f))
+    lyricstimer += (1.0f / (Game.getSetting("SECRET_GAME_SPEED") / 60.0f))
 }
 else
 */
@@ -27,45 +27,45 @@ if (jukeboxplaying == 8)
 
 constant array<string> LifeWillChangeLyrics =
 {
-" ",
-"It's not a game",
-"I'm not a robot AI challenging you",
-"I'm not a phantom",
-"I'm in your face and",
-"I'm here to see it through",
-"Right before your eyes",
-"Watch us multiply",
-"Come to claim our rights, it's time",
-"As our power grows",
-"Tryin' to stop us shows",
-"Might as well go try 'n' stop time",
-"So you know that we're out there",
-"Swatting lies in the making",
-"Can't move fast without breaking",
-"Can't hold on or life won't change",
-"And our voices ring out, yeah",
-"Took the mask off to feel free",
-"Fought it out in the debris",
-"Now we know that life will change",
-"Ain't it a shame",
-"I'm not a figment of your ailing old mind",
-"I'm just as real as",
-"I'm just as dangerous",
-"As you, so know you'll find",
-"A taste of your own meds",
-"Fire in every breath",
-"Fire inside your head, your heart",
-"And as your crippled brain",
-"Tries to fight in vain",
-"Your empire will fall apart",
-"And you'll know we were out there",
-"Swatted lies in the making",
-"Your empire for the taking",
-"Can't hold on or life won't change",
-"And our voices rang out, here",
-"Took the mask off to feel free",
-"Fought it out in the debris",
-"Now we know that life will change"
+    " ",
+    "It's not a game",
+    "I'm not a robot AI challenging you",
+    "I'm not a phantom",
+    "I'm in your face and",
+    "I'm here to see it through",
+    "Right before your eyes",
+    "Watch us multiply",
+    "Come to claim our rights, it's time",
+    "As our power grows",
+    "Tryin' to stop us shows",
+    "Might as well go try 'n' stop time",
+    "So you know that we're out there",
+    "Swatting lies in the making",
+    "Can't move fast without breaking",
+    "Can't hold on or life won't change",
+    "And our voices ring out, yeah",
+    "Took the mask off to feel free",
+    "Fought it out in the debris",
+    "Now we know that life will change",
+    "Ain't it a shame",
+    "I'm not a figment of your ailing old mind",
+    "I'm just as real as",
+    "I'm just as dangerous",
+    "As you, so know you'll find",
+    "A taste of your own meds",
+    "Fire in every breath",
+    "Fire inside your head, your heart",
+    "And as your crippled brain",
+    "Tries to fight in vain",
+    "Your empire will fall apart",
+    "And you'll know we were out there",
+    "Swatted lies in the making",
+    "Your empire for the taking",
+    "Can't hold on or life won't change",
+    "And our voices rang out, here",
+    "Took the mask off to feel free",
+    "Fought it out in the debris",
+    "Now we know that life will change"
 }
 
 function void LifeWillChange_Lyrics()

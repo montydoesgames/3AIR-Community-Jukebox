@@ -7,8 +7,7 @@
     "sonicheroes":    { "File": "sonicheroes.png", "Rect": "0,0,68,12", "Center": "16,6" },
     "undefeatable":    { "File": "undefeatable.png", "Rect": "0,0,66,12", "Center": "16,6" },
     "lifewillchange":    { "File": "lifewillchange.png", "Rect": "0,0,72,12", "Center": "16,6" },
-"TakeOver":    { "File": "TakeOver.png", "Rect": "0,0,52,12", "Center": "16,6" },
-    "LastSuprise":    { "File": "lastsurprise.png", "Rect": "0,0,66,12", "Center": "16,6" },
+    "TakeOver":    { "File": "TakeOver.png", "Rect": "0,0,52,12", "Center": "16,6" },
     "LastSuprise":    { "File": "lastsurprise.png", "Rect": "0,0,66,12", "Center": "16,6" },
     "MassDestruction":    { "File": "massdestruction.png", "Rect": "0,0,80,12", "Center": "16,6" },
 	//DISTURBING THE PEEAAAAACE
@@ -30,9 +29,10 @@
     // "No. I am not doing the memes. Leave me in peace."
 
     "CaptainUnderpantsMusic":    { "File": "CaptainUnderpantsMusic.png", "Rect": "0,0,72,24", "Center": "16,6" },
-    "FNAF":   { "File": "fnaf.png", "Rect": "0,0,72,24", "Center": "16,6" },
     "weekendwhip":    { "File": "weekendwhip.png", "Rect": "0,0,68,24", "Center": "16,6" }, //Jump up, kick back, whip around and spin!
 
+    "BadApplePC98":    { "File": "thisisyourfaultdoggy.png", "Rect": "0,0,92,12", "Center": "16,6" },
+    "ThemeOfAdol1993":    { "File": "themeofadol.png", "Rect": "0,0,92,12", "Center": "16,6" },
     "Michi_1":    { "File": "Michi_1.png", "Rect": "0,0,72,12", "Center": "16,6" },
     "Magnolia_1":    { "File": "Magnolia_1.png", "Rect": "0,0,72,12", "Center": "16,6" },
     "Niji":    { "File": "Niji.png", "Rect": "0,0,72,12", "Center": "16,6" },

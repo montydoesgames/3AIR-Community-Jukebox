@@ -1,5 +1,5 @@
 {
-    "theairwindyvalley": { "File": "theairwindyvalley.ogg", "Type": "Music", "Name": "theairwindyvalley", "SoundTestVisibility": "Hidden" },
+    "theairwindyvalley": { "File": "theairwindyvalley.ogg", "Type": "Music", "Name": "theairwindyvalley", "LoopStart": "232544", "SoundTestVisibility": "Hidden" },
     "cityescape": { "File": "CityEscape.ogg", "Type": "Music", "Name": "cityescape", "SoundTestVisibility": "Hidden" },
     "cityescape_fast": { "File": "CityEscape_fast.ogg", "Type": "Music", "Name": "cityescape", "SoundTestVisibility": "Hidden" },
     "openyourheart": { "File": "OpenYourHeart.ogg", "Type": "Music", "Name": "openyourheart", "SoundTestVisibility": "Hidden" },
@@ -15,6 +15,9 @@
     "Tension": { "File": "Tension.ogg", "Type": "Music", "Name": "Ys 1 Chronicles - Tension", "LoopStart": "43264" },    
     "BurningFight": { "File": "BurningFight.ogg", "Type": "Music", "Name": "Ys 3 (Mega Drive) - Burning Fight", "LoopStart": "1792" },    
     "IceRidgeOfNoltia": { "File": "IceRidgeOfNoltia.ogg", "Type": "Music", "Name": "Ys 2 Chronicles - Ice Ridge of Noltia", "LoopStart": "204090" },
+    "ThemeOfAdol1993": { "File": "ThemeOfAdol1993.ogg", "Type": "Music", "Name": "Ys 4 (TurboGrafx-CD) - Theme of Adol 1994", "LoopStart": "618101" },
+    "FieldOfGale": { "File": "FieldOfGale.ogg", "Type": "Music", "Name": "Ys 5 - Field of Gale", "LoopStart": "0" }, // Will loop later
+    "MountainZone": { "File": "MountainZone.ogg", "Type": "Music", "Name": "Ys 6 - Mountain Zone", "LoopStart": "365625" },
     "CaptainUnderpantsMusic": { "File": "captainunderpants.ogg", "Type": "Music", "Name": "Captain Underpants Music dont listen to the other songs", "SoundTestVisibility": "Hidden" },
     "GrandpaThemeSong": { "File": "grandpathemesong.ogg", "Type": "Music", "Name": "Grandpa Theme Song", "SoundTestVisibility": "Hidden" },
     "BandLand": { "File": "BandLand.ogg", "Type": "Music", "Name": "Rayman - Band land", "LoopStart": "0" },
@@ -35,6 +38,10 @@
     "AirCombat": { "File": "AirCombat.ogg", "Type": "Music", "Name": "Mega Turrican - Air Combat", "LoopStart": "177190" },    
     "FNAF": { "File": "FiveNightsatFreddysSongTheLivingTombstone.ogg", "Type": "Music", "Name": "Living Tombstone - FNAF", "SoundTestVisibility": "Hidden" },
     "weekendwhip": { "File": "weekendwhip.ogg", "Type": "Music", "Name": "weekendwhip", "SoundTestVisibility": "Hidden" },
+    "tombstone_arizzona": { "File": "tombstone_arizzona.ogg", "Type": "Music", "Name": "tombstone_arizzona", "SoundTestVisibility": "Hidden" },
+    "KyuuyakuTokyo": { "File": "KyuuyakuTokyo.ogg", "Type": "Music", "Name": "Megami Tensei: The Old Testament - 3D Tokyo 1", "LoopStart": "0" }, // Will loop later
+    "RetributionForTheEternalNight": { "File": "RetributionForTheEternalNight.ogg", "Type": "Music", "Name": "Touhou Eiyashou: Imperishable Night - Retribution for the Eternal Night ~ Imperishable Night", "LoopStart": "387072" },    
+    "BadApplePC98": { "File": "BadApplePC98.ogg", "Type": "Music", "Name": "Touhou Gensoukyou ~ Lotus Land Story - Bad Apple!!", "LoopStart": "0" },    
 
     "Michi_1": { "File": "Michi_1.ogg", "Type": "Music", "Name": "Michi_1" },
     "Magnolia_1": { "File": "Magnolia_1.ogg", "Type": "Music", "Name": "Magnolia_1" },
@@ -47,5 +54,7 @@
     "Bloody_Battle_1": { "File": "Bloody_Battle_1.ogg", "Type": "Music", "Name": "Bloody_Battle_1", },    
     "Big_the_Cat_Lofi": { "File": "Big_the_Cat_Lofi.ogg", "Type": "Music", "Name": "Big_the_Cat_Lofi", "SoundTestVisibility": "Hidden" },
     "The_Glacial_Fortress": { "File": "The_Glacial_Fortress.ogg", "Type": "Music", "Name": "The_Glacial_Fortress", "SoundTestVisibility": "Hidden" },
+
+    "BuckBumble": { "File": "BuckBumble.ogg", "Type": "Music", "Name": "Buck Bumble - Title Theme", "LoopStart": "329728" },    
 
 }
