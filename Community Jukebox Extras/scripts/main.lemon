@@ -5,18 +5,7 @@ global u8 currentlyric
 
 function void JukeboxLyrics()
 {
-/*
-if Game.isSecretUnlocked(u32 secretId)
-{
-    u16 setting = Game.getSetting("SECRET_GAME_SPEED")
-    Renderer.drawText("oxyfont_small", 10, 170, stringformat("Speed: %02x", setting), 0xffffffff, 1, 0, 0xe000, 0)
-    lyricstimer += (1.0f / (Game.getSetting("SECRET_GAME_SPEED") / 60.0f))
-}
-else
-*/
-{
 	lyricstimer += 1.0f
-}
 
 if (jukeboxplaying == 8)
 	LifeWillChange_Lyrics()
@@ -70,7 +59,6 @@ constant array<string> LifeWillChangeLyrics =
 
 function void LifeWillChange_Lyrics()
 {
-/*
 	if lyricstimer >= 1700.0f
 		currentlyric = 1
 	if lyricstimer >= 1820.0f
@@ -95,17 +83,6 @@ function void LifeWillChange_Lyrics()
 		currentlyric = 11
 	if lyricstimer >= 4460.0f
 		currentlyric = 0
-*/
+
 Renderer.drawText("oxy.0font_small", getScreenWidth() / 2, 190, LifeWillChangeLyrics[currentlyric], 0xffffffff, 2, 0, 0xe000, 0)
 }
-
-/*
-function void CommunityJukebox.Main(u8 gamemode)
-{
-    	if (Input.buttonPressed(BUTTON_L) || Input.buttonPressed(BUTTON_R)) && (level.framecounter & 0x04)
-    	{
-    		lyricstimer = 0.0f
-    	}
-    base.CommunityJukebox.Main(gamemode)
-}
-*/
