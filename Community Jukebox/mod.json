@@ -4,7 +4,8 @@
 	"Name": "Community Jukebox",
 	"Author": "montydoesgames",
 	"Description": "Songs requested by the mania for the mania!",
-	"ModVersion": "Github Contributor Build"
+	"ModVersion": "Github Contributor Build",
+	"UniqueID": "CommunityJukebox"
     },
     "UsesFeatures":
     {
