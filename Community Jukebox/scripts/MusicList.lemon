@@ -70,6 +70,7 @@ constant array<string> CommunityJukebox_Music =
 
     // Other Game Music
     "MainBossCastle(NewSMBDS)",
+    "TheGrandFinale",
     "HeartlessBeing",
     "AirCombat",
     "bandland",
