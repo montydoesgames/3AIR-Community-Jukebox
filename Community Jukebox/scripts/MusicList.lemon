@@ -9,6 +9,7 @@ constant array<string> CommunityJukebox_Music =
     "openyourheart",
     "liveandlearn",
     "sonicheroes",
+    "KnightoftheWind",
     "undefeatable",
     "Big_the_Cat_Lofi",
 
@@ -25,6 +26,7 @@ constant array<string> CommunityJukebox_Music =
     //Touhou music; maybe move this down with the other shmups?
     "EasternMysticalTaleOfRomance",
     "RetributionForTheEternalNight",
+    "ShanghaiScarletTeahouseChineseTea",
     "BadApplePC98",
 
     // Ys music
@@ -37,6 +39,7 @@ constant array<string> CommunityJukebox_Music =
 
     // Final Fantasy music
     "protecttheespers",
+    "GiantDungeon(FF4)",
     "crazymotorcyclechase",
     "manwithmachinegun",
     "ff9battle",
@@ -66,9 +69,11 @@ constant array<string> CommunityJukebox_Music =
     "ryualpha3", // Street Fighter Alpha 3
 
     // Other Game Music
+    "MainBossCastle(NewSMBDS)",
     "HeartlessBeing",
     "AirCombat",
     "bandland",
+    "Mr.DarkBattle",
     "vrtraining",
     "warproom",
 
