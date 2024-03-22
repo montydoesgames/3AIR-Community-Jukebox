@@ -8,52 +8,52 @@ include MusicList
 
 // Stupid blue rat game that was never good
 constant u8 SONIC_MUSIC_START = 1 // Windy Valley
-constant u8 SONIC_MUSIC_END = 7 // Big the Cat Lo-Fi
+constant u8 SONIC_MUSIC_END = 8 // Big the Cat Lo-Fi
 
 // Shin Megami Tensei; includes Persona subseries
-constant u8 MEGATEN_MUSIC_START = 8 // Life Will Change
-constant u8 MEGATEN_MUSIC_END = 13 // DDS2 3D Tokyo 1
+constant u8 MEGATEN_MUSIC_START = 9 // Life Will Change
+constant u8 MEGATEN_MUSIC_END = 14 // DDS2 3D Tokyo 1
 
 // Touhou Project (possibly move this to be with the other shoot 'em ups?)
-constant u8 TOUHOU_MUSIC_START = 14 // Eastern Tale of Mystical Romance
-constant u8 TOUHOU_MUSIC_END = 16 // Bad Apple!! (PC-98)
+constant u8 TOUHOU_MUSIC_START = 15 // Eastern Tale of Mystical Romance
+constant u8 TOUHOU_MUSIC_END = 18 // Bad Apple!! (PC-98)
 
 // Ys, AKA the GOAT 
-constant u8 YS_MUSIC_START = 17 // Tension
-constant u8 YS_MUSIC_END = 22 // Mountain Zone
+constant u8 YS_MUSIC_START = 19 // Tension
+constant u8 YS_MUSIC_END = 24 // Mountain Zone
 
 // Final Fantasy Music
-constant u8 FINAL_FANTASY_MUSIC_START = 23 // Protect the Espers
-constant u8 FINAL_FANTASY_MUSIC_END = 26 // Battle (FF9)
+constant u8 FINAL_FANTASY_MUSIC_START = 25 // Protect the Espers
+constant u8 FINAL_FANTASY_MUSIC_END = 28 // Battle (FF9)
 
 // Childhood Classics: music from kids' TV shows and stuff
-constant u8 NOSTALGIA_MUSIC_START = 27 // Captain Underpants
-constant u8 NOSTALGIA_MUSIC_END = 33 // Hyper Drive (opening theme song from Yu-Gi-Oh 5Ds)
+constant u8 NOSTALGIA_MUSIC_START = 29 // Captain Underpants
+constant u8 NOSTALGIA_MUSIC_END = 35 // Hyper Drive (opening theme song from Yu-Gi-Oh 5Ds)
 // Proposal: Reshuffle these categories to have Childhood Classics after all the video games
 
 // DonPachi Music
-constant u8 DONPACHI_MUSIC_START = 34 // East Asia
-constant u8 DONPACHI_MUSIC_END = 37 // Ran
+constant u8 DONPACHI_MUSIC_START = 36 // East Asia
+constant u8 DONPACHI_MUSIC_END = 39 // Ran
 
 // Misc. Shoot 'em ups
-constant u8 MISC_SHMUP_MUSIC_START = 38 // Bloody Battle
-constant u8 MISC_SHMUP_MUSIC_END = 40 // The Glacial Fortress
+constant u8 MISC_SHMUP_MUSIC_START = 40 // Bloody Battle
+constant u8 MISC_SHMUP_MUSIC_END = 42 // The Glacial Fortress
 
 // Misc. Fighting Games
-constant u8 MISC_FIGHTER_MUSIC_START = 41 // Conclusion (Sol Badguy VS Ky Kiske)
-constant u8 MISC_FIGHTER_MUSIC_END = 42 // Ryu's Stage (SFA3)
+constant u8 MISC_FIGHTER_MUSIC_START = 43 // Conclusion (Sol Badguy VS Ky Kiske)
+constant u8 MISC_FIGHTER_MUSIC_END = 44 // Ryu's Stage (SFA3)
 
 // Misc. Game Music
-constant u8 MISC_GAME_MUSIC_START = 43
-constant u8 MISC_GAME_MUSIC_END = 47
+constant u8 MISC_GAME_MUSIC_START = 45
+constant u8 MISC_GAME_MUSIC_END = 52
 
 // Misc/Ungroupable Music
-constant u8 UNGROUPABLE_MUSIC_START = 48
-constant u8 UNGROUPABLE_MUSIC_END = 50
+constant u8 UNGROUPABLE_MUSIC_START = 53
+constant u8 UNGROUPABLE_MUSIC_END = 56
 
 // Memes only has a start due to it being at the very back of the list
-constant u8 MEME_MUSIC_START = 51 // Grandad Theme Song
-constant u8 MEME_MUSIC_END = 54 // Buck Bumble
+constant u8 MEME_MUSIC_START = 57 // Grandad Theme Song
+constant u8 MEME_MUSIC_END = 60 // Buck Bumble
 
 
 // Configuration variables
