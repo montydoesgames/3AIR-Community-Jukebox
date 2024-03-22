@@ -8,7 +8,7 @@ include MusicList
 
 // Stupid blue rat game that was never good
 constant u8 SONIC_MUSIC_START = 1 // Windy Valley
-constant u8 SONIC_MUSIC_END = 7 // Big the Cat Lo-Fi
+constant u8 SONIC_MUSIC_END = 8 // Big the Cat Lo-Fi
 
 // Shin Megami Tensei; includes Persona subseries
 constant u8 MEGATEN_MUSIC_START = 8 // Life Will Change
@@ -16,7 +16,7 @@ constant u8 MEGATEN_MUSIC_END = 13 // DDS2 3D Tokyo 1
 
 // Touhou Project (possibly move this to be with the other shoot 'em ups?)
 constant u8 TOUHOU_MUSIC_START = 14 // Eastern Tale of Mystical Romance
-constant u8 TOUHOU_MUSIC_END = 16 // Bad Apple!! (PC-98)
+constant u8 TOUHOU_MUSIC_END = 17 // Bad Apple!! (PC-98)
 
 // Ys, AKA the GOAT 
 constant u8 YS_MUSIC_START = 17 // Tension
@@ -24,7 +24,7 @@ constant u8 YS_MUSIC_END = 22 // Mountain Zone
 
 // Final Fantasy Music
 constant u8 FINAL_FANTASY_MUSIC_START = 23 // Protect the Espers
-constant u8 FINAL_FANTASY_MUSIC_END = 26 // Battle (FF9)
+constant u8 FINAL_FANTASY_MUSIC_END = 27 // Battle (FF9)
 
 // Childhood Classics: music from kids' TV shows and stuff
 constant u8 NOSTALGIA_MUSIC_START = 27 // Captain Underpants
@@ -45,7 +45,7 @@ constant u8 MISC_FIGHTER_MUSIC_END = 42 // Ryu's Stage (SFA3)
 
 // Misc. Game Music
 constant u8 MISC_GAME_MUSIC_START = 43
-constant u8 MISC_GAME_MUSIC_END = 47
+constant u8 MISC_GAME_MUSIC_END = 49
 
 // Misc/Ungroupable Music
 constant u8 UNGROUPABLE_MUSIC_START = 48
