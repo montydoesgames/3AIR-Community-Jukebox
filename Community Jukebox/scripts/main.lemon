@@ -45,15 +45,15 @@ constant u8 MISC_FIGHTER_MUSIC_END = 44 // Ryu's Stage (SFA3)
 
 // Misc. Game Music
 constant u8 MISC_GAME_MUSIC_START = 45
-constant u8 MISC_GAME_MUSIC_END = 52
+constant u8 MISC_GAME_MUSIC_END = 54
 
 // Misc/Ungroupable Music
-constant u8 UNGROUPABLE_MUSIC_START = 53
-constant u8 UNGROUPABLE_MUSIC_END = 56
+constant u8 UNGROUPABLE_MUSIC_START = 55
+constant u8 UNGROUPABLE_MUSIC_END = 58
 
 // Memes only has a start due to it being at the very back of the list
-constant u8 MEME_MUSIC_START = 57 // Grandad Theme Song
-constant u8 MEME_MUSIC_END = 60 // Buck Bumble
+constant u8 MEME_MUSIC_START = 59 // Grandad Theme Song
+constant u8 MEME_MUSIC_END = 63 // Buck Bumble
 
 
 // Configuration variables
