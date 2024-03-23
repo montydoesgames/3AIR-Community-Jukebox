@@ -63,5 +63,8 @@
     "GiantDungeon(FF4)": { "File": "Giant Dungeon (FF4).ogg", "Type": "Music", "Name": "GiantDungeon(FF4)", "SoundTestVisibility": "Hidden" },
     "MainBossCastle(NewSMBDS)": { "File": "Main Boss Castle (NewSMB DS).ogg", "Type": "Music", "Name": "MainBossCastle(NewSMBDS)", "SoundTestVisibility": "Hidden" },
     "TheGrandFinale": { "File": "TheGrandFinale.ogg", "Type": "Music", "Name": "TheGrandFinale", "SoundTestVisibility": "Hidden" },
+    "GustyGardenGalaxy": { "File": "Gusty Garden Galaxy.ogg", "Type": "Music", "Name": "GustyGardenGalaxy", "SoundTestVisibility": "Hidden" },
     "Mr.DarkBattle": { "File": "Mr. Dark Battle.ogg", "Type": "Music", "Name": "Mr.DarkBattle", "SoundTestVisibility": "Hidden" },
+    "BFGDivision": { "File": "BFG Division", "Type": "Music", "Name": "BFGDivision", "SoundTestVisibility": "Hidden" },
+    "WhatismydestinyDragonBall": { "File": "What is my destiny Dragon Ball.ogg", "Type": "Music", "Name": "WhatismydestinyDragonBall", "SoundTestVisibility": "Hidden" },
 }
