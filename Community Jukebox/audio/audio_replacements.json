@@ -55,6 +55,13 @@
     "Big_the_Cat_Lofi": { "File": "Big_the_Cat_Lofi.ogg", "Type": "Music", "Name": "Big_the_Cat_Lofi", "SoundTestVisibility": "Hidden" },
     "The_Glacial_Fortress": { "File": "The_Glacial_Fortress.ogg", "Type": "Music", "Name": "The_Glacial_Fortress", "SoundTestVisibility": "Hidden" },
 
-    "BuckBumble": { "File": "BuckBumble.ogg", "Type": "Music", "Name": "Buck Bumble - Title Theme", "LoopStart": "329728" },    
+    "BuckBumble": { "File": "BuckBumble.ogg", "Type": "Music", "Name": "Buck Bumble - Title Theme", "LoopStart": "329728" },  
 
+    
+    "KnightoftheWind": { "File": "Knight of the Wind.ogg", "Type": "Music", "Name": "Knight of the Wind", "SoundTestVisibility": "Hidden" },
+    "ShanghaiScarletTeahouseChineseTea": { "File": "Shanghai Scarlet Teahouse Chinese Tea.ogg", "Type": "Music", "Name": "ShanghaiScarletTeahouseChineseTea", "SoundTestVisibility": "Hidden" },
+    "GiantDungeon(FF4)": { "File": "Giant Dungeon (FF4).ogg", "Type": "Music", "Name": "GiantDungeon(FF4)", "SoundTestVisibility": "Hidden" },
+    "MainBossCastle(NewSMBDS)": { "File": "Main Boss Castle (NewSMB DS).ogg", "Type": "Music", "Name": "MainBossCastle(NewSMBDS)", "SoundTestVisibility": "Hidden" },
+    "TheGrandFinale": { "File": "TheGrandFinale.ogg", "Type": "Music", "Name": "TheGrandFinale", "SoundTestVisibility": "Hidden" },
+    "Mr.DarkBattle": { "File": "Mr. Dark Battle.ogg", "Type": "Music", "Name": "Mr.DarkBattle", "SoundTestVisibility": "Hidden" },
 }
