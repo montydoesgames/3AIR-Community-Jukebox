@@ -44,4 +44,16 @@
     "Bloody_Battle_1":    { "File": "Bloody_Battle_1.png", "Rect": "0,0,91,12", "Center": "16,6" },
     "Big_the_Cat_Lofi":    { "File": "Big_the_Cat_Lofi.png", "Rect": "0,0,110,12", "Center": "16,6" },
     "The_Glacial_Fortress":    { "File": "The_Glacial_Fortress.png", "Rect": "0,0,110,12", "Center": "16,6" },
+
+    "KnightoftheWind":    { "File": "KnightoftheWind.png", "Rect": "0,0,92,12", "Center": "16,6" },
+    "ShanghaiScarletTeahouseChineseTea":    { "File": "ShanghaiScarletTeahouseChineseTea.png", "Rect": "0,0,80,24", "Center": "16,6" },
+"GiantDungeon(FF4)":    { "File": "GiantDungeon(FF4).png", "Rect": "0,0,92,12", "Center": "16,6" },
+"MainBossCastle(NewSMBDS)":    { "File": "MainBossCastle(NewSMBDS).png", "Rect": "0,0,80,24", "Center": "16,6" },
+"TheGrandFinale":    { "File": "TheGrandFinale.png", "Rect": "0,0,80,24", "Center": "16,6" },
+"GustyGardenGalaxy":    { "File": "GustyGardenGalaxy.png", "Rect": "0,0,80,24", "Center": "16,6" },
+"Mr.DarkBattle":    { "File": "Mr.DarkBattle.png", "Rect": "0,0,72,24", "Center": "16,6" },
+"BFGDivision":    { "File": "BFGDivision.png", "Rect": "0,0,72,24", "Center": "16,6" },
+"DROPTHEBOMB":    { "File": "DROPTHEBOMB.png", "Rect": "0,0,72,24", "Center": "16,6" },
+"WhatismydestinyDragonBall":    { "File": "WhatismydestinyDragonBall.png", "Rect": "0,0,80,24", "Center": "16,6" },
+
 }
