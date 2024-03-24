@@ -67,5 +67,5 @@
     "Mr.DarkBattle": { "File": "Mr. Dark Battle.ogg", "Type": "Music", "Name": "Mr.DarkBattle", "SoundTestVisibility": "Hidden" },
     "BFGDivision": { "File": "BFG Division.ogg", "Type": "Music", "Name": "BFGDivision", "SoundTestVisibility": "Hidden" },
     "DROPTHEBOMB": { "File": "DROP THE BOMB.ogg", "Type": "Music", "Name": "DROPTHEBOMB", "SoundTestVisibility": "Hidden" },
-    "The italian intro song for DBZ": { "File": "What is my destiny Dragon Ball.ogg", "Type": "Music", "Name": "WhatismydestinyDragonBall", "SoundTestVisibility": "Hidden" },
+    "What is my destiny Dragon Ball": { "File": "What is my destiny Dragon Ball.ogg", "Type": "Music", "Name": "The italian intro song for DBZ", "SoundTestVisibility": "Hidden" },
 }
