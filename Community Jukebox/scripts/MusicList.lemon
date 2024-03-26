@@ -51,6 +51,7 @@ constant array<string> CommunityJukebox_Music =
     "PeppaPigSong", // Proposal: Move this to the meme category because it contains an edited scream at the end and the sound test name calls it a "Fixed Version"
     "HotDogDance",
     "BrandyAndMrWhiskers",
+    "WhatismydestinyDragonBall", // The italian version of the opening theme song of Dragon Ball Z
     "HyperDrive",
 
     // DonPachi Music
@@ -90,7 +91,6 @@ constant array<string> CommunityJukebox_Music =
     "GrandpaThemeSong",
     "SMLCookieCrisp",
     "Pacmanthemesong", // Arabic version of the opening theme song to Pac-Man and the Ghostly Adventures; sound test name calls it a "Good Version" which suggests its inclusion is as a meme 
-    "WhatismydestinyDragonBall", // The italian version of the opening theme song of Dragon Ball Z
     "BuckBumble", // Does come from a game but it's being included mainly for laughs; should it be moved to the game music category?
 
 }
