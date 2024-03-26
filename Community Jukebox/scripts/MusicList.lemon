@@ -73,6 +73,7 @@ constant array<string> CommunityJukebox_Music =
     "MainBossCastle(NewSMBDS)",
     "TheGrandFinale",
     "GustyGardenGalaxy",
+    "GreenhornForest
     "HeartlessBeing",
     "AirCombat",
     "bandland",
