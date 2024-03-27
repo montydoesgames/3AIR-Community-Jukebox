@@ -58,10 +58,15 @@
     "BuckBumble": { "File": "BuckBumble.ogg", "Type": "Music", "Name": "Buck Bumble - Title Theme", "LoopStart": "329728" },  
 
     
-    "KnightoftheWind": { "File": "Knight of the Wind.ogg", "Type": "Music", "Name": "Knight of the Wind", "SoundTestVisibility": "Hidden" },
-    "ShanghaiScarletTeahouseChineseTea": { "File": "Shanghai Scarlet Teahouse Chinese Tea.ogg", "Type": "Music", "Name": "ShanghaiScarletTeahouseChineseTea", "SoundTestVisibility": "Hidden" },
+    "KnightoftheWind": { "File": "Knight of the Wind.ogg", "Type": "Music", "Name": "Main theme of Sonic and the Black Knight", "SoundTestVisibility": "Hidden" },
+    "ShanghaiScarletTeahouseChineseTea": { "File": "Shanghai Scarlet Teahouse Chinese Tea.ogg", "Type": "Music", "Name": "Meiling best 2hu", "SoundTestVisibility": "Hidden" },
     "GiantDungeon(FF4)": { "File": "Giant Dungeon (FF4).ogg", "Type": "Music", "Name": "GiantDungeon(FF4)", "SoundTestVisibility": "Hidden" },
+    "WhatismydestinyDragonBall": { "File": "What is my destiny Dragon Ball.ogg", "Type": "Music", "Name": "The italian theme song for DBZ", "SoundTestVisibility": "Hidden" },
     "MainBossCastle(NewSMBDS)": { "File": "Main Boss Castle (NewSMB DS).ogg", "Type": "Music", "Name": "MainBossCastle(NewSMBDS)", "SoundTestVisibility": "Hidden" },
     "TheGrandFinale": { "File": "TheGrandFinale.ogg", "Type": "Music", "Name": "TheGrandFinale", "SoundTestVisibility": "Hidden" },
+    "GustyGardenGalaxy": { "File": "Gusty Garden Galaxy.ogg", "Type": "Music", "Name": "GustyGardenGalaxy", "SoundTestVisibility": "Hidden" },
+    "GreenhornForest": { "File": "Greenhorn Forest.ogg", "Type": "Music", "Name": "GreenhornForest", "SoundTestVisibility": "Hidden" },
     "Mr.DarkBattle": { "File": "Mr. Dark Battle.ogg", "Type": "Music", "Name": "Mr.DarkBattle", "SoundTestVisibility": "Hidden" },
+    "BFGDivision": { "File": "BFG Division.ogg", "Type": "Music", "Name": "BFGDivision", "SoundTestVisibility": "Hidden" },
+    "DROPTHEBOMB": { "File": "DROP THE BOMB.ogg", "Type": "Music", "Name": "DROPTHEBOMB", "SoundTestVisibility": "Hidden" },
 }
