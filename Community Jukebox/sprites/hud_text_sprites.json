@@ -33,6 +33,10 @@
 
     "BadApplePC98":    { "File": "thisisyourfaultdoggy.png", "Rect": "0,0,92,12", "Center": "16,6" },
     "ThemeOfAdol1993":    { "File": "themeofadol.png", "Rect": "0,0,92,12", "Center": "16,6" },
+    "FieldOfGale":    { "File": "fieldofgale.png", "Rect": "0,0,92,12", "Center": "16,6" },
+    "MountainZone":    { "File": "mountainzone.png", "Rect": "0,0,92,12", "Center": "16,6" },
+    "RetributionForTheEternalNight":    { "File": "retribution.png", "Rect": "0,0,160,24", "Center": "16,12" },
+    "KyuuyakuTokyo": { "File": "tokyo.png", "Rect": "0,0,92,12", "Center": "16,6" },
     "Michi_1":    { "File": "Michi_1.png", "Rect": "0,0,72,12", "Center": "16,6" },
     "Magnolia_1":    { "File": "Magnolia_1.png", "Rect": "0,0,72,12", "Center": "16,6" },
     "Niji":    { "File": "Niji.png", "Rect": "0,0,72,12", "Center": "16,6" },
@@ -44,4 +48,5 @@
     "Bloody_Battle_1":    { "File": "Bloody_Battle_1.png", "Rect": "0,0,91,12", "Center": "16,6" },
     "Big_the_Cat_Lofi":    { "File": "Big_the_Cat_Lofi.png", "Rect": "0,0,110,12", "Center": "16,6" },
     "The_Glacial_Fortress":    { "File": "The_Glacial_Fortress.png", "Rect": "0,0,110,12", "Center": "16,6" },
+    "BuckBumble":    { "File": "buckbumble.png", "Rect": "0,0,72,12", "Center": "16,6" },
 }
