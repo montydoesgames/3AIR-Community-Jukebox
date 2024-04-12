@@ -7,7 +7,7 @@ function void JukeboxLyrics()
 {
 	lyricstimer += 1
 
-if (jukeboxplaying == 8)
+if (jukeboxplaying == 9)
 	LifeWillChange_Lyrics()
 }
 
