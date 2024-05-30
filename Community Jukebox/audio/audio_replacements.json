@@ -27,7 +27,7 @@
     "ManWithMachineGun": { "File": "ManWithMachineGun.ogg", "Type": "Music", "Name": "Final Fantasy 8 - The Man with the Machine Gun", "LoopStart": "258048" },
     "FF9Battle": { "File": "FF9Battle.ogg", "Type": "Music", "Name": "Final Fantasy 9 - Battle", "LoopStart": "258048" },
     "RyuAlpha3": { "File": "RyuAlpha3.ogg", "Type": "Music", "Name": "Street Fighter Alpha 3 - Ryu", "LoopStart": "673792" },
-    "VRTraining": { "File": "VRTraining.ogg", "Type": "Music", "Name": "Metal Gear Sonic - VR Training", "LoopStart": "473088" },
+    "VRTraining": { "File": "VRTraining.ogg", "Type": "Music", "Name": "Metal Gear Solid - VR Training", "LoopStart": "473088" },
     "WarpRoom": { "File": "WarpRoom.ogg", "Type": "Music", "Name": "Crash Bandicoot 3: Warped - Warp Room", "LoopStart": "444416" },
     "SMLCookieCrisp": { "File": "smlcookiecrisp.ogg", "Type": "Music", "Name": "SML Cookie Crisp", "SoundTestVisibility": "Hidden" },
     "Pacmanthemesong": { "File": "pacmanthemesong.ogg", "Type": "Music", "Name": "Pac Man Theme Song Good Version", "SoundTestVisibility": "Hidden" },
@@ -40,7 +40,10 @@
     "weekendwhip": { "File": "weekendwhip.ogg", "Type": "Music", "Name": "weekendwhip", "SoundTestVisibility": "Hidden" },
     "tombstone_arizzona": { "File": "tombstone_arizzona.ogg", "Type": "Music", "Name": "tombstone_arizzona", "SoundTestVisibility": "Hidden" },
     "KyuuyakuTokyo": { "File": "KyuuyakuTokyo.ogg", "Type": "Music", "Name": "Megami Tensei: The Old Testament - 3D Tokyo 1", "LoopStart": "0" }, // Will loop later
+    "FierceBattle": {"File": "ONEMOREGODREJECTED.ogg", "Type": "Music", "Name": "Shin Megami Tensei 3: Nocturne - Fierce Battle", "LoopStart": "946176"},
+    "Ikebukuro": {"File": "Ikebukuro.ogg", "Type": "Music", "Name": "Shin Megami Tensei 4 - Ikebukuro Underground District", "LoopStart": "200704"},
     "RetributionForTheEternalNight": { "File": "RetributionForTheEternalNight.ogg", "Type": "Music", "Name": "Touhou Eiyashou: Imperishable Night - Retribution for the Eternal Night ~ Imperishable Night", "LoopStart": "387072" },    
+    "LonePrayer": { "File": "RetributionForTheEternalNight.ogg", "Type": "Music", "Name": "Shin Megami Tensei: Persona (PSP) - A Lone Prayer", "LoopStart": "659456" },    
     "BadApplePC98": { "File": "BadApplePC98.ogg", "Type": "Music", "Name": "Touhou Gensoukyou ~ Lotus Land Story - Bad Apple!!", "LoopStart": "0" },    
 
     "Michi_1": { "File": "Michi_1.ogg", "Type": "Music", "Name": "Michi_1" },
