@@ -40,10 +40,14 @@
     "weekendwhip": { "File": "weekendwhip.ogg", "Type": "Music", "Name": "weekendwhip", "SoundTestVisibility": "Hidden" },
     "tombstone_arizzona": { "File": "tombstone_arizzona.ogg", "Type": "Music", "Name": "tombstone_arizzona", "SoundTestVisibility": "Hidden" },
     "KyuuyakuTokyo": { "File": "KyuuyakuTokyo.ogg", "Type": "Music", "Name": "Megami Tensei: The Old Testament - 3D Tokyo 1", "LoopStart": "0" }, // Will loop later
+    "Ginza": { "File": "Ginza.ogg", "Type": "Music", "Name": "Shin Megami Tensei - Ginza", "LoopStart": "0" },
+    "OldEnemy": {"File": "OldEnemy.ogg", "Type": "Music", "Name": "Shin Megami Tensei If... (PS1) - Old Enemy", "LoopStart": "946176"},
     "FierceBattle": {"File": "ONEMOREGODREJECTED.ogg", "Type": "Music", "Name": "Shin Megami Tensei 3: Nocturne - Fierce Battle", "LoopStart": "946176"},
     "Ikebukuro": {"File": "Ikebukuro.ogg", "Type": "Music", "Name": "Shin Megami Tensei 4 - Ikebukuro Underground District", "LoopStart": "200704"},
     "RetributionForTheEternalNight": { "File": "RetributionForTheEternalNight.ogg", "Type": "Music", "Name": "Touhou Eiyashou: Imperishable Night - Retribution for the Eternal Night ~ Imperishable Night", "LoopStart": "387072" },    
-    "LonePrayer": { "File": "RetributionForTheEternalNight.ogg", "Type": "Music", "Name": "Shin Megami Tensei: Persona (PSP) - A Lone Prayer", "LoopStart": "659456" },    
+    "LonePrayer": { "File": "LonePrayer.ogg", "Type": "Music", "Name": "Shin Megami Tensei: Persona (PSP) - A Lone Prayer", "LoopStart": "659456" },
+    "Kichijoji199X": { "File": "Kichijoji199X.ogg", "Type": "Music", "Name": "Persona 5 Royal - Kichijoji 199X", "LoopStart": "659456" },
+    
     "BadApplePC98": { "File": "BadApplePC98.ogg", "Type": "Music", "Name": "Touhou Gensoukyou ~ Lotus Land Story - Bad Apple!!", "LoopStart": "0" },    
 
     "Michi_1": { "File": "Michi_1.ogg", "Type": "Music", "Name": "Michi_1" },
@@ -59,7 +63,7 @@
     "The_Glacial_Fortress": { "File": "The_Glacial_Fortress.ogg", "Type": "Music", "Name": "The_Glacial_Fortress", "SoundTestVisibility": "Hidden" },
 
     "BuckBumble": { "File": "BuckBumble.ogg", "Type": "Music", "Name": "Buck Bumble - Title Theme", "LoopStart": "329728" },  
-
+    "JumpJumpJump": { "File": "JumpJumpJump.ogg", "Type": "Music", "Name": "Dance Dance Revolution: Mario Mix - Jump! Jump! Jump!", "LoopStart": "645120" },
     
     "KnightoftheWind": { "File": "Knight of the Wind.ogg", "Type": "Music", "Name": "Main theme of Sonic and the Black Knight", "SoundTestVisibility": "Hidden" },
     "ShanghaiScarletTeahouseChineseTea": { "File": "Shanghai Scarlet Teahouse Chinese Tea.ogg", "Type": "Music", "Name": "Meiling best 2hu", "SoundTestVisibility": "Hidden" },
