@@ -27,9 +27,9 @@
         		}
       		},
       		{
-        		"InternalName": "PersonaMusic",
-        		"DisplayName": "Persona/MGT Music",
-        		"Variable": "CommJukeMGTMusic",
+        		"InternalName": "MarioMusic",
+        		"DisplayName": "Mario Music",
+        		"Variable": "CommJukeMarioMusic",
         		"DefaultValue": "1",
         		"Options": 
 				{
@@ -37,10 +37,21 @@
           			"1": "On"
         		}
       		},
-            {
-        		"InternalName": "TouhouMusic",
-        		"DisplayName": "Touhou Music",
-        		"Variable": "CommJukeTouhouMusic",
+      		{
+        		"InternalName": "PersonaMusic",
+        		"DisplayName": "Persona Music",
+        		"Variable": "CommJukePersonaMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+      		{
+        		"InternalName": "MegaTenMusic",
+        		"DisplayName": "Megami Tensei Music",
+        		"Variable": "CommJukeMGTMusic",
         		"DefaultValue": "1",
         		"Options": 
 				{
@@ -74,6 +85,17 @@
         		"InternalName": "NostalgiaMusic",
         		"DisplayName": "\"Childhood Classics\" Music",
         		"Variable": "CommJukeNostalgiaMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+      		{
+        		"InternalName": "TouhouMusic",
+        		"DisplayName": "Touhou Music",
+        		"Variable": "CommJukeTouhouMusic",
         		"DefaultValue": "1",
         		"Options": 
 				{

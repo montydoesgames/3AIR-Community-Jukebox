@@ -12,6 +12,13 @@ constant array<string> CommunityJukebox_Music =
     "KnightoftheWind",
     "undefeatable",
     "Big_the_Cat_Lofi",
+    
+    // Mario Music
+    "JumpJumpJump",
+    "MainBossCastle(NewSMBDS)",
+    "TheGrandFinale",
+    "GustyGardenGalaxy",
+    "GreenhornForest",
 
     //Persona music
     "lifewillchange",
@@ -19,15 +26,14 @@ constant array<string> CommunityJukebox_Music =
     "TakeOver",
     "MassDestruction",
     "itsgoingdownnow",
+    "LonePrayer",
+    "Kichijoji199X",
     
     // Other SMT music
     "KyuuyakuTokyo",
-
-    //Touhou music; maybe move this down with the other shmups?
-    "EasternMysticalTaleOfRomance",
-    "RetributionForTheEternalNight",
-    "ShanghaiScarletTeahouseChineseTea",
-    "BadApplePC98",
+    "Ginza",
+    "FierceBattle",
+    "Ikebukuro",
 
     // Ys music
     "Tension",    
@@ -54,6 +60,12 @@ constant array<string> CommunityJukebox_Music =
     "WhatismydestinyDragonBall", // The italian version of the opening theme song of Dragon Ball Z
     "HyperDrive",
 
+    //Touhou music; maybe move this down with the other shmups?
+    "EasternMysticalTaleOfRomance",
+    "RetributionForTheEternalNight",
+    "ShanghaiScarletTeahouseChineseTea",
+    "BadApplePC98",
+    
     // DonPachi Music
     "East_Asia",
     "Michi_1",
@@ -70,10 +82,6 @@ constant array<string> CommunityJukebox_Music =
     "ryualpha3", // Street Fighter Alpha 3
 
     // Other Game Music
-    "MainBossCastle(NewSMBDS)",
-    "TheGrandFinale",
-    "GustyGardenGalaxy",
-    "GreenhornForest",
     "HeartlessBeing",
     "AirCombat",
     "bandland",
