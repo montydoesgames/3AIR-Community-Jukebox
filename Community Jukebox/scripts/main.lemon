@@ -24,44 +24,44 @@ constant u8 MEGATEN_MUSIC_END = 24 // Ikebukuro Undeground District
 
 // Ys, AKA the GOAT 
 constant u8 YS_MUSIC_START = 25// Tension
-constant u8 YS_MUSIC_END = 30 // Mountain Zone
+constant u8 YS_MUSIC_END = 31 // Mother Earth Altago
 
 // Final Fantasy Music
-constant u8 FINAL_FANTASY_MUSIC_START = 31 // Protect the Espers
-constant u8 FINAL_FANTASY_MUSIC_END = 35 // Battle (FF9)
+constant u8 FINAL_FANTASY_MUSIC_START = 32 // Protect the Espers
+constant u8 FINAL_FANTASY_MUSIC_END = 36 // Battle (FF9)
 
 // Childhood Classics: music from kids' TV shows and stuff
-constant u8 NOSTALGIA_MUSIC_START = 36 // Captain Underpants
-constant u8 NOSTALGIA_MUSIC_END = 43 // Hyper Drive (opening theme song from Yu-Gi-Oh 5Ds)
+constant u8 NOSTALGIA_MUSIC_START = 37 // Captain Underpants
+constant u8 NOSTALGIA_MUSIC_END = 44 // Hyper Drive (opening theme song from Yu-Gi-Oh 5Ds)
 // Proposal: Reshuffle these categories to have Childhood Classics after all the video games
 
 // Touhou Project (can also include unnofical installments)
-constant u8 TOUHOU_MUSIC_START = 44 // Eastern Tale of Mystical Romance
-constant u8 TOUHOU_MUSIC_END = 47 // Bad Apple!! (PC-98)
+constant u8 TOUHOU_MUSIC_START = 45 // Eastern Tale of Mystical Romance
+constant u8 TOUHOU_MUSIC_END = 48 // Bad Apple!! (PC-98)
 
 // DonPachi Music
-constant u8 DONPACHI_MUSIC_START = 48 // East Asia
-constant u8 DONPACHI_MUSIC_END = 51 // Ran
+constant u8 DONPACHI_MUSIC_START = 49 // East Asia
+constant u8 DONPACHI_MUSIC_END = 52 // Ran
 
 // Misc. Shoot 'em ups
-constant u8 MISC_SHMUP_MUSIC_START = 52 // Bloody Battle
-constant u8 MISC_SHMUP_MUSIC_END = 54 // The Glacial Fortress
+constant u8 MISC_SHMUP_MUSIC_START = 53 // Bloody Battle
+constant u8 MISC_SHMUP_MUSIC_END = 55 // The Glacial Fortress
 
 // Misc. Fighting Games
-constant u8 MISC_FIGHTER_MUSIC_START = 55 // Conclusion (Sol Badguy VS Ky Kiske)
-constant u8 MISC_FIGHTER_MUSIC_END = 56 // Ryu's Stage (SFA3)
+constant u8 MISC_FIGHTER_MUSIC_START = 56 // Conclusion (Sol Badguy VS Ky Kiske)
+constant u8 MISC_FIGHTER_MUSIC_END = 57 // Ryu's Stage (SFA3)
 
 // Misc. Game Music
-constant u8 MISC_GAME_MUSIC_START = 57 // Heartless Being
-constant u8 MISC_GAME_MUSIC_END = 63
+constant u8 MISC_GAME_MUSIC_START = 58 // Heartless Being
+constant u8 MISC_GAME_MUSIC_END = 64
 
 // Misc/Ungroupable Music
-constant u8 UNGROUPABLE_MUSIC_START = 64
-constant u8 UNGROUPABLE_MUSIC_END = 67
+constant u8 UNGROUPABLE_MUSIC_START = 65
+constant u8 UNGROUPABLE_MUSIC_END = 68
 
 // Meme/Joke Music; located at the back due to the fact that humour is highly subjective
-constant u8 MEME_MUSIC_START = 68 // Grandad Theme Song
-constant u8 MEME_MUSIC_END = 71 // Buck Bumble
+constant u8 MEME_MUSIC_START = 69 // Grandad Theme Song
+constant u8 MEME_MUSIC_END = 72 // Buck Bumble
 
 
 // Configuration variables
@@ -99,10 +99,10 @@ function void Standalone.playAudio(u8 sfxId)
 //# address-hook(0x003af0) end(0x003b12)
 function void Menu.FadeInAfterInit()
 {
-jukebox_isplaying = false
-jukeboxplaying = 0
+    jukebox_isplaying = false
+    jukeboxplaying = 0
 
-base.Menu.FadeInAfterInit()
+    base.Menu.FadeInAfterInit()
 }
 
 
@@ -211,6 +211,7 @@ function void CommunityJukebox.SkipSeries() // Suggestion: Possibly make this us
         jukeboxplaying = MY_CATEGORY_MUSIC_START + 1
 
     */
+    // ShadowXeldron speaking, I should probably look into a more optimal way of doing this
 
     if !(CommJukeSonicMusic) && (jukeboxplaying == SONIC_MUSIC_START)
         jukeboxplaying = SONIC_MUSIC_END + 1

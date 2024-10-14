@@ -42,6 +42,7 @@ constant array<string> CommunityJukebox_Music =
     "ThemeOfAdol1993",
     "FieldOfGale",
     "MountainZone",
+    "MotherEarthAltago",
 
     // Final Fantasy music
     "protecttheespers",
