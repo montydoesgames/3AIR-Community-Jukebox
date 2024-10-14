@@ -120,6 +120,13 @@ constant array<string> CommunityJukebox_Names =
     "Knight of the Wind",
     "Undefeatable",
     "Big the Cat Lo-Fi",
+    
+    // Mario Music
+    "Jump Jump Jump!",
+    "Main Boss Castle (NSMB)",
+    "The Grand Finale",
+    "Gusty Garden Galaxy",
+    "Greenhorn Forest",
 
     //Persona music
     "Life Will Change",
@@ -127,15 +134,20 @@ constant array<string> CommunityJukebox_Names =
     "Take Over",
     "Mass Destruction",
     "It's Going Down Now",
+    "A Lone Prayer",
+    "Kichijoji 199X",
     
     // Other SMT music
-    "Kyuuyaku Tokyo",
+    "Explorer ~ Closed Off City",
+    "Ginza",
+    "Fierce Battle",
+    "Ikebukuro Underground District",
 
     //Touhou music; maybe move this down with the other shmups?
     "Eastern Mystical Tale Of Romance",
     "Retribution For The Eternal Night",
     "Shanghai Scarlet Teahouse Chinese Tea",
-    "Bad Apple (PC98)",
+    "Bad Apple (PC-98)",
 
     // Ys music
     "Tension",    
@@ -147,9 +159,9 @@ constant array<string> CommunityJukebox_Names =
 
     // Final Fantasy music
     "Protect The Espers",
-    "Giant Dungeon (FF4)",
+    "Within the Giant",
     "Crazy Motorcycle Chase",
-    "Man With Machine Gun",
+    "The Man With the Machine Gun",
     "Battle (FF9)",
 
     // "Childhold classics" music
@@ -178,13 +190,9 @@ constant array<string> CommunityJukebox_Names =
     "Ryu (Alpha 3)", // Street Fighter Alpha 3
 
     // Other Game Music
-    "Main Boss Castle (NSMB)",
-    "The Grand Finale",
-    "Gusty Garden Galaxy",
-    "Greenhorn Forest",
     "Heartless Being",
     "Air Combat",
-    "Bandland",
+    "Band Land",
     "Mr. Dark Battle",
     "BFG Division",
     "VR Training",
