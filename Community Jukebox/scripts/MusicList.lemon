@@ -1,3 +1,4 @@
+//Sprite key / Sound key
 constant array<string> CommunityJukebox_Music =
 {
     //Jukebox is not on
@@ -102,5 +103,103 @@ constant array<string> CommunityJukebox_Music =
     "SMLCookieCrisp",
     "Pacmanthemesong", // Arabic version of the opening theme song to Pac-Man and the Ghostly Adventures; sound test name calls it a "Good Version" which suggests its inclusion is as a meme 
     "BuckBumble", // Does come from a game but it's being included mainly for laughs; should it be moved to the game music category?
+
+}
+
+// Name for the menu
+constant array<string> CommunityJukebox_Names =
+{
+	"Off",
+
+	//Sonic
+	"The Air... For Windy Valley",
+	"City Escape Act 1"
+	"Open Your Heart",
+	"Live and Learn",
+    "Sonic Heroes",
+    "Knight of the Wind",
+    "Undefeatable",
+    "Big the Cat Lo-Fi",
+
+    //Persona music
+    "Life Will Change",
+    "Last Surprise",
+    "Take Over",
+    "Mass Destruction",
+    "It's Going Down Now",
+    
+    // Other SMT music
+    "Kyuuyaku Tokyo",
+
+    //Touhou music; maybe move this down with the other shmups?
+    "Eastern Mystical Tale Of Romance",
+    "Retribution For The Eternal Night",
+    "Shanghai Scarlet Teahouse Chinese Tea",
+    "Bad Apple (PC98)",
+
+    // Ys music
+    "Tension",    
+    "Ice Ridge Of Noltia",
+    "Burning Fight",
+    "Theme Of Adol 1993",
+    "Field Of Gale",
+    "Mountain Zone",
+
+    // Final Fantasy music
+    "Protect The Espers",
+    "Giant Dungeon (FF4)",
+    "Crazy Motorcycle Chase",
+    "Man With Machine Gun",
+    "Battle (FF9)",
+
+    // "Childhold classics" music
+    "Captain Underpants Theme",
+    "FNAF 1 Song",
+    "Weekend Whip",
+    "Peppa Pig Intro", // Proposal: Move this to the meme category because it contains an edited scream at the end and the sound test name calls it a "Fixed Version"
+    "Hot Dog Dance",
+    "Brandy And Mr. Whiskers",
+    "What Is My Destiny - Dragon Ball", // The italian version of the opening theme song of Dragon Ball Z
+    "Hyper Drive",
+
+    // DonPachi Music
+    "East Asia",
+    "Michi",
+	"Niji",    
+	"Ran",
+
+    // Misc. shoot 'em up music
+    "Bloody Battle", // Einhänder - did you know that Square Enix made a shmup?
+    "Silver Lining", // Eschatos
+    "The Glacial Fortress", // Omega Five
+
+    // Misc. fighting game music
+    "Conclusion", // Guilty Gear: The Missing Link
+    "Ryu (Alpha 3)", // Street Fighter Alpha 3
+
+    // Other Game Music
+    "Main Boss Castle (NSMB)",
+    "The Grand Finale",
+    "Gusty Garden Galaxy",
+    "Greenhorn Forest",
+    "Heartless Being",
+    "Air Combat",
+    "Bandland",
+    "Mr. Dark Battle",
+    "BFG Division",
+    "VR Training",
+    "Warp Room",
+
+    //Misc and ungroupable music
+    "Tombstone Arizzona",
+    "DROP THE BOMB",
+	"Magnolia", // Original song; TODO: Find author
+	"Super Reflex", // Megalomanchia2
+
+    // Memes
+    "Grandpa Theme Song",
+    "SML Cookie Crisp",
+    "Pac-Man and the Ghostly Adventures (Arabic)", // Arabic version of the opening theme song to Pac-Man and the Ghostly Adventures; sound test name calls it a "Good Version" which suggests its inclusion is as a meme 
+    "Buck Bumble", // Does come from a game but it's being included mainly for laughs; should it be moved to the game music category?
 
 }
