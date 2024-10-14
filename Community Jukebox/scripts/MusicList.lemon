@@ -35,6 +35,7 @@ constant array<string> CommunityJukebox_Music =
     "Ginza",
     "FierceBattle",
     "Ikebukuro",
+    "OldEnemy",
 
     // Ys music
     "Tension",    
@@ -123,7 +124,7 @@ constant array<string> CommunityJukebox_Names =
     
     // Mario Music
     "Jump Jump Jump!",
-    "Main Boss Castle (NSMB)",
+    "Main Boss Castle (NewSMBDS)",
     "The Grand Finale",
     "Gusty Garden Galaxy",
     "Greenhorn Forest",
@@ -142,12 +143,7 @@ constant array<string> CommunityJukebox_Names =
     "Ginza",
     "Fierce Battle",
     "Ikebukuro Underground District",
-
-    //Touhou music; maybe move this down with the other shmups?
-    "Eastern Mystical Tale Of Romance",
-    "Retribution For The Eternal Night",
-    "Shanghai Scarlet Teahouse Chinese Tea",
-    "Bad Apple (PC-98)",
+    "Old Enemy",
 
     // Ys music
     "Tension",    
@@ -173,6 +169,12 @@ constant array<string> CommunityJukebox_Names =
     "Brandy And Mr. Whiskers",
     "What Is My Destiny - Dragon Ball", // The italian version of the opening theme song of Dragon Ball Z
     "Hyper Drive",
+    
+    //Touhou music; maybe move this down with the other shmups?
+    "Eastern Mystical Tale Of Romance",
+    "Retribution For The Eternal Night",
+    "Shanghai Scarlet Teahouse Chinese Tea",
+    "Bad Apple (PC-98)",
 
     // DonPachi Music
     "East Asia",
@@ -185,7 +187,7 @@ constant array<string> CommunityJukebox_Names =
     "Silver Lining", // Eschatos
     "The Glacial Fortress", // Omega Five
 
-    // Misc. fighting game music
+    // Misc. fighting game music (there's only two tracks in this category - do we remove it?)
     "Conclusion", // Guilty Gear: The Missing Link
     "Ryu (Alpha 3)", // Street Fighter Alpha 3
 
