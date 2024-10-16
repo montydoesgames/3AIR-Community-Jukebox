@@ -27,6 +27,7 @@
     "manwithmachinegun":    { "File": "manwithmachinegun.png", "Rect": "0,0,130,12", "Center": "16,6" },
     "protecttheespers":    { "File": "savethem.png", "Rect": "0,0,92,12", "Center": "16,6" },
     "FierceBattle":    { "File": "FierceBattle.png", "Rect": "0,0,92,12", "Center": "16,6" },
+    "ToBeFree":    { "File": "ToBeFree.png", "Rect": "0,0,92,12", "Center": "16,6" },
     
     // "No. I am not doing the memes. Leave me in peace."
 

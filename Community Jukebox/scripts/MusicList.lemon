@@ -45,6 +45,7 @@ constant array<string> CommunityJukebox_Music =
     "FieldOfGale",
     "MountainZone",
     "MotherEarthAltago",
+    "ToBeFree",
 
     // Final Fantasy music
     "protecttheespers",
@@ -114,7 +115,7 @@ constant array<string> CommunityJukebox_Names =
 
 	//Sonic
 	"The Air... For Windy Valley",
-	"City Escape Act 1"
+	"City Escape Act 1",
 	"Open Your Heart",
 	"Live and Learn",
     "Sonic Heroes",
@@ -152,6 +153,7 @@ constant array<string> CommunityJukebox_Names =
     "Theme Of Adol 1993",
     "Field Of Gale",
     "Mountain Zone",
+    "To Be Free",
 
     // Final Fantasy music
     "Protect The Espers",
