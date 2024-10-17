@@ -20,48 +20,48 @@ constant u8 PERSONA_MUSIC_END = 20 // Kichijoji 199X
 
 // Shin Megami Tensei; excludes Persona subseries
 constant u8 MEGATEN_MUSIC_START = 21 // 3D: Tokyo 1 (Kyuuyaku)
-constant u8 MEGATEN_MUSIC_END = 24 // Ikebukuro Undeground District
+constant u8 MEGATEN_MUSIC_END = 25 // Old Enemy
 
 // Ys, AKA the GOAT 
-constant u8 YS_MUSIC_START = 25// Tension
-constant u8 YS_MUSIC_END = 33 // To Be Free
+constant u8 YS_MUSIC_START = 26 // Tension
+constant u8 YS_MUSIC_END = 34 // To Be Free
 
 // Final Fantasy Music
-constant u8 FINAL_FANTASY_MUSIC_START = 34 // Protect the Espers
-constant u8 FINAL_FANTASY_MUSIC_END = 38 // Battle (FF9)
+constant u8 FINAL_FANTASY_MUSIC_START = 35 // Protect the Espers
+constant u8 FINAL_FANTASY_MUSIC_END = 39 // Battle (FF9)
 
 // Childhood Classics: music from kids' TV shows and stuff
-constant u8 NOSTALGIA_MUSIC_START = 39 // Captain Underpants
-constant u8 NOSTALGIA_MUSIC_END = 46 // Hyper Drive (opening theme song from Yu-Gi-Oh 5Ds)
+constant u8 NOSTALGIA_MUSIC_START = 40 // Captain Underpants
+constant u8 NOSTALGIA_MUSIC_END = 47 // Hyper Drive (opening theme song from Yu-Gi-Oh 5Ds)
 // Proposal: Reshuffle these categories to have Childhood Classics after all the video games
 
 // Touhou Project (can also include unnofical installments)
-constant u8 TOUHOU_MUSIC_START = 47 // Eastern Tale of Mystical Romance
-constant u8 TOUHOU_MUSIC_END = 50 // Bad Apple!! (PC-98)
+constant u8 TOUHOU_MUSIC_START = 48 // Eastern Tale of Mystical Romance
+constant u8 TOUHOU_MUSIC_END = 51 // Bad Apple!! (PC-98)
 
 // DonPachi Music
-constant u8 DONPACHI_MUSIC_START = 51 // East Asia
-constant u8 DONPACHI_MUSIC_END = 54 // Ran
+constant u8 DONPACHI_MUSIC_START = 52 // East Asia
+constant u8 DONPACHI_MUSIC_END = 55 // Ran
 
 // Misc. Shoot 'em ups
-constant u8 MISC_SHMUP_MUSIC_START = 55 // Bloody Battle
-constant u8 MISC_SHMUP_MUSIC_END = 57 // The Glacial Fortress
+constant u8 MISC_SHMUP_MUSIC_START = 56 // Bloody Battle
+constant u8 MISC_SHMUP_MUSIC_END = 58 // The Glacial Fortress
 
 // Misc. Fighting Games
-constant u8 MISC_FIGHTER_MUSIC_START = 58 // Conclusion (Sol Badguy VS Ky Kiske)
-constant u8 MISC_FIGHTER_MUSIC_END = 59 // Ryu's Stage (SFA3)
+constant u8 MISC_FIGHTER_MUSIC_START = 59 // Conclusion (Sol Badguy VS Ky Kiske)
+constant u8 MISC_FIGHTER_MUSIC_END = 60 // Ryu's Stage (SFA3)
 
 // Misc. Game Music
-constant u8 MISC_GAME_MUSIC_START = 60 // Heartless Being
-constant u8 MISC_GAME_MUSIC_END = 66
+constant u8 MISC_GAME_MUSIC_START = 61 // Heartless Being
+constant u8 MISC_GAME_MUSIC_END = 67
 
 // Misc/Ungroupable Music
-constant u8 UNGROUPABLE_MUSIC_START = 67
-constant u8 UNGROUPABLE_MUSIC_END = 70
+constant u8 UNGROUPABLE_MUSIC_START = 68
+constant u8 UNGROUPABLE_MUSIC_END = 71
 
 // Meme/Joke Music; located at the back due to the fact that humour is highly subjective
-constant u8 MEME_MUSIC_START = 71 // Grandad Theme Song
-constant u8 MEME_MUSIC_END = 73 // Buck Bumble
+constant u8 MEME_MUSIC_START = 72 // Grandad Theme Song
+constant u8 MEME_MUSIC_END = 75 // Buck Bumble
 
 
 // Configuration variables
