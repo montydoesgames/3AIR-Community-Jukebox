@@ -45,6 +45,7 @@ constant array<string> CommunityJukebox_Music =
     "FieldOfGale",
     "MountainZone",
     "MotherEarthAltago",
+    "IclucianDance",
     "ToBeFree",
 
     // Final Fantasy music
@@ -153,6 +154,8 @@ constant array<string> CommunityJukebox_Names =
     "Theme Of Adol 1993",
     "Field Of Gale",
     "Mountain Zone",
+    "Mother Earth Altago",
+    "Iclucian Dance",
     "To Be Free",
 
     // Final Fantasy music

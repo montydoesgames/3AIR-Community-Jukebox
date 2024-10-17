@@ -19,6 +19,7 @@
     "FieldOfGale": { "File": "FieldOfGale.ogg", "Type": "Music", "Name": "Ys 5 - Field of Gale", "LoopStart": "0" }, // Will loop later
     "MountainZone": { "File": "MountainZone.ogg", "Type": "Music", "Name": "Ys 6 - Mountain Zone", "LoopStart": "365625" },
     "MotherEarthAltago": { "File": "MotherEarthAltago.ogg", "Type": "Music", "Name": "Ys 7 - Mother Earth Altago", "LoopStart": "0" },
+    "IclucianDance": { "File": "IclucianDance.ogg", "Type": "Music", "Name": "Ys 8 - Iclucian Dance", "LoopStart": "86016" },
     "ToBeFree": { "File": "ToBeFree.ogg", "Type": "Music", "Name": "Ys 10 - To Be Free", "LoopStart": "0" },
     "CaptainUnderpantsMusic": { "File": "captainunderpants.ogg", "Type": "Music", "Name": "Captain Underpants Music dont listen to the other songs", "SoundTestVisibility": "Hidden" },
     "GrandpaThemeSong": { "File": "grandpathemesong.ogg", "Type": "Music", "Name": "Grandpa Theme Song", "SoundTestVisibility": "Hidden" },
