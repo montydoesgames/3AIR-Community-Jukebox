@@ -1,0 +1,6 @@
+{
+    "JukeboxBG_Base3K":    { "File": "Base3K.png", "Center": "248,112" },
+    "JukeboxBG_Sonic":    { "File": "Sonic.png", "Center": "248,112" },
+    "JukeboxBG_Persona":    { "File": "Persona.png", "Center": "248,112" },
+    "JukeboxBG_Splatoon":    { "File": "Splatoon.png", "Center": "248,112" },
+}
