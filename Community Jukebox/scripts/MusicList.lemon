@@ -155,7 +155,6 @@ constant array<string> CommunityJukebox_Names =
     "Fierce Battle",
     "Ikebukuro Underground District",
     "Old Enemy",
-    "Kyuuyaku Tokyo",
 
     // Splatoon
     "Seaskape",

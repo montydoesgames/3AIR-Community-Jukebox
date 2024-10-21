@@ -49,27 +49,27 @@ constant u8 TOUHOU_MUSIC_END = 58 // Bad Apple!! (PC-98)
 
 // DonPachi Music
 constant u8 DONPACHI_MUSIC_START = 59 // East Asia
-constant u8 DONPACHI_MUSIC_END = 60 // Ran
+constant u8 DONPACHI_MUSIC_END = 62 // Ran
 
 // Misc. Shoot 'em ups
-constant u8 MISC_SHMUP_MUSIC_START = 61 // Bloody Battle
-constant u8 MISC_SHMUP_MUSIC_END = 62 // The Glacial Fortress
+constant u8 MISC_SHMUP_MUSIC_START = 63 // Bloody Battle
+constant u8 MISC_SHMUP_MUSIC_END = 65 // The Glacial Fortress
 
 // Misc. Fighting Games. This category is small so I might remove it.
-constant u8 MISC_FIGHTER_MUSIC_START = 63 // Conclusion (Sol Badguy VS Ky Kiske)
-constant u8 MISC_FIGHTER_MUSIC_END = 64 // Ryu's Stage (SFA3)
+constant u8 MISC_FIGHTER_MUSIC_START = 66 // Conclusion (Sol Badguy VS Ky Kiske)
+constant u8 MISC_FIGHTER_MUSIC_END = 67 // Ryu's Stage (SFA3)
 
 // Misc. Game Music
-constant u8 MISC_GAME_MUSIC_START = 65 // Heartless Being
+constant u8 MISC_GAME_MUSIC_START = 68 // Heartless Being
 constant u8 MISC_GAME_MUSIC_END = 74 // Warp Room
 
 // Misc/Ungroupable Music
 constant u8 UNGROUPABLE_MUSIC_START = 75 // Tombstone Arizzona. This might actually meant be in misc games?
-constant u8 UNGROUPABLE_MUSIC_END = 78 //
+constant u8 UNGROUPABLE_MUSIC_END = 78 // Super Reflex 1
 
 // Meme/Joke Music; located at the back due to the fact that humour is highly subjective
 constant u8 MEME_MUSIC_START = 79 // Grandad Theme Song
-constant u8 MEME_MUSIC_END = 81 // Buck Bumble
+constant u8 MEME_MUSIC_END = 82 // Buck Bumble
 
 
 // Configuration variables
@@ -86,6 +86,7 @@ global u8 CommJukeSplatoonMusic
 global u8 CommJukeYsMusic
 global u8 CommJukeFinalFantasyMusic
 global u8 CommJukeNostalgiaMusic
+global u8 CommJukeTouhouMusic
 global u8 CommJukeDonPachiMusic
 global u8 CommJukeShmupMusic
 global u8 CommJukeFightingMusic

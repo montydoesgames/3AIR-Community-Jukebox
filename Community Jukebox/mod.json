@@ -42,6 +42,7 @@
       		{
         		"InternalName": "MarioMusic",
         		"DisplayName": "Mario Music",
+        		"Category": "Frontiers-Style: Category Toggle",
         		"Variable": "CommJukeMarioMusic",
         		"DefaultValue": "1",
         		"Options": 
@@ -53,6 +54,7 @@
       		{
         		"InternalName": "PersonaMusic",
         		"DisplayName": "Persona Music",
+        		"Category": "Frontiers-Style: Category Toggle",
         		"Variable": "CommJukePersonaMusic",
         		"DefaultValue": "1",
         		"Options": 
@@ -64,6 +66,7 @@
       		{
         		"InternalName": "MegaTenMusic",
         		"DisplayName": "Megami Tensei Music",
+        		"Category": "Frontiers-Style: Category Toggle",
         		"Variable": "CommJukeMGTMusic",
 				"Options":
 				{
@@ -122,6 +125,7 @@
       		{
         		"InternalName": "TouhouMusic",
         		"DisplayName": "Touhou Music",
+        		"Category": "Frontiers-Style: Category Toggle",
         		"Variable": "CommJukeTouhouMusic",
         		"DefaultValue": "1",
         		"Options": 
