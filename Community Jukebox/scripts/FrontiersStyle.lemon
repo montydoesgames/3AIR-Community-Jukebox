@@ -1,0 +1,60 @@
+function void CommunityJukebox.Frontiers(u8 gamemode)
+{
+    /*
+    gamemode values:
+        0 - Main Game
+        1 - Competition Mode
+        2 - Blue Spheres
+    */
+
+		s16 baseX = gamemode == 3 ? global.level_started + 1 : global.level_started
+	if (baseX < 0)
+	{
+		baseX += 8
+		global.level_started = baseX
+	}
+	baseX += 0x0f
+	u16 renderQueue = 0xe000
+
+    	if (Input.buttonPressed(BUTTON_L) || Input.buttonPressed(BUTTON_R)) && (level.framecounter & 0x04)
+    	{
+    	    jukebox_isplaying = true
+        	jukeboxplaying = (Input.buttonPressed(BUTTON_L)) ? ((jukeboxplaying == 0) ? (CommunityJukebox_Music.length() - 1) : (jukeboxplaying - 1)) : (jukeboxplaying + 1)
+        	
+            if (jukeboxplaying > CommunityJukebox_Music.length() - 1)
+            	jukeboxplaying = 0
+            u8 SkipCount = 1
+
+            while (SkipCount < CommunityJukebox_Music.length())
+            {
+				CommunityJukebox.SkipSeries()
+				SkipCount += 1
+			}
+        	if !(Audio.isPlayingAudio(CommunityJukebox_Music[jukeboxplaying]))
+        	{
+				Audio.playAudio(CommunityJukebox_Music[jukeboxplaying], AudioContext.CONTEXT_MUSIC)
+         		jukeboxtimer = 2400
+        	}
+        	if jukeboxplaying == 0
+        	{
+        	    jukebox_isplaying = false
+        	    Audio.playAudio(MUSIC_CTRL_STOP, AudioContext.CONTEXT_MUSIC)
+        	    chooseFittingMusic()
+         		jukeboxtimer = 2400
+        	}
+    	}
+
+    if jukeboxtimer > 0
+    {
+        --jukeboxtimer
+        if (Renderer.hasCustomSprite(CommunityJukebox_Music[jukeboxplaying]))
+    	    HUD.drawSprite(CommunityJukebox_Music[jukeboxplaying], baseX, 0x80, renderQueue)
+    	else //Fallback
+            Renderer.drawText("oxyfont_small", baseX, 0x80, stringformat("Now playing: %s", CommunityJukebox_Names[jukeboxplaying]), 0xffffffff, 1, 0, 0xe000, 0)
+    }
+
+    #if COMMJUKE_SHOW_TRACKID
+    Renderer.drawText("oxyfont_small", 10, 190, stringformat("Track No.: %02d", jukeboxplaying), 0xffffffff, 1, 0, 0xe000, 0)
+    Renderer.drawText("oxyfont_small", 10, 180, stringformat("Time: %d", System.getGlobalVariableValueByName("lyricstimer")), 0xffffffff, 1, 0, 0xe000, 0)
+    #endif
+}

@@ -24,11 +24,14 @@ constant array<string> CommunityJukebox_Music =
     // Other SMT music
     "KyuuyakuTokyo",
 
-    //Touhou music; maybe move this down with the other shmups?
-    "EasternMysticalTaleOfRomance",
-    "RetributionForTheEternalNight",
-    "ShanghaiScarletTeahouseChineseTea",
-    "BadApplePC98",
+    // Splatoon music
+    "Seaskape",
+    "SplattackCSide",
+    "EightLeggedAdvance",
+    "CityOfColour",
+    "CalamariInkantation",
+    "SpectrumObligato_EbbAndFlow_OutOfOrder",
+    "RainbowColorInkantation",
 
     // Ys music
     "Tension",    
@@ -65,6 +68,10 @@ constant array<string> CommunityJukebox_Music =
     "Bloody_Battle_1", // Einhänder - did you know that Square Enix made a shmup?
     "Silver_Lining_1", // Eschatos
     "The_Glacial_Fortress", // Omega Five
+    "EasternMysticalTaleOfRomance",
+    "RetributionForTheEternalNight",
+    "ShanghaiScarletTeahouseChineseTea",
+    "BadApplePC98",
 
     // Misc. fighting game music
     "conclusion", // Guilty Gear: The Missing Link
@@ -104,7 +111,7 @@ constant array<string> CommunityJukebox_Names =
 
 	//Sonic
 	"The Air... For Windy Valley",
-	"City Escape Act 1"
+	"City Escape Act 1",
 	"Open Your Heart",
 	"Live and Learn",
     "Sonic Heroes",
@@ -122,11 +129,14 @@ constant array<string> CommunityJukebox_Names =
     // Other SMT music
     "Kyuuyaku Tokyo",
 
-    //Touhou music; maybe move this down with the other shmups?
-    "Eastern Mystical Tale Of Romance",
-    "Retribution For The Eternal Night",
-    "Shanghai Scarlet Teahouse Chinese Tea",
-    "Bad Apple (PC98)",
+    // Splatoon
+    "Seaskape",
+    "Splattack",
+    "Eight-Legged Advance",
+    "City of Color",
+    "Calamari Inkantation",
+    "Spectrum Obligato ~ Ebb & Flow (Out of Order)",
+    "Rainbow Color Inkantation",
 
     // Ys music
     "Tension",    
@@ -163,6 +173,10 @@ constant array<string> CommunityJukebox_Names =
     "Bloody Battle", // Einhänder - did you know that Square Enix made a shmup?
     "Silver Lining", // Eschatos
     "The Glacial Fortress", // Omega Five
+    "Eastern Mystical Tale Of Romance",
+    "Retribution For The Eternal Night",
+    "Shanghai Scarlet Teahouse Chinese Tea",
+    "Bad Apple (PC98)",
 
     // Misc. fighting game music
     "Conclusion", // Guilty Gear: The Missing Link
