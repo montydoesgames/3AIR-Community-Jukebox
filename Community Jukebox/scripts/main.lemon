@@ -6,7 +6,7 @@ include MenuStyle
 #define COMMJUKE_SHOW_TRACKID = 1
 #define COMMUNITY_JUKEBOX_ACTIVE = 1
 
-constant u8 COMMJUKE_CATEGORIES = 12 // The number of categories we have
+constant u8 COMMJUKE_CATEGORIES = 15 // The number of categories we have
 
 // Track end ID constants - Please use decimals (255) rather than hexadecimals (0xFF) if you can
 

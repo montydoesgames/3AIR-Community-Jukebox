@@ -209,10 +209,6 @@ constant array<string> CommunityJukebox_Names =
     "Bloody Battle", // Einhänder - did you know that Square Enix made a shmup?
     "Silver Lining", // Eschatos
     "The Glacial Fortress", // Omega Five
-    "Eastern Mystical Tale Of Romance",
-    "Retribution For The Eternal Night",
-    "Shanghai Scarlet Teahouse Chinese Tea",
-    "Bad Apple (PC98)",
 
     // Misc. fighting game music (there's only two tracks in this category - do we remove it?)
     "Conclusion", // Guilty Gear: The Missing Link
