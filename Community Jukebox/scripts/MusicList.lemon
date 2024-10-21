@@ -2,105 +2,119 @@
 constant array<string> CommunityJukebox_Music =
 {
     //Jukebox is not on
-    "jukeboxoff",
+    "jukeboxoff", // 0
 
     //Sonic music
-    "theairwindyvalley",
-    "cityescape",
-    "openyourheart",
-    "liveandlearn",
-    "sonicheroes",
-    "KnightoftheWind",
-    "undefeatable",
-    "Big_the_Cat_Lofi",
+    "theairwindyvalley", // 1
+    "cityescape", // 2
+    "openyourheart", // 3
+    "liveandlearn", // 4
+    "sonicheroes", // 5
+    "KnightoftheWind", // 6
+    "undefeatable", // 7
+    "Big_the_Cat_Lofi", // 8
+    
+    // Mario Music
+    "JumpJumpJump", // 9
+    "MainBossCastle(NewSMBDS)", // 10
+    "TheGrandFinale", // 11
+    "GustyGardenGalaxy", // 12
+    "GreenhornForest", // 13
 
     //Persona music
-    "lifewillchange",
-    "LastSuprise",
-    "TakeOver",
-    "MassDestruction",
-    "itsgoingdownnow",
+    "lifewillchange", // 14
+    "LastSuprise", // 15
+    "TakeOver", // 16
+    "MassDestruction", // 17
+    "itsgoingdownnow", // 18
+    "LonePrayer", // 19
+    "Kichijoji199X", // 20
     
     // Other SMT music
-    "KyuuyakuTokyo",
+    "KyuuyakuTokyo", // 21
+    "Ginza", // 22
+    "FierceBattle", // 23
+    "Ikebukuro", // 24
+    "OldEnemy", // 25
 
     // Splatoon music
-    "Seaskape",
-    "SplattackCSide",
-    "EightLeggedAdvance",
-    "CityOfColour",
-    "CalamariInkantation",
-    "SpectrumObligato_EbbAndFlow_OutOfOrder",
-    "RainbowColorInkantation",
+    "Seaskape", // 26
+    "SplattackCSide", // 27
+    "EightLeggedAdvance", // 28
+    "CityOfColour", // 29
+    "CalamariInkantation", // 30
+    "SpectrumObligato_EbbAndFlow_OutOfOrder", // 31 
+    "RainbowColorInkantation", // 32
 
     // Ys music
-    "Tension",    
-    "IceRidgeOfNoltia",
-    "BurningFight",
-    "ThemeOfAdol1993",
-    "FieldOfGale",
-    "MountainZone",
+    "Tension", // 33
+    "IceRidgeOfNoltia", // 34
+    "BurningFight", // 35
+    "ThemeOfAdol1993", // 36
+    "FieldOfGale", // 37
+    "MountainZone", // 38
+    "MotherEarthAltago", // 39
+    "IclucianDance", // 40
+    "ToBeFree", // 41
 
     // Final Fantasy music
-    "protecttheespers",
-    "GiantDungeon(FF4)",
-    "crazymotorcyclechase",
-    "manwithmachinegun",
-    "ff9battle",
+    "protecttheespers", // 42
+    "GiantDungeon(FF4)", // 43
+    "crazymotorcyclechase", // 44
+    "manwithmachinegun", // 45
+    "ff9battle", // 46
 
     // "Childhold classics" music
-    "CaptainUnderpantsMusic",
-    "FNAF",
-    "weekendwhip",
-    "PeppaPigSong", // Proposal: Move this to the meme category because it contains an edited scream at the end and the sound test name calls it a "Fixed Version"
-    "HotDogDance",
-    "BrandyAndMrWhiskers",
-    "WhatismydestinyDragonBall", // The italian version of the opening theme song of Dragon Ball Z
-    "HyperDrive",
+    "CaptainUnderpantsMusic", // 47
+    "FNAF", // 48
+    "weekendwhip", // 49
+    "PeppaPigSong", // 50, Proposal: Move this to the meme category because it contains an edited scream at the end and the sound test name calls it a "Fixed Version"
+    "HotDogDance", // 51
+    "BrandyAndMrWhiskers", // 52
+    "WhatismydestinyDragonBall", // 53, The italian version of the opening theme song of Dragon Ball Z
+    "HyperDrive", // 54
 
+    //Touhou music; maybe move this down with the other shmups?
+    "EasternMysticalTaleOfRomance", // 55
+    "RetributionForTheEternalNight", // 56
+    "ShanghaiScarletTeahouseChineseTea", // 57
+    "BadApplePC98", // 58
+    
     // DonPachi Music
-    "East_Asia",
-    "Michi_1",
-	"Niji",    
-	"Ran",
+    "East_Asia", // 59
+    "Michi_1", // 60
+	"Niji", // 61
+	"Ran", // 62
 
     // Misc. shoot 'em up music
-    "Bloody_Battle_1", // Einhänder - did you know that Square Enix made a shmup?
-    "Silver_Lining_1", // Eschatos
-    "The_Glacial_Fortress", // Omega Five
-    "EasternMysticalTaleOfRomance",
-    "RetributionForTheEternalNight",
-    "ShanghaiScarletTeahouseChineseTea",
-    "BadApplePC98",
+    "Bloody_Battle_1", // 63, Einhänder - did you know that Square Enix made a shmup?
+    "Silver_Lining_1", // 64, Eschatos
+    "The_Glacial_Fortress", // 65 Omega Five
 
     // Misc. fighting game music
-    "conclusion", // Guilty Gear: The Missing Link
-    "ryualpha3", // Street Fighter Alpha 3
+    "conclusion", // 66
+    "ryualpha3", // 67, Street Fighter Alpha 3
 
     // Other Game Music
-    "MainBossCastle(NewSMBDS)",
-    "TheGrandFinale",
-    "GustyGardenGalaxy",
-    "GreenhornForest",
-    "HeartlessBeing",
-    "AirCombat",
-    "bandland",
-    "Mr.DarkBattle",
-    "BFGDivision",
-    "vrtraining",
-    "warproom",
+    "HeartlessBeing", // 68
+    "AirCombat", // 69
+    "bandland", // 70
+    "Mr.DarkBattle", // 71
+    "BFGDivision", // 72
+    "vrtraining", // 73
+    "warproom", // 74
 
     //Misc and ungroupable music
-    "tombstone_arizzona",
-    "DROPTHEBOMB",
-	"Magnolia_1", // Original song; TODO: Find author
-	"Super_Reflex_1", // Megalomanchia2
+    "tombstone_arizzona", // 75
+    "DROPTHEBOMB", // 76
+	"Magnolia_1", // 77, Original song; TODO: Find author
+	"Super_Reflex_1", // 78, Megalomanchia2
 
     // Memes
-    "GrandpaThemeSong",
-    "SMLCookieCrisp",
-    "Pacmanthemesong", // Arabic version of the opening theme song to Pac-Man and the Ghostly Adventures; sound test name calls it a "Good Version" which suggests its inclusion is as a meme 
-    "BuckBumble", // Does come from a game but it's being included mainly for laughs; should it be moved to the game music category?
+    "GrandpaThemeSong", // 79
+    "SMLCookieCrisp", // 80
+    "Pacmanthemesong", // 81, Arabic version of the opening theme song to Pac-Man and the Ghostly Adventures; sound test name calls it a "Good Version" which suggests its inclusion is as a meme 
+    "BuckBumble", // 82, Does come from a game but it's being included mainly for laughs; should it be moved to the game music category?
 
 }
 
@@ -118,6 +132,13 @@ constant array<string> CommunityJukebox_Names =
     "Knight of the Wind",
     "Undefeatable",
     "Big the Cat Lo-Fi",
+    
+    // Mario Music
+    "Jump Jump Jump!",
+    "Main Boss Castle (NewSMBDS)",
+    "The Grand Finale",
+    "Gusty Garden Galaxy",
+    "Greenhorn Forest",
 
     //Persona music
     "Life Will Change",
@@ -125,9 +146,15 @@ constant array<string> CommunityJukebox_Names =
     "Take Over",
     "Mass Destruction",
     "It's Going Down Now",
+    "A Lone Prayer",
+    "Kichijoji 199X",
     
     // Other SMT music
-    "Kyuuyaku Tokyo",
+    "Explorer ~ Closed Off City",
+    "Ginza",
+    "Fierce Battle",
+    "Ikebukuro Underground District",
+    "Old Enemy",
 
     // Splatoon
     "Seaskape",
@@ -145,12 +172,15 @@ constant array<string> CommunityJukebox_Names =
     "Theme Of Adol 1993",
     "Field Of Gale",
     "Mountain Zone",
+    "Mother Earth Altago",
+    "Iclucian Dance",
+    "To Be Free",
 
     // Final Fantasy music
     "Protect The Espers",
-    "Giant Dungeon (FF4)",
+    "Within the Giant",
     "Crazy Motorcycle Chase",
-    "Man With Machine Gun",
+    "The Man With the Machine Gun",
     "Battle (FF9)",
 
     // "Childhold classics" music
@@ -162,6 +192,12 @@ constant array<string> CommunityJukebox_Names =
     "Brandy And Mr. Whiskers",
     "What Is My Destiny - Dragon Ball", // The italian version of the opening theme song of Dragon Ball Z
     "Hyper Drive",
+    
+    //Touhou music; maybe move this down with the other shmups?
+    "Eastern Mystical Tale Of Romance",
+    "Retribution For The Eternal Night",
+    "Shanghai Scarlet Teahouse Chinese Tea",
+    "Bad Apple (PC-98)",
 
     // DonPachi Music
     "East Asia",
@@ -173,23 +209,15 @@ constant array<string> CommunityJukebox_Names =
     "Bloody Battle", // Einhänder - did you know that Square Enix made a shmup?
     "Silver Lining", // Eschatos
     "The Glacial Fortress", // Omega Five
-    "Eastern Mystical Tale Of Romance",
-    "Retribution For The Eternal Night",
-    "Shanghai Scarlet Teahouse Chinese Tea",
-    "Bad Apple (PC98)",
 
-    // Misc. fighting game music
+    // Misc. fighting game music (there's only two tracks in this category - do we remove it?)
     "Conclusion", // Guilty Gear: The Missing Link
     "Ryu (Alpha 3)", // Street Fighter Alpha 3
 
     // Other Game Music
-    "Main Boss Castle (NSMB)",
-    "The Grand Finale",
-    "Gusty Garden Galaxy",
-    "Greenhorn Forest",
     "Heartless Being",
     "Air Combat",
-    "Bandland",
+    "Band Land",
     "Mr. Dark Battle",
     "BFG Division",
     "VR Training",

@@ -40,10 +40,10 @@
         		}
       		},
       		{
-        		"InternalName": "PersonaMusic",
-        		"DisplayName": "Persona/MGT Music",
+        		"InternalName": "MarioMusic",
+        		"DisplayName": "Mario Music",
         		"Category": "Frontiers-Style: Category Toggle",
-        		"Variable": "CommJukeMGTMusic",
+        		"Variable": "CommJukeMarioMusic",
         		"DefaultValue": "1",
         		"Options": 
 				{
@@ -51,6 +51,29 @@
           			"1": "On"
         		}
       		},
+      		{
+        		"InternalName": "PersonaMusic",
+        		"DisplayName": "Persona Music",
+        		"Category": "Frontiers-Style: Category Toggle",
+        		"Variable": "CommJukePersonaMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+      		{
+        		"InternalName": "MegaTenMusic",
+        		"DisplayName": "Megami Tensei Music",
+        		"Category": "Frontiers-Style: Category Toggle",
+        		"Variable": "CommJukeMGTMusic",
+				"Options":
+				{
+					"0": "Off",
+					"1": "On"
+			  	}
+			},
             {
         		"InternalName": "SplatoonMusic",
         		"DisplayName": "Splatoon Music",
@@ -92,6 +115,18 @@
         		"DisplayName": "\"Childhood Classics\" Music",
         		"Category": "Frontiers-Style: Category Toggle",
         		"Variable": "CommJukeNostalgiaMusic",
+        		"DefaultValue": "1",
+        		"Options": 
+				{
+          			"0": "Off",
+          			"1": "On"
+        		}
+      		},
+      		{
+        		"InternalName": "TouhouMusic",
+        		"DisplayName": "Touhou Music",
+        		"Category": "Frontiers-Style: Category Toggle",
+        		"Variable": "CommJukeTouhouMusic",
         		"DefaultValue": "1",
         		"Options": 
 				{
@@ -170,7 +205,7 @@
           			"0": "Off",
           			"1": "On"
         		}
-      		},
+      		}
       	]
     }
 }

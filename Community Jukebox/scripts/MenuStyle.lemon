@@ -49,53 +49,65 @@ function void CommunityJukebox.Menu()
 		CategorySongCount = 0x30
 	else if CurrentCategory == 1 // Sonic
 		CategorySongCount = SONIC_MUSIC_END - 1
-	else if CurrentCategory == 2 // SMT
-		CategorySongCount = MEGATEN_MUSIC_END - SONIC_MUSIC_END
-	else if CurrentCategory == 3 // Splatoon
+	else if CurrentCategory == 2 // Mario
+		CategorySongCount = MARIO_MUSIC_END - SONIC_MUSIC_END
+	else if CurrentCategory == 3 // Persona
+		CategorySongCount = PERSONA_MUSIC_END - MARIO_MUSIC_END
+	else if CurrentCategory == 4 // SMT
+		CategorySongCount = MEGATEN_MUSIC_END - PERSONA_MUSIC_END
+	else if CurrentCategory == 5 // Splatoon
 		CategorySongCount = SPLATOON_MUSIC_END - MEGATEN_MUSIC_END
-	else if CurrentCategory == 4 // Ys
+	else if CurrentCategory == 6 // Ys
 		CategorySongCount = YS_MUSIC_END - SPLATOON_MUSIC_END
-	else if CurrentCategory == 5 // Final Fantasy
+	else if CurrentCategory == 7 // Final Fantasy
 		CategorySongCount = FINAL_FANTASY_MUSIC_END - YS_MUSIC_END
-	else if CurrentCategory == 6 // Nostalgia
+	else if CurrentCategory == 8 // Nostalgia
 		CategorySongCount = NOSTALGIA_MUSIC_END - FINAL_FANTASY_MUSIC_END
-	else if CurrentCategory == 7 // DonPachi
-		CategorySongCount = DONPACHI_MUSIC_END - NOSTALGIA_MUSIC_END
-	else if CurrentCategory == 8 // Misc. shmups
+	else if CurrentCategory == 9 // Touhou
+		CategorySongCount = TOUHOU_MUSIC_END - NOSTALGIA_MUSIC_END
+	else if CurrentCategory == 10 // DonPachi
+		CategorySongCount = DONPACHI_MUSIC_END - TOUHOU_MUSIC_END
+	else if CurrentCategory == 11 // Misc. shmups
 		CategorySongCount = MISC_SHMUP_MUSIC_END - DONPACHI_MUSIC_END
-	else if CurrentCategory == 9 // Misc. Fighting
+	else if CurrentCategory == 12 // Misc. Fighting
 		CategorySongCount = MISC_FIGHTER_MUSIC_END - MISC_SHMUP_MUSIC_END
-	else if CurrentCategory == 10 // Misc Games
+	else if CurrentCategory == 13 // Misc Games
 		CategorySongCount = MISC_GAME_MUSIC_END - MISC_FIGHTER_MUSIC_END
-	else if CurrentCategory == 11 // Misc
+	else if CurrentCategory == 14 // Misc
 		CategorySongCount = UNGROUPABLE_MUSIC_END - MISC_GAME_MUSIC_END
-	else if CurrentCategory == 12 // Memes
+	else if CurrentCategory == 15 // Memes
 		CategorySongCount = MEME_MUSIC_END - UNGROUPABLE_MUSIC_END
 
 	// Lower Boundary of the Category - Used to find song position in the array
 	if CurrentCategory == 1 // Sonic
 		CatLowerBoundary = SONIC_MUSIC_START
-	else if CurrentCategory == 2 // SMT
+	else if CurrentCategory == 2 // Mario
+		CatLowerBoundary = MARIO_MUSIC_START
+	else if CurrentCategory == 3 // Persona
+		CatLowerBoundary = PERSONA_MUSIC_START
+	else if CurrentCategory == 4 // SMT
 		CatLowerBoundary = MEGATEN_MUSIC_START
-	else if CurrentCategory == 3 // Splatoon
+	else if CurrentCategory == 5 // Splatoon
 		CatLowerBoundary = SPLATOON_MUSIC_START
-	else if CurrentCategory == 4 // Ys
+	else if CurrentCategory == 6 // Ys
 		CatLowerBoundary = YS_MUSIC_START
-	else if CurrentCategory == 5 // Final Fantasy
+	else if CurrentCategory == 7 // Final Fantasy
 		CatLowerBoundary = FINAL_FANTASY_MUSIC_START
-	else if CurrentCategory == 6 // Nostalgia
+	else if CurrentCategory == 8 // Nostalgia
 		CatLowerBoundary = NOSTALGIA_MUSIC_START
-	else if CurrentCategory == 7 // DonPachi
+	else if CurrentCategory == 9 // Touhou
+		CatLowerBoundary = TOUHOU_MUSIC_START
+	else if CurrentCategory == 10 // DonPachi
 		CatLowerBoundary = DONPACHI_MUSIC_START
-	else if CurrentCategory == 8 // Misc. shmups
+	else if CurrentCategory == 11 // Misc. shmups
 		CatLowerBoundary = MISC_SHMUP_MUSIC_START
-	else if CurrentCategory == 9 // Misc. Fighting
+	else if CurrentCategory == 12 // Misc. Fighting
 		CatLowerBoundary = MISC_FIGHTER_MUSIC_START
-	else if CurrentCategory == 10 // Misc Games
+	else if CurrentCategory == 13 // Misc Games
 		CatLowerBoundary = MISC_GAME_MUSIC_START
-	else if CurrentCategory == 11 // Misc
+	else if CurrentCategory == 14 // Misc
 		CatLowerBoundary = UNGROUPABLE_MUSIC_START
-	else if CurrentCategory == 12 // Memes
+	else if CurrentCategory == 15 // Memes
 		CatLowerBoundary = MEME_MUSIC_START
 
 		if Input.buttonPressed(BUTTON_UP) // Scroll up
@@ -115,14 +127,14 @@ function void CommunityJukebox.Menu()
 		if Input.buttonPressed(BUTTON_LEFT)
 		{
 			if CurrentCategory == 0
-				CurrentCategory = COMMJUKE_CATEGORIES - 1
+				CurrentCategory = COMMJUKE_CATEGORIES
 			else
 				--CurrentCategory
 		}
 		else if Input.buttonPressed(BUTTON_RIGHT)
 		{
 			++CurrentCategory
-			if CurrentCategory > (COMMJUKE_CATEGORIES - 1)
+			if CurrentCategory > (COMMJUKE_CATEGORIES)
 				CurrentCategory = 0
 		}
 
