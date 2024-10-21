@@ -127,14 +127,14 @@ function void CommunityJukebox.Menu()
 		if Input.buttonPressed(BUTTON_LEFT)
 		{
 			if CurrentCategory == 0
-				CurrentCategory = COMMJUKE_CATEGORIES - 1
+				CurrentCategory = COMMJUKE_CATEGORIES
 			else
 				--CurrentCategory
 		}
 		else if Input.buttonPressed(BUTTON_RIGHT)
 		{
 			++CurrentCategory
-			if CurrentCategory > (COMMJUKE_CATEGORIES - 1)
+			if CurrentCategory > (COMMJUKE_CATEGORIES)
 				CurrentCategory = 0
 		}
 
