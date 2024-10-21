@@ -1,0 +1,144 @@
+//# address-hook(0x0013e4) end(0x0014e4)
+function void UpdateGamePause()
+{
+	if !CommJukeStyle
+	{
+		base.UpdateGamePause()
+		return
+	}
+
+	// Back button pressed?
+	if (Input.buttonPressed(BUTTON_BACK)) // Open Menu if yes
+	{
+		{
+			global.game.paused = true
+			CommJukeinMenu = true
+			while CommJukeinMenu == true
+			{
+				Renderer.resetSprites()
+
+				CommunityJukebox.Menu()
+				if (Input.buttonPressed(BUTTON_B))
+					break
+
+				global.frame_state = 0x10
+				waitForNextFrame()
+
+			}
+			global.game.paused = false
+
+			// Fix for brief glitch in Blue Spheres special stage
+			if (global.game_mode == 0x34)
+				BlueSpheres.replacePlaneRendering()
+		}
+	}
+base.UpdateGamePause()
+}
+
+global u8 CatLowerBoundary
+global u8 CategorySongCount
+global u8 CurrentCategory
+global u8 SelectedOption
+
+function void CommunityJukebox.Menu()
+{
+	// I would've used variable functions but the game did not like that for some reason so I guess we're doing global variables and one big function now.
+
+	// Song Count in the Category
+	if CurrentCategory == 0 // Base 3K
+		CategorySongCount = 0x30
+	else if CurrentCategory == 1 // Sonic
+		CategorySongCount = SONIC_MUSIC_END - 1
+	else if CurrentCategory == 2 // SMT
+		CategorySongCount = MEGATEN_MUSIC_END - SONIC_MUSIC_END
+	else if CurrentCategory == 3 // Splatoon
+		CategorySongCount = SPLATOON_MUSIC_END - MEGATEN_MUSIC_END
+	else if CurrentCategory == 4 // Ys
+		CategorySongCount = YS_MUSIC_END - SPLATOON_MUSIC_END
+	else if CurrentCategory == 5 // Final Fantasy
+		CategorySongCount = FINAL_FANTASY_MUSIC_END - YS_MUSIC_END
+	else if CurrentCategory == 6 // Nostalgia
+		CategorySongCount = NOSTALGIA_MUSIC_END - FINAL_FANTASY_MUSIC_END
+	else if CurrentCategory == 7 // DonPachi
+		CategorySongCount = DONPACHI_MUSIC_END - NOSTALGIA_MUSIC_END
+	else if CurrentCategory == 8 // Misc. shmups
+		CategorySongCount = MISC_SHMUP_MUSIC_END - DONPACHI_MUSIC_END
+	else if CurrentCategory == 9 // Misc. Fighting
+		CategorySongCount = MISC_FIGHTER_MUSIC_END - MISC_SHMUP_MUSIC_END
+	else if CurrentCategory == 10 // Misc Games
+		CategorySongCount = MISC_GAME_MUSIC_END - MISC_FIGHTER_MUSIC_END
+	else if CurrentCategory == 11 // Misc
+		CategorySongCount = UNGROUPABLE_MUSIC_END - MISC_GAME_MUSIC_END
+	else if CurrentCategory == 12 // Memes
+		CategorySongCount = MEME_MUSIC_END - UNGROUPABLE_MUSIC_END
+
+	// Lower Boundary of the Category - Used to find song position in the array
+	if CurrentCategory == 1 // Sonic
+		CatLowerBoundary = SONIC_MUSIC_START
+	else if CurrentCategory == 2 // SMT
+		CatLowerBoundary = MEGATEN_MUSIC_START
+	else if CurrentCategory == 3 // Splatoon
+		CatLowerBoundary = SPLATOON_MUSIC_START
+	else if CurrentCategory == 4 // Ys
+		CatLowerBoundary = YS_MUSIC_START
+	else if CurrentCategory == 5 // Final Fantasy
+		CatLowerBoundary = FINAL_FANTASY_MUSIC_START
+	else if CurrentCategory == 6 // Nostalgia
+		CatLowerBoundary = NOSTALGIA_MUSIC_START
+	else if CurrentCategory == 7 // DonPachi
+		CatLowerBoundary = DONPACHI_MUSIC_START
+	else if CurrentCategory == 8 // Misc. shmups
+		CatLowerBoundary = MISC_SHMUP_MUSIC_START
+	else if CurrentCategory == 9 // Misc. Fighting
+		CatLowerBoundary = MISC_FIGHTER_MUSIC_START
+	else if CurrentCategory == 10 // Misc Games
+		CatLowerBoundary = MISC_GAME_MUSIC_START
+	else if CurrentCategory == 11 // Misc
+		CatLowerBoundary = UNGROUPABLE_MUSIC_START
+	else if CurrentCategory == 12 // Memes
+		CatLowerBoundary = MEME_MUSIC_START
+
+		if Input.buttonPressed(BUTTON_UP) // Scroll up
+		{
+			if SelectedOption == 0
+				SelectedOption = CategorySongCount - 1 // Loop
+			else
+				--SelectedOption
+		}
+		else if Input.buttonPressed(BUTTON_DOWN) // Scroll down
+		{
+			++SelectedOption
+			if SelectedOption > (CategorySongCount - 1)
+				SelectedOption = 0 // Loop
+		}
+
+		if Input.buttonPressed(BUTTON_LEFT)
+		{
+			if CurrentCategory == 0
+				CurrentCategory = COMMJUKE_CATEGORIES - 1
+			else
+				--CurrentCategory
+		}
+		else if Input.buttonPressed(BUTTON_RIGHT)
+		{
+			++CurrentCategory
+			if CurrentCategory > (COMMJUKE_CATEGORIES - 1)
+				CurrentCategory = 0
+		}
+
+		if Input.buttonPressed(BUTTON_X)
+		{
+			if CurrentCategory > 0
+				Audio.playAudio(CommunityJukebox_Music[SelectedOption + CatLowerBoundary], AudioContext.CONTEXT_MUSIC)
+			else
+				playMusic(SelectedOption)
+			
+			jukebox_isplaying = true
+		}
+
+Renderer.drawText("oxyfont_small", 0x10, 0x80, stringformat("Category: %d", CurrentCategory), 0xffffffff, 1, 0, 0xe001, 0)
+Renderer.drawText("oxyfont_small", 0x10, 0x70, stringformat("Choosing: %s", CommunityJukebox_Names[SelectedOption + CatLowerBoundary]), 0xffffffff, 1, 0, 0xe001, 0)
+
+Renderer.drawCustomSprite("JukeboxBG_Splatoon", getScreenWidth() / 2, getScreenHeight() / 2, 0, SPRITE_FLAG_PRIO + SPRITE_FLAG_NO_GLOBAL_TINT, 0xe000)
+
+}

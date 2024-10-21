@@ -79,4 +79,12 @@
     "Mr.DarkBattle": { "File": "Mr. Dark Battle.ogg", "Type": "Music", "Name": "Mr.DarkBattle", "SoundTestVisibility": "Hidden" },
     "BFGDivision": { "File": "BFG Division.ogg", "Type": "Music", "Name": "BFGDivision", "SoundTestVisibility": "Hidden" },
     "DROPTHEBOMB": { "File": "DROP THE BOMB.ogg", "Type": "Music", "Name": "DROPTHEBOMB", "SoundTestVisibility": "Hidden" },
+
+    "Seaskape": { "File": "Seaskape.ogg", "Type": "Music", "Name": "Seaskape", "SoundTestVisibility": "Hidden" },
+    "SplattackCSide": { "File": "SplattackCSide.ogg", "Type": "Music", "Name": "SplattackCSide", "SoundTestVisibility": "Hidden" },
+    "EightLeggedAdvance": { "File": "EightLeggedAdvance.ogg", "Type": "Music", "Name": "EightLeggedAdvance", "SoundTestVisibility": "Hidden" },
+    "CityOfColour": { "File": "CityOfColour.ogg", "Type": "Music", "Name": "CityOfColour", "SoundTestVisibility": "Hidden" },
+    "CalamariInkantation": { "File": "CalamariInkantation.ogg", "Type": "Music", "Name": "CalamariInkantation", "SoundTestVisibility": "Hidden" },
+    "SpectrumObligato_EbbAndFlow_OutOfOrder": { "File": "SpectrumObligato_EbbAndFlow_OutOfOrder.ogg", "Type": "Music", "Name": "SpectrumObligato_EbbAndFlow_OutOfOrder", "SoundTestVisibility": "Hidden" },
+    "RainbowColorInkantation": { "File": "RainbowColorInkantation.ogg", "Type": "Music", "Name": "RainbowColorInkantation", "SoundTestVisibility": "Hidden" },
 }
