@@ -2,7 +2,7 @@
 
 Because soundtrack mods just aren't enough!
 
-Cycle through many series' music with L and R, and listen to the community's favourite OSTs!
+Browse the music of many popular series, and listen to the community's favourite OSTs as you play!
 
 ## Request a song:
 ### Rules:
