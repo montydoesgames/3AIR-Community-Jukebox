@@ -13,6 +13,8 @@ function void UpdateGamePause()
 		{
 			global.game.paused = true
 			CommJukeinMenu = true
+			if (SelectedOption == 0)
+				SelectedOption = 1
 			while CommJukeinMenu == true
 			{
 				Renderer.resetSprites()
@@ -113,44 +115,64 @@ function void CommunityJukebox.Menu()
 		if Input.buttonPressed(BUTTON_UP) // Scroll up
 		{
 			if SelectedOption == 0
-				SelectedOption = CategorySongCount - 1 // Loop
+				SelectedOption = CategorySongCount // Loop
 			else
 				--SelectedOption
 		}
 		else if Input.buttonPressed(BUTTON_DOWN) // Scroll down
 		{
 			++SelectedOption
-			if SelectedOption > (CategorySongCount - 1)
+			if SelectedOption > (CategorySongCount)
 				SelectedOption = 0 // Loop
 		}
 
 		if Input.buttonPressed(BUTTON_LEFT)
 		{
-			if CurrentCategory == 0
+			if CurrentCategory == 1
 				CurrentCategory = COMMJUKE_CATEGORIES
 			else
 				--CurrentCategory
+			SelectedOption = 0
 		}
 		else if Input.buttonPressed(BUTTON_RIGHT)
 		{
 			++CurrentCategory
 			if CurrentCategory > (COMMJUKE_CATEGORIES)
-				CurrentCategory = 0
+				CurrentCategory = 1
+			SelectedOption = 0
 		}
 
 		if Input.buttonPressed(BUTTON_X)
 		{
-			if CurrentCategory > 0
-				Audio.playAudio(CommunityJukebox_Music[SelectedOption + CatLowerBoundary], AudioContext.CONTEXT_MUSIC)
+			jukebox_isplaying = true
+			if (CurrentCategory > 0)
+			{
+				if (SelectedOption < CategorySongCount)
+					Audio.playAudio(CommunityJukebox_Music[SelectedOption + CatLowerBoundary], AudioContext.CONTEXT_MUSIC)
+				else if (SelectedOption == CategorySongCount)
+					jukebox_isplaying = false
+			}
 			else
 				playMusic(SelectedOption)
-			
-			jukebox_isplaying = true
 		}
 
-Renderer.drawText("oxyfont_small", 0x10, 0x80, stringformat("Category: %d", CurrentCategory), 0xffffffff, 1, 0, 0xe001, 0)
-Renderer.drawText("oxyfont_small", 0x10, 0x70, stringformat("Choosing: %s", CommunityJukebox_Names[SelectedOption + CatLowerBoundary]), 0xffffffff, 1, 0, 0xe001, 0)
+	string categoryName = stringformat("Category: %s", CommunityJukebox_CategoryNames[CurrentCategory])
+	Renderer.drawText("oxyfont_regular", 0x10, 0x14, categoryName, 0xffffffff, 1, 0, 0xe001, 0)
+	u16 py = 0x26
+	for (u8 i = 0; i < CategorySongCount; i++)
+	{
+		u32 colorTint = 0xffffffff
+		if (SelectedOption == i)
+		{
+			colorTint = 0xffff00ff
+		}
+		Renderer.drawText("oxyfont_small", 0x20, py, stringformat("%s", CommunityJukebox_Names[i + CatLowerBoundary]), colorTint, 1, 0, 0xe001, 0)
+		py += 0x0a
+	}
+	Renderer.drawText("oxyfont_small", 0x20, py, "Off", (SelectedOption == CategorySongCount) ? 0xffff00ff : 0xffffffff, 1, 0, 0xe001, 0)
+	//Renderer.drawText("oxyfont_small", 0x10, 0x80, stringformat("Category: %d", CurrentCategory), 0xffffffff, 1, 0, 0xe001, 0)
+	//Renderer.drawText("oxyfont_small", 0x10, 0x70, stringformat("Choosing: %s", CommunityJukebox_Names[SelectedOption + CatLowerBoundary]), 0xffffffff, 1, 0, 0xe001, 0)
 
-Renderer.drawCustomSprite("JukeboxBG_Splatoon", getScreenWidth() / 2, getScreenHeight() / 2, 0, SPRITE_FLAG_PRIO + SPRITE_FLAG_NO_GLOBAL_TINT, 0xe000)
+	Renderer.drawCustomSprite("JukeboxBG_Splatoon", getScreenWidth() / 2, getScreenHeight() / 2, 0, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xe000)
 
 }
