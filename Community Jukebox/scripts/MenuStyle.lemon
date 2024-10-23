@@ -115,20 +115,20 @@ function void CommunityJukebox.Menu()
 		if Input.buttonPressed(BUTTON_UP) // Scroll up
 		{
 			if SelectedOption == 0
-				SelectedOption = CategorySongCount // Loop
+				SelectedOption = CategorySongCount - 1 // Loop
 			else
 				--SelectedOption
 		}
 		else if Input.buttonPressed(BUTTON_DOWN) // Scroll down
 		{
 			++SelectedOption
-			if SelectedOption > (CategorySongCount)
+			if SelectedOption > (CategorySongCount - 1)
 				SelectedOption = 0 // Loop
 		}
 
 		if Input.buttonPressed(BUTTON_LEFT)
 		{
-			if CurrentCategory == 1
+			if CurrentCategory == 0
 				CurrentCategory = COMMJUKE_CATEGORIES
 			else
 				--CurrentCategory
@@ -138,22 +138,18 @@ function void CommunityJukebox.Menu()
 		{
 			++CurrentCategory
 			if CurrentCategory > (COMMJUKE_CATEGORIES)
-				CurrentCategory = 1
+				CurrentCategory = 0
 			SelectedOption = 0
 		}
 
 		if Input.buttonPressed(BUTTON_X)
 		{
-			jukebox_isplaying = true
-			if (CurrentCategory > 0)
-			{
-				if (SelectedOption < CategorySongCount)
-					Audio.playAudio(CommunityJukebox_Music[SelectedOption + CatLowerBoundary], AudioContext.CONTEXT_MUSIC)
-				else if (SelectedOption == CategorySongCount)
-					jukebox_isplaying = false
-			}
+			if CurrentCategory > 0
+				Audio.playAudio(CommunityJukebox_Music[SelectedOption + CatLowerBoundary], AudioContext.CONTEXT_MUSIC)
 			else
 				playMusic(SelectedOption)
+			
+			jukebox_isplaying = true
 		}
 
 	string categoryName = stringformat("Category: %s", CommunityJukebox_CategoryNames[CurrentCategory])
@@ -169,7 +165,6 @@ function void CommunityJukebox.Menu()
 		Renderer.drawText("oxyfont_small", 0x20, py, stringformat("%s", CommunityJukebox_Names[i + CatLowerBoundary]), colorTint, 1, 0, 0xe001, 0)
 		py += 0x0a
 	}
-	Renderer.drawText("oxyfont_small", 0x20, py, "Off", (SelectedOption == CategorySongCount) ? 0xffff00ff : 0xffffffff, 1, 0, 0xe001, 0)
 	//Renderer.drawText("oxyfont_small", 0x10, 0x80, stringformat("Category: %d", CurrentCategory), 0xffffffff, 1, 0, 0xe001, 0)
 	//Renderer.drawText("oxyfont_small", 0x10, 0x70, stringformat("Choosing: %s", CommunityJukebox_Names[SelectedOption + CatLowerBoundary]), 0xffffffff, 1, 0, 0xe001, 0)
 
