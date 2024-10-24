@@ -236,3 +236,23 @@ constant array<string> CommunityJukebox_Names =
     "Buck Bumble", // Does come from a game but it's being included mainly for laughs; should it be moved to the game music category?
 
 }
+
+constant array<string> CommunityJukebox_CategoryNames = 
+{
+    "",
+    "Sonic",
+    "Super Mario",
+    "Persona",
+    "Megami Tensei",
+    "Splatoon",
+    "Ys",
+    "Final Fantasy",
+    "\"Childhood Classics\"",
+    "Touhou",
+    "DonPachi",
+    "Shoot-em-up's",
+    "Fighting Games",
+    "Other Games",
+    "Miscellaneous",
+    "Memes"
+}
