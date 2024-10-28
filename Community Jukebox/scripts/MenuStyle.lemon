@@ -145,7 +145,16 @@ function void CommunityJukebox.Menu()
 		if Input.buttonPressed(BUTTON_X)
 		{
 			if CurrentCategory > 0
+                        {
+        	            if SelectedOption == 0 // Off
+        	            {
+        	                jukebox_isplaying = false
+        	                Audio.playAudio(MUSIC_CTRL_STOP, AudioContext.CONTEXT_MUSIC)
+        	                chooseFittingMusic()
+        	            }
+                            else
 				Audio.playAudio(CommunityJukebox_Music[SelectedOption + CatLowerBoundary], AudioContext.CONTEXT_MUSIC)
+                        }
 			else
 				playMusic(SelectedOption)
 			
