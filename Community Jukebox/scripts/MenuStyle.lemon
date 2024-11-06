@@ -145,18 +145,9 @@ function void CommunityJukebox.Menu()
 		if Input.buttonPressed(BUTTON_X)
 		{
 			if CurrentCategory > 0
-		            Audio.playAudio(CommunityJukebox_Music[SelectedOption + CatLowerBoundary], AudioContext.CONTEXT_MUSIC)
+				Audio.playAudio(CommunityJukebox_Music[SelectedOption + CatLowerBoundary], AudioContext.CONTEXT_MUSIC)
 			else
-                        {
-        	            if SelectedOption == 0 // Off
-        	            {
-        	                jukebox_isplaying = false
-        	                Audio.playAudio(MUSIC_CTRL_STOP, AudioContext.CONTEXT_MUSIC)
-        	                chooseFittingMusic()
-        	            }
-                            else
 				playMusic(SelectedOption)
-                        }
 			
 			jukebox_isplaying = true
 		}
@@ -177,6 +168,11 @@ function void CommunityJukebox.Menu()
 	//Renderer.drawText("oxyfont_small", 0x10, 0x80, stringformat("Category: %d", CurrentCategory), 0xffffffff, 1, 0, 0xe001, 0)
 	//Renderer.drawText("oxyfont_small", 0x10, 0x70, stringformat("Choosing: %s", CommunityJukebox_Names[SelectedOption + CatLowerBoundary]), 0xffffffff, 1, 0, 0xe001, 0)
 
-	Renderer.drawCustomSprite("JukeboxBG_Splatoon", getScreenWidth() / 2, getScreenHeight() / 2, 0, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xe000)
+	if (CommJukeBGStyle == 0) && (Renderer.hasCustomSprite(stringformat("JukeboxBG_%s", CommunityJukebox_CategoryNames[CurrentCategory])))
+		Renderer.drawCustomSprite(stringformat("JukeboxBG_%s", CommunityJukebox_CategoryNames[CurrentCategory]), getScreenWidth() / 2, getScreenHeight() / 2, 0, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xe000)
+	else if (CommJukeBGStyle > 0)
+		Renderer.drawCustomSprite(stringformat("JukeboxBG_%s", CommunityJukebox_CategoryNames[CommJukeBGStyle - 1]), getScreenWidth() / 2, getScreenHeight() / 2, 0, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xe000)
+	else
+		Renderer.drawCustomSprite(stringformat("JukeboxBG_%s", CommunityJukebox_CategoryNames[0]), getScreenWidth() / 2, getScreenHeight() / 2, 0, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xe000)
 
 }

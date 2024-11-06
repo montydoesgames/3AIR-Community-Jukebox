@@ -42,9 +42,10 @@ constant array<string> CommunityJukebox_Music =
     "SplattackCSide", // 27
     "EightLeggedAdvance", // 28
     "CityOfColour", // 29
-    "CalamariInkantation", // 30
-    "SpectrumObligato_EbbAndFlow_OutOfOrder", // 31 
-    "RainbowColorInkantation", // 32
+    "SufferNoFools", // 30
+    "CalamariInkantation", // 31
+    "SpectrumObligato_EbbAndFlow_OutOfOrder", // 32
+    "RainbowColorInkantation", // 33
 
     // Ys music
     "Tension", // 33
@@ -161,6 +162,7 @@ constant array<string> CommunityJukebox_Names =
     "Splattack",
     "Eight-Legged Advance",
     "City of Color",
+    "Suffer No Fools",
     "Calamari Inkantation",
     "Spectrum Obligato ~ Ebb & Flow (Out of Order)",
     "Rainbow Color Inkantation",
@@ -239,7 +241,7 @@ constant array<string> CommunityJukebox_Names =
 
 constant array<string> CommunityJukebox_CategoryNames = 
 {
-    "",
+    "Base3K",
     "Sonic",
     "Super Mario",
     "Persona",

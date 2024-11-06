@@ -28,6 +28,33 @@
         		}
       		},
       		{
+        		"InternalName": "JukeboxBGStyle",
+        		"DisplayName": "Jukebox Background",
+        		"Category": "Splatoon-Style: Visuals",
+        		"Variable": "CommJukeBGStyle",
+        		"DefaultValue": "0x00",
+        		"Options": 
+				{
+					"0x00": "Per-Category",
+				    "0x01": "Base S3&K",
+				    "0x02": "Sonic",
+				    "0x03": "Super Mario",
+				    "0x04": "Persona",
+				    "0x05": "Megami Tensei",
+				    "0x06": "Splatoon",
+				    "0x07": "Ys",
+				    "0x08": "Final Fantasy",
+				    "0x09": "\"Childhood Classics\"",
+				    "0x0a": "Touhou",
+				    "0x0b": "DonPachi",
+				    "0x0c": "Shoot-em-up's",
+				    "0x0d": "Fighting Games",
+				    "0x0e": "Other Games",
+				    "0x0f": "Miscellaneous",
+				    "0x10": "Memes"
+        		}
+      		},
+      		{
         		"InternalName": "SonicMusic",
         		"DisplayName": "Sonic Music",
         		"Category": "Frontiers-Style: Category Toggle",

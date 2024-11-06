@@ -84,6 +84,7 @@
     "SplattackCSide": { "File": "SplattackCSide.ogg", "Type": "Music", "Name": "SplattackCSide", "SoundTestVisibility": "Hidden" },
     "EightLeggedAdvance": { "File": "EightLeggedAdvance.ogg", "Type": "Music", "Name": "EightLeggedAdvance", "SoundTestVisibility": "Hidden" },
     "CityOfColour": { "File": "CityOfColour.ogg", "Type": "Music", "Name": "CityOfColour", "SoundTestVisibility": "Hidden" },
+    "SufferNoFools": { "File": "SufferNoFools.ogg", "Type": "Music", "Name": "Suffer No Fools", "SoundTestVisibility": "Hidden" },
     "CalamariInkantation": { "File": "CalamariInkantation.ogg", "Type": "Music", "Name": "CalamariInkantation", "SoundTestVisibility": "Hidden" },
     "SpectrumObligato_EbbAndFlow_OutOfOrder": { "File": "SpectrumObligato_EbbAndFlow_OutOfOrder.ogg", "Type": "Music", "Name": "SpectrumObligato_EbbAndFlow_OutOfOrder", "SoundTestVisibility": "Hidden" },
     "RainbowColorInkantation": { "File": "RainbowColorInkantation.ogg", "Type": "Music", "Name": "RainbowColorInkantation", "SoundTestVisibility": "Hidden" },
