@@ -28,48 +28,48 @@ constant u8 MEGATEN_MUSIC_END = 25 // Old Enemy
 
 // Splatoon
 constant u8 SPLATOON_MUSIC_START = 26 // Seaskape
-constant u8 SPLATOON_MUSIC_END = 32 // Rainbow Color Inkantation
+constant u8 SPLATOON_MUSIC_END = 33 // Rainbow Color Inkantation
 
 // Ys, AKA the GOAT 
-constant u8 YS_MUSIC_START = 33 // Tension
-constant u8 YS_MUSIC_END = 41 // To Be Free
+constant u8 YS_MUSIC_START = 34 // Tension
+constant u8 YS_MUSIC_END = 42 // To Be Free
 
 // Final Fantasy Music
-constant u8 FINAL_FANTASY_MUSIC_START = 42 // Protect the Espers
-constant u8 FINAL_FANTASY_MUSIC_END = 46 // Battle (FF9)
+constant u8 FINAL_FANTASY_MUSIC_START = 43 // Protect the Espers
+constant u8 FINAL_FANTASY_MUSIC_END = 47 // Battle (FF9)
 
 // Childhood Classics: music from kids' TV shows and stuff
-constant u8 NOSTALGIA_MUSIC_START = 47 // Captain Underpants
-constant u8 NOSTALGIA_MUSIC_END = 54 // Hyper Drive (opening theme song from Yu-Gi-Oh 5Ds)
+constant u8 NOSTALGIA_MUSIC_START = 48 // Captain Underpants
+constant u8 NOSTALGIA_MUSIC_END = 55 // Hyper Drive (opening theme song from Yu-Gi-Oh 5Ds)
 // Proposal: Reshuffle these categories to have Childhood Classics after all the video games
 
 // Touhou Project (can also include unnofical installments)
-constant u8 TOUHOU_MUSIC_START = 55 // Eastern Tale of Mystical Romance
-constant u8 TOUHOU_MUSIC_END = 58 // Bad Apple!! (PC-98)
+constant u8 TOUHOU_MUSIC_START = 56 // Eastern Tale of Mystical Romance
+constant u8 TOUHOU_MUSIC_END = 59 // Bad Apple!! (PC-98)
 
 // DonPachi Music
-constant u8 DONPACHI_MUSIC_START = 59 // East Asia
-constant u8 DONPACHI_MUSIC_END = 62 // Ran
+constant u8 DONPACHI_MUSIC_START = 60 // East Asia
+constant u8 DONPACHI_MUSIC_END = 63 // Ran
 
 // Misc. Shoot 'em ups
-constant u8 MISC_SHMUP_MUSIC_START = 63 // Bloody Battle
-constant u8 MISC_SHMUP_MUSIC_END = 65 // The Glacial Fortress
+constant u8 MISC_SHMUP_MUSIC_START = 64 // Bloody Battle
+constant u8 MISC_SHMUP_MUSIC_END = 66 // The Glacial Fortress
 
 // Misc. Fighting Games. This category is small so I might remove it.
-constant u8 MISC_FIGHTER_MUSIC_START = 66 // Conclusion (Sol Badguy VS Ky Kiske)
-constant u8 MISC_FIGHTER_MUSIC_END = 67 // Ryu's Stage (SFA3)
+constant u8 MISC_FIGHTER_MUSIC_START = 67 // Conclusion (Sol Badguy VS Ky Kiske)
+constant u8 MISC_FIGHTER_MUSIC_END = 68 // Ryu's Stage (SFA3)
 
 // Misc. Game Music
-constant u8 MISC_GAME_MUSIC_START = 68 // Heartless Being
-constant u8 MISC_GAME_MUSIC_END = 74 // Warp Room
+constant u8 MISC_GAME_MUSIC_START = 69 // Heartless Being
+constant u8 MISC_GAME_MUSIC_END = 75 // Warp Room
 
 // Misc/Ungroupable Music
-constant u8 UNGROUPABLE_MUSIC_START = 75 // Tombstone Arizzona. This might actually meant be in misc games?
-constant u8 UNGROUPABLE_MUSIC_END = 78 // Super Reflex 1
+constant u8 UNGROUPABLE_MUSIC_START = 76 // Tombstone Arizzona. This might actually meant be in misc games?
+constant u8 UNGROUPABLE_MUSIC_END = 79 // Super Reflex 1
 
 // Meme/Joke Music; located at the back due to the fact that humour is highly subjective
-constant u8 MEME_MUSIC_START = 79 // Grandad Theme Song
-constant u8 MEME_MUSIC_END = 82 // Buck Bumble
+constant u8 MEME_MUSIC_START = 70 // Grandad Theme Song
+constant u8 MEME_MUSIC_END = 83 // Buck Bumble
 
 
 // Configuration variables
@@ -77,6 +77,7 @@ global u8 jukeboxtimer
 global u8 jukeboxplaying
 global bool jukebox_isplaying
 global u8 CommJukeStyle
+global u8 CommJukeBGStyle
 global bool CommJukeinMenu
 global u8 CommJukeSonicMusic
 global u8 CommJukeMarioMusic
